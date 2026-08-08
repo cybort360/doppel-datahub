@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DOPPEL creates governed synthetic data products from DataHub context." />
+  <title>DOPPEL — Safe Data Twins</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="/" aria-label="DOPPEL home">
+        <span class="brand-mark"><i></i><i></i></span>
+        <span>DOPPEL</span>
+      </a>
+      <nav class="nav" aria-label="Demo steps">
+        <button class="nav-item active" data-step="0"><span>01</span> Data asset</button>
+        <button class="nav-item" data-step="1"><span>02</span> Generation plan</button>
+        <button class="nav-item" data-step="2"><span>03</span> Live pipeline</button>
+        <button class="nav-item" data-step="3"><span>04</span> Verification</button>
+        <button class="nav-item" data-step="4"><span>05</span> DataHub writeback</button>
+      </nav>
+      <div class="rail-foot">
+        <div class="mode-indicator"><b></b><span id="modeLabel">Fixture mode</span></div>
+        <p>Non-production data only.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">DataHub Agent Hackathon · DOPPEL</span>
+          <h1 id="pageTitle">Production healthcare data</h1>
+        </div>
+        <div class="top-actions">
+          <a href="/docs" target="_blank" rel="noreferrer">API</a>
+          <button id="refreshButton" class="quiet-button">Refresh</button>
+        </div>
+      </header>
+
+      <!-- SCREEN 1: DATA ASSET -->
+      <section id="screen-0" class="screen active">
+        <div class="hero">
+          <h2>This production dataset contains sensitive patient information.</h2>
+          <p>DOPPEL creates a useful development twin without exposing the patients.</p>
+        </div>
+
+        <div class="restricted-banner">
+          <span class="classification">Production / Restricted</span>
+          <span id="assetHeaderLine">Clinical Operations · Patient Data Team</span>
+        </div>
+
+        <div class="asset-grid">
+          <article class="asset-card" id="patientsCard">
+            <div class="asset-card-head">
+              <div>
+                <span class="eyebrow">Source table</span>
+                <h3>healthcare.patients</h3>
+              </div>
+              <span class="row-count" id="patientsRowCount">—</span>
+            </div>
+            <div class="pills" id="patientsTags"></div>
+            <div class="field-list" id="patientsFields"></div>
+          </article>
+
+          <article class="asset-card" id="encountersCard">
+            <div class="asset-card-head">
+              <div>
+                <span class="eyebrow">Source table</span>
+                <h3>healthcare.encounters</h3>
+              </div>
+              <span class="row-count" id="encountersRowCount">—</span>
+            </div>
+            <div class="pills" id="encountersTags"></div>
+            <div class="field-list" id="encountersFields"></div>
+          </article>
+        </div>
+
+        <div class="lineage-panel">
+          <div class="lineage-node source">
+            <span>PROD</span>
+            <strong>clinical.patients</strong>
+            <small>Owner: Patient Data Team · Domain: Clinical Operations</small>
+          </div>
+          <div class="lineage-connector"><i></i></div>
+          <div class="lineage-node source">
+            <span>PROD</span>
+            <strong>clinical.encounters</strong>
+            <small>Owner: Claims Analytics Team · Domain: Clinical Operations</small>
+          </div>
+          <div class="lineage-connector"><i></i></div>
+          <div class="lineage-node target">
+            <span>RESTRICTED</span>
+            <strong>patient_id → encounter_id</strong>
+            <small>One-to-many relationship</small>
+          </div>
+        </div>
+
+        <div class="cta-bar">
+          <div class="seed-summary">
+            <span>Seeded demo</span>
+            <b>scale 1.00× · seed 42 · expiry 30 days · publish on</b>
+          </div>
+          <button id="startDemoButton" class="primary-button">
+            <span>Create safe twin</span><b>→</b>
+          </button>
+        </div>
+      </section>
+
+      <!-- SCREEN 2: GENERATION PLAN -->
+      <section id="screen-1" class="screen">
+        <div class="hero small">
+          <h2>Generation plan</h2>
+          <p>Before execution, DOPPEL reads DataHub context and chooses a strategy for every field.</p>
+        </div>
+
+        <div class="plan-panels" id="planPanels"></div>
+
+        <div class="plan-contract">
+          <div class="contract-item"><span>Seed</span><b>42</b></div>
+          <div class="contract-item"><span>Scale</span><b>1.00×</b></div>
+          <div class="contract-item"><span>Expiry</span><b>30 days</b></div>
+          <div class="contract-item"><span>Publish</span><b>DataHub</b></div>
+        </div>
+
+        <div class="cta-bar">
+          <button id="backToAssetButton" class="quiet-button">Back</button>
+          <button id="runPipelineButton" class="primary-button">
+            <span>Run pipeline</span><b>→</b>
+          </button>
+        </div>
+      </section>
+
+      <!-- SCREEN 3: LIVE PIPELINE -->
+      <section id="screen-2" class="screen">
+        <div class="hero small">
+          <h2>Live pipeline</h2>
+          <p id="pipelineSubtitle">Connecting to backend…</p>
+        </div>
+
+        <div class="pipeline-layout">
+          <ol class="pipeline-stages" id="pipelineStages">
+            <li data-stage="context"><b>01</b><div><strong>Read DataHub context</strong><span>Schema, tags, ownership, relationships</span></div><i></i></li>
+            <li data-stage="plan"><b>02</b><div><strong>Build generation plan</strong><span>Strategy selected per governed field</span></div><i></i></li>
+            <li data-stage="generate_patients"><b>03</b><div><strong>Generate patients</strong><span>Identifiers replaced, distributions retained</span></div><i></i></li>
+            <li data-stage="generate_encounters"><b>04</b><div><strong>Generate encounters</strong><span>Relationship-preserving foreign keys</span></div><i></i></li>
+            <li data-stage="privacy"><b>05</b><div><strong>Check privacy</strong><span>Direct identifiers, exact-row leakage, singling-out</span></div><i></i></li>
+            <li data-stage="utility"><b>06</b><div><strong>Check utility</strong><span>Distributions, correlations, aggregates</span></div><i></i></li>
+            <li data-stage="relationships"><b>07</b><div><strong>Check relationships</strong><span>Diagnosis/procedure/claim associations</span></div><i></i></li>
+            <li data-stage="integrity"><b>08</b><div><strong>Check referential integrity</strong><span>Foreign-key validity, cardinality</span></div><i></i></li>
+            <li data-stage="publish"><b>09</b><div><strong>Publish to DataHub</strong><span>Lineage, tags, scores, evidence</span></div><i></i></li>
+          </ol>
+          <div class="pipeline-log" id="pipelineLog"></div>
+        </div>
+      </section>
+
+      <!-- SCREEN 4: VERIFICATION -->
+      <section id="screen-3" class="screen">
+        <div class="verdict" id="verdict">
+          <span class="verdict-label">Result</span>
+          <strong id="verdictStatus">—</strong>
+          <p id="verdictReason">Waiting for pipeline result.</p>
+        </div>
+
+        <div class="metric-grid" id="verificationMetrics">
+          <article><span>Exact copied rows</span><strong id="metricOverlap">—</strong><small>source rows reproduced unchanged</small></article>
+          <article><span>Direct identifier matches</span><strong id="metricDirect">—</strong><small>names, emails, IDs, phones, addresses</small></article>
+          <article><span>Privacy score</span><strong id="metricPrivacy">—</strong><small>direct-identifier and row checks</small></article>
+          <article><span>Utility score</span><strong id="metricUtility">—</strong><small>distribution and schema fidelity</small></article>
+          <article><span>Referential integrity</span><strong id="metricIntegrity">—</strong><small>foreign-key validity</small></article>
+          <article><span>Singling-out risk</span><strong id="metricSingling">—</strong><small>quasi-identifier uniqueness</small></article>
+          <article><span>Correlation similarity</span><strong id="metricCorrelation">—</strong><small>pairwise numeric correlations</small></article>
+          <article><span>Conditional similarity</span><strong id="metricConditional">—</strong><small>claim amount by procedure</small></article>
+        </div>
+
+        <div class="reasons-panel" id="reasonsPanel"></div>
+
+        <div class="secondary-example">
+          <p>Want to see what a failing run looks like?</p>
+          <button id="showRejectedButton" class="quiet-button">View rejected example</button>
+        </div>
+
+        <div class="cta-bar">
+          <button id="backToPipelineButton" class="quiet-button">Back</button>
+          <button id="toWritebackButton" class="primary-button">
+            <span>View DataHub writeback</span><b>→</b>
+          </button>
+        </div>
+      </section>
+
+      <!-- SCREEN 5: DATAHUB WRITEBACK -->
+      <section id="screen-4" class="screen">
+        <div class="hero small">
+          <h2>DataHub writeback</h2>
+          <p>The synthetic twin is registered in DataHub with lineage and evidence.</p>
+        </div>
+
+        <div class="writeback-diagram">
+          <div class="lineage-node source">
+            <span>SOURCE</span>
+            <strong>clinical.patients</strong>
+            <small>PROD · Restricted</small>
+          </div>
+          <div class="lineage-connector down"><i></i></div>
+          <div class="lineage-node target large">
+            <span>NON_PROD</span>
+            <strong>doppel.healthcare.patients_synthetic</strong>
+            <small id="writebackPatientsMeta">SYNTHETIC · NON_PRODUCTION</small>
+          </div>
+        </div>
+
+        <div class="writeback-diagram">
+          <div class="lineage-node source">
+            <span>SOURCE</span>
+            <strong>clinical.encounters</strong>
+            <small>PROD · Restricted</small>
+          </div>
+          <div class="lineage-connector down"><i></i></div>
+          <div class="lineage-node target large">
+            <span>NON_PROD</span>
+            <strong>doppel.healthcare.encounters_synthetic</strong>
+            <small id="writebackEncountersMeta">SYNTHETIC · NON_PRODUCTION</small>
+          </div>
+        </div>
+
+        <div class="writeback-details">
+          <div class="detail-card">
+            <span class="eyebrow">Tags</span>
+            <div class="pills">
+              <span class="pill">SYNTHETIC</span>
+              <span class="pill">NON_PRODUCTION</span>
+              <span class="pill" id="verifiedPill">DOPPEL_VERIFIED</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="eyebrow">Evidence receipt</span>
+            <p id="evidenceReceipt">Run evidence is linked to each synthetic asset via InstitutionalMemory.</p>
+          </div>
+          <div class="detail-card">
+            <span class="eyebrow">Expiry</span>
+            <p id="expiryValue">—</p>
+          </div>
+          <div class="detail-card">
+            <span class="eyebrow">Owner / domain</span>
+            <p id="ownerDomainValue">—</p>
+          </div>
+        </div>
+
+        <div class="cta-bar">
+          <button id="restartButton" class="quiet-button">Start over</button>
+          <a id="viewDataHubButton" class="primary-link" href="http://localhost:9002" target="_blank" rel="noreferrer">View in DataHub</a>
+          <a id="downloadTwinButton" class="primary-link" href="#">Download twin</a>
+          <a id="downloadEvidenceButton" class="primary-link" href="#">Download evidence</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

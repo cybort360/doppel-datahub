@@ -1,0 +1,2 @@
+-r requirements.txt
+acryl-datahub>=1.6.0.15,<1.7

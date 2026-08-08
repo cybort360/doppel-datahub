@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540">
+  <style>
+    .box { fill: #fbfaf5; stroke: #11110f; stroke-width: 1.5; }
+    .header { fill: #11110f; }
+    .title { font-family: Inter, ui-sans-serif, sans-serif; font-size: 14px; font-weight: 700; fill: #11110f; }
+    .subtitle { font-family: Inter, ui-sans-serif, sans-serif; font-size: 11px; fill: #6d6a62; }
+    .arrow { fill: none; stroke: #11110f; stroke-width: 2; marker-end: url(#arrowhead); }
+    .label { font-family: Inter, ui-sans-serif, sans-serif; font-size: 12px; font-weight: 700; fill: #11110f; }
+    .output { fill: #dff0e9; stroke: #137d61; stroke-width: 1.5; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#11110f"/>
+    </marker>
+  </defs>
+
+  <!-- Context -->
+  <rect x="210" y="30" width="300" height="70" rx="4" class="box" fill="#e5e2d8"/>
+  <text x="360" y="58" text-anchor="middle" class="title">DataHub GMS or fixture context</text>
+  <text x="360" y="82" text-anchor="middle" class="subtitle">Dataset properties · Schema · Tags · Terms · Ownership · Lineage</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="100" x2="360" y2="130" class="arrow"/>
+
+  <!-- Catalog -->
+  <rect x="210" y="130" width="300" height="80" rx="4" class="box"/>
+  <text x="360" y="160" text-anchor="middle" class="title">Catalog Service</text>
+  <text x="360" y="184" text-anchor="middle" class="subtitle">Resolves source asset · Reads governance · Infers semantic types</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="210" x2="360" y2="240" class="arrow"/>
+
+  <!-- Generator -->
+  <rect x="210" y="240" width="300" height="80" rx="4" class="box"/>
+  <text x="360" y="270" text-anchor="middle" class="title">Synthetic Generator</text>
+  <text x="360" y="294" text-anchor="middle" class="subtitle">Surrogate IDs · Categorical · Numeric · Dates · FK-safe multi-table</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="320" x2="360" y2="350" class="arrow"/>
+
+  <!-- Verification -->
+  <rect x="210" y="350" width="300" height="80" rx="4" class="box"/>
+  <text x="360" y="380" text-anchor="middle" class="title">Verification Boundary</text>
+  <text x="360" y="404" text-anchor="middle" class="subtitle">Privacy · Utility · Integrity · Fail-closed decision</text>
+
+  <!-- Decision diamond -->
+  <polygon points="360,445 400,475 360,505 320,475" fill="#fbfaf5" stroke="#11110f" stroke-width="1.5"/>
+  <text x="360" y="480" text-anchor="middle" class="label">VERIFIED?</text>
+
+  <!-- Arrow to diamond -->
+  <line x1="360" y1="430" x2="360" y2="445" class="arrow"/>
+
+  <!-- Left branch -->
+  <line x1="320" y1="475" x2="160" y2="475" class="arrow"/>
+  <rect x="20" y="435" width="140" height="70" rx="4" class="output"/>
+  <text x="90" y="460" text-anchor="middle" class="title">Artifact Bundle</text>
+  <text x="90" y="482" text-anchor="middle" class="subtitle">CSV · report.json</text>
+  <text x="90" y="498" text-anchor="middle" class="subtitle">README · ZIP</text>
+
+  <!-- Right branch -->
+  <line x1="400" y1="475" x2="560" y2="475" class="arrow"/>
+  <rect x="560" y="435" width="140" height="70" rx="4" class="output"/>
+  <text x="630" y="460" text-anchor="middle" class="title">DataHub Writeback</text>
+  <text x="630" y="482" text-anchor="middle" class="subtitle">Tags · Lineage · Scores</text>
+  <text x="630" y="498" text-anchor="middle" class="subtitle">Evidence</text>
+</svg>

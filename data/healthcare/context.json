@@ -1,0 +1,240 @@
+{
+  "id": "healthcare",
+  "name": "Clinical Operations Twin",
+  "description": "Synthetic patient and encounter data for privacy-safe development and testing.",
+  "domain": "Clinical Operations",
+  "owner": "Data Platform Team",
+  "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patient_operations,PROD)",
+  "governance_summary": [
+    "Direct identifiers are tagged and must never be copied.",
+    "Patient-to-encounter relationships must remain valid.",
+    "Generated assets expire after a declared non-production window.",
+    "Aggregate distributions should remain useful for product testing."
+  ],
+  "tables": [
+    {
+      "name": "patients",
+      "file": "patients.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
+      "description": "Patient registry containing direct identifiers and clinical segmentation.",
+      "domain": "Clinical Operations",
+      "owner": "Patient Data Team",
+      "tags": [
+        "PII",
+        "PHI",
+        "RESTRICTED"
+      ],
+      "primary_key": "patient_id",
+      "foreign_keys": [],
+      "columns": [
+        {
+          "name": "patient_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY",
+            "PII"
+          ],
+          "description": "Internal patient identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "first_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "Patient given name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "last_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "Patient family name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "email",
+          "dtype": "object",
+          "semantic_type": "email",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "Patient email address.",
+          "strategy": "reserved_domain_email"
+        },
+        {
+          "name": "date_of_birth",
+          "dtype": "object",
+          "semantic_type": "date_of_birth",
+          "nullable": false,
+          "tags": [
+            "PHI",
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "Patient birth date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "postal_code",
+          "dtype": "object",
+          "semantic_type": "postal_code",
+          "nullable": false,
+          "tags": [
+            "PII",
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "Patient postal code.",
+          "strategy": "faker_postcode"
+        },
+        {
+          "name": "sex",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "Recorded sex category.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "diagnosis_code",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [
+            "PHI"
+          ],
+          "description": "Primary diagnosis group.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "risk_score",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [
+            "PHI"
+          ],
+          "description": "Normalized clinical risk score.",
+          "strategy": "gaussian_copula"
+        },
+        {
+          "name": "visits_last_year",
+          "dtype": "int64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [],
+          "description": "Count of visits in the prior year.",
+          "strategy": "gaussian_copula"
+        }
+      ]
+    },
+    {
+      "name": "encounters",
+      "file": "encounters.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)",
+      "description": "Clinical encounters and claims linked to patients.",
+      "domain": "Clinical Operations",
+      "owner": "Claims Analytics Team",
+      "tags": [
+        "PHI",
+        "FINANCIAL"
+      ],
+      "primary_key": "encounter_id",
+      "foreign_keys": [
+        {
+          "column": "patient_id",
+          "references_table": "patients",
+          "references_column": "patient_id"
+        }
+      ],
+      "columns": [
+        {
+          "name": "encounter_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY"
+          ],
+          "description": "Encounter identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "patient_id",
+          "dtype": "object",
+          "semantic_type": "foreign_key",
+          "nullable": false,
+          "tags": [
+            "FOREIGN_KEY",
+            "PII"
+          ],
+          "description": "Patient foreign key.",
+          "strategy": "frequency_preserving_fk"
+        },
+        {
+          "name": "encounter_date",
+          "dtype": "object",
+          "semantic_type": "datetime",
+          "nullable": false,
+          "tags": [
+            "PHI"
+          ],
+          "description": "Encounter date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "facility",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Facility where care occurred.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "procedure_code",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [
+            "PHI"
+          ],
+          "description": "Procedure category.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "claim_amount",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": true,
+          "tags": [
+            "FINANCIAL"
+          ],
+          "description": "Submitted claim amount.",
+          "strategy": "conditional_on:procedure_code"
+        },
+        {
+          "name": "status",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Claim adjudication state.",
+          "strategy": "categorical_distribution"
+        }
+      ]
+    }
+  ]
+}

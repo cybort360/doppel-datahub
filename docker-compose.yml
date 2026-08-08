@@ -1,0 +1,11 @@
+services:
+  doppel:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DOPPEL_MODE: ${DOPPEL_MODE:-fixture}
+      DATAHUB_GMS_URL: ${DATAHUB_GMS_URL:-http://host.docker.internal:8080}
+      DATAHUB_TOKEN: ${DATAHUB_TOKEN:-}
+    volumes:
+      - ./artifacts:/app/artifacts

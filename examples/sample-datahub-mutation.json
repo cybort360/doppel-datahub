@@ -1,0 +1,43 @@
+{
+  "source": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patient_operations,PROD)",
+  "synthetic_assets": [
+    {
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.patients_synthetic,NON_PROD)",
+      "tags": [
+        "SYNTHETIC",
+        "NON_PRODUCTION"
+      ],
+      "customProperties": {
+        "doppel_run_id": "1487cfdc433b",
+        "privacy_score": "100.0",
+        "utility_score": "98.7",
+        "integrity_score": "100.0",
+        "generated_at": "2026-08-08T15:14:25.563930+00:00",
+        "expires_at": "2026-09-07T15:14:25.563930+00:00",
+        "source_dataset": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)"
+      },
+      "lineage": {
+        "upstream": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)"
+      }
+    },
+    {
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.encounters_synthetic,NON_PROD)",
+      "tags": [
+        "SYNTHETIC",
+        "NON_PRODUCTION"
+      ],
+      "customProperties": {
+        "doppel_run_id": "1487cfdc433b",
+        "privacy_score": "100.0",
+        "utility_score": "98.7",
+        "integrity_score": "100.0",
+        "generated_at": "2026-08-08T15:14:25.563930+00:00",
+        "expires_at": "2026-09-07T15:14:25.563930+00:00",
+        "source_dataset": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)"
+      },
+      "lineage": {
+        "upstream": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)"
+      }
+    }
+  ]
+}

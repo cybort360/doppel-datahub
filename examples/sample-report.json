@@ -1,0 +1,332 @@
+{
+  "run_id": "6f80e4ff1c97",
+  "status": "completed",
+  "asset_id": "healthcare",
+  "created_at": "2026-08-08T14:53:02.401170Z",
+  "completed_at": "2026-08-08T14:53:02.401136Z",
+  "expires_at": "2026-09-07T14:53:02.401136Z",
+  "output_dir": "artifacts/runs/6f80e4ff1c97",
+  "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
+  "source_table_urns": [
+    "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
+    "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)"
+  ],
+  "synthetic_urns": [
+    "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.patients_synthetic,NON_PROD)",
+    "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.encounters_synthetic,NON_PROD)"
+  ],
+  "privacy_score": 100.0,
+  "utility_score": 98.7,
+  "integrity_score": 100.0,
+  "fk_integrity": 100.0,
+  "exact_row_overlap": 0,
+  "tables": [
+    {
+      "table": "patients",
+      "source_rows": 1200,
+      "synthetic_rows": 1200,
+      "privacy_metrics": [
+        {
+          "name": "exact_row_overlap",
+          "value": 0,
+          "status": "pass",
+          "detail": "Number of complete source rows reproduced in the synthetic table."
+        },
+        {
+          "name": "direct_identifier_overlap",
+          "value": 0,
+          "status": "pass",
+          "detail": "Value overlap across direct-identifier fields: patient_id, first_name, last_name, email, postal_code."
+        },
+        {
+          "name": "quasi_identifier_singling_out_rate",
+          "value": 0.0217,
+          "status": "pass",
+          "detail": "Fraction of rows in generalized quasi-identifier groups smaller than five. Dates are generalized to decade and postal codes to prefix."
+        }
+      ],
+      "utility_metrics": [
+        {
+          "name": "schema_match",
+          "value": 1.0,
+          "status": "pass",
+          "detail": "Column names and ordering are preserved."
+        },
+        {
+          "name": "mean_null_rate_delta",
+          "value": 0.0003,
+          "status": "pass",
+          "detail": "Mean absolute difference between source and synthetic null rates."
+        },
+        {
+          "name": "date_distribution:date_of_birth",
+          "value": 0.9808,
+          "status": "pass",
+          "detail": "One minus the Kolmogorov-Smirnov distance over parsed timestamps."
+        },
+        {
+          "name": "distribution:sex",
+          "value": 0.9925,
+          "status": "pass",
+          "detail": "One minus total-variation distance for the categorical distribution."
+        },
+        {
+          "name": "distribution:diagnosis_code",
+          "value": 0.9733,
+          "status": "pass",
+          "detail": "One minus total-variation distance for the categorical distribution."
+        },
+        {
+          "name": "distribution:risk_score",
+          "value": 0.9658,
+          "status": "pass",
+          "detail": "One minus the Kolmogorov-Smirnov distance for the numerical distribution."
+        },
+        {
+          "name": "distribution:visits_last_year",
+          "value": 0.9775,
+          "status": "pass",
+          "detail": "One minus the Kolmogorov-Smirnov distance for the numerical distribution."
+        },
+        {
+          "name": "correlation_similarity",
+          "value": 0.9962,
+          "status": "pass",
+          "detail": "Similarity of pairwise numerical correlations."
+        }
+      ]
+    },
+    {
+      "table": "encounters",
+      "source_rows": 4200,
+      "synthetic_rows": 4200,
+      "privacy_metrics": [
+        {
+          "name": "exact_row_overlap",
+          "value": 0,
+          "status": "pass",
+          "detail": "Number of complete source rows reproduced in the synthetic table."
+        },
+        {
+          "name": "direct_identifier_overlap",
+          "value": 0,
+          "status": "pass",
+          "detail": "Value overlap across direct-identifier fields: encounter_id."
+        }
+      ],
+      "utility_metrics": [
+        {
+          "name": "schema_match",
+          "value": 1.0,
+          "status": "pass",
+          "detail": "Column names and ordering are preserved."
+        },
+        {
+          "name": "mean_null_rate_delta",
+          "value": 0.0001,
+          "status": "pass",
+          "detail": "Mean absolute difference between source and synthetic null rates."
+        },
+        {
+          "name": "date_distribution:encounter_date",
+          "value": 0.9867,
+          "status": "pass",
+          "detail": "One minus the Kolmogorov-Smirnov distance over parsed timestamps."
+        },
+        {
+          "name": "distribution:facility",
+          "value": 0.9898,
+          "status": "pass",
+          "detail": "One minus total-variation distance for the categorical distribution."
+        },
+        {
+          "name": "distribution:procedure_code",
+          "value": 0.9886,
+          "status": "pass",
+          "detail": "One minus total-variation distance for the categorical distribution."
+        },
+        {
+          "name": "distribution:claim_amount",
+          "value": 0.9847,
+          "status": "pass",
+          "detail": "One minus the Kolmogorov-Smirnov distance for the numerical distribution."
+        },
+        {
+          "name": "distribution:status",
+          "value": 0.9945,
+          "status": "pass",
+          "detail": "One minus total-variation distance for the categorical distribution."
+        },
+        {
+          "name": "conditional_mean:claim_amount|procedure_code",
+          "value": 0.9895,
+          "status": "pass",
+          "detail": "Similarity of claim_amount means within each procedure_code group."
+        },
+        {
+          "name": "relationship:diagnosis_to_procedure",
+          "value": 0.8455,
+          "status": "pass",
+          "detail": "One minus TVD of the diagnosis/procedure joint distribution."
+        },
+        {
+          "name": "relationship:age_group_to_diagnosis",
+          "value": 0.8633,
+          "status": "pass",
+          "detail": "One minus TVD of the age-group/diagnosis joint distribution."
+        },
+        {
+          "name": "aggregate_query:encounters_by_facility",
+          "value": 0.9898,
+          "status": "pass",
+          "detail": "One minus TVD of encounter counts by facility."
+        },
+        {
+          "name": "aggregate_query:mean_claim_by_procedure",
+          "value": 0.9944,
+          "status": "pass",
+          "detail": "Similarity of average claim_amount per procedure_code."
+        },
+        {
+          "name": "aggregate_query:patients_by_age_group",
+          "value": 0.9683,
+          "status": "pass",
+          "detail": "One minus TVD of patient counts by age group."
+        },
+        {
+          "name": "fk:encounters.patient_id",
+          "value": 0,
+          "status": "pass",
+          "detail": "Orphan keys against patients.patient_id."
+        },
+        {
+          "name": "cardinality:patients_to_patient_id",
+          "value": 1.0,
+          "status": "pass",
+          "detail": "Shape similarity of children-per-parent after mean-normalization."
+        }
+      ]
+    }
+  ],
+  "generation_plan": {
+    "seed": 42,
+    "scale": 1.0,
+    "context_source": "datahub",
+    "expiry_days": 30,
+    "tables": [
+      {
+        "table": "patients",
+        "source_rows": 1200,
+        "synthetic_rows": 1200,
+        "primary_key": "patient_id",
+        "foreign_keys": [],
+        "strategies": {
+          "patient_id": "surrogate_id",
+          "first_name": "faker_name",
+          "last_name": "faker_name",
+          "email": "reserved_domain_email",
+          "date_of_birth": "distribution_preserving_date",
+          "postal_code": "faker_postcode",
+          "sex": "categorical_distribution",
+          "diagnosis_code": "categorical_distribution",
+          "risk_score": "gaussian_copula",
+          "visits_last_year": "gaussian_copula"
+        }
+      },
+      {
+        "table": "encounters",
+        "source_rows": 4200,
+        "synthetic_rows": 4200,
+        "primary_key": "encounter_id",
+        "foreign_keys": [
+          {
+            "column": "patient_id",
+            "references_table": "patients",
+            "references_column": "patient_id"
+          }
+        ],
+        "strategies": {
+          "encounter_id": "surrogate_id",
+          "patient_id": "frequency_preserving_fk",
+          "encounter_date": "distribution_preserving_date",
+          "facility": "categorical_distribution",
+          "procedure_code": "categorical_distribution",
+          "claim_amount": "conditional_on:procedure_code",
+          "status": "categorical_distribution"
+        }
+      }
+    ],
+    "privacy_model": "Heuristic privacy validation: direct identifier separation, exact-row overlap checks, and non-production governance. This is not a formal differential-privacy guarantee."
+  },
+  "publish_result": {
+    "mode": "datahub",
+    "status": "published",
+    "emitted": [
+      "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.patients_synthetic,NON_PROD)",
+      "urn:li:dataset:(urn:li:dataPlatform:postgres,doppel.healthcare.encounters_synthetic,NON_PROD)"
+    ]
+  },
+  "warnings": [
+    "Synthetic data lowers exposure risk but does not remove the need for governance review.",
+    "The included privacy tests are practical heuristics, not a mathematical privacy proof."
+  ],
+  "decision": "VERIFIED",
+  "reasons": [
+    "All privacy/integrity gates passed and utility score 98.7 cleared threshold 70.0."
+  ],
+  "privacy_summary": {
+    "exact_row_overlap": 0,
+    "direct_identifier_overlap": 0,
+    "singling_out_rate": 0.0217,
+    "failed_gates": []
+  },
+  "utility_summary": {
+    "distribution_scores": [
+      0.9808,
+      0.9925,
+      0.9733,
+      0.9658,
+      0.9775,
+      0.9962,
+      0.9867,
+      0.9898,
+      0.9886,
+      0.9847,
+      0.9945,
+      0.9895,
+      0.8455,
+      0.8633,
+      0.9898,
+      0.9944,
+      0.9683,
+      1.0
+    ],
+    "metric_names": [
+      "date_distribution:date_of_birth",
+      "distribution:sex",
+      "distribution:diagnosis_code",
+      "distribution:risk_score",
+      "distribution:visits_last_year",
+      "correlation_similarity",
+      "date_distribution:encounter_date",
+      "distribution:facility",
+      "distribution:procedure_code",
+      "distribution:claim_amount",
+      "distribution:status",
+      "conditional_mean:claim_amount|procedure_code",
+      "relationship:diagnosis_to_procedure",
+      "relationship:age_group_to_diagnosis",
+      "aggregate_query:encounters_by_facility",
+      "aggregate_query:mean_claim_by_procedure",
+      "aggregate_query:patients_by_age_group",
+      "cardinality:patients_to_patient_id"
+    ],
+    "mean_distribution_similarity": 0.9712,
+    "failed_gates": []
+  },
+  "integrity_summary": {
+    "integrity_score": 100.0,
+    "orphan_foreign_keys": 0,
+    "failed_gates": []
+  }
+}
