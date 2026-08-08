@@ -1,11 +1,11 @@
 {
-  "run_id": "0ae3d999a06e",
+  "run_id": "74c961384fd0",
   "status": "completed",
   "asset_id": "healthcare",
-  "created_at": "2026-08-08T20:46:48.255790Z",
-  "completed_at": "2026-08-08T20:46:48.255762Z",
-  "expires_at": "2026-09-07T20:46:48.255762Z",
-  "output_dir": "artifacts/runs/0ae3d999a06e",
+  "created_at": "2026-08-08T21:01:37.528323Z",
+  "completed_at": "2026-08-08T21:01:37.528298Z",
+  "expires_at": "2026-09-07T21:01:37.528298Z",
+  "output_dir": "artifacts/runs/74c961384fd0",
   "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
   "source_table_urns": [
     "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
