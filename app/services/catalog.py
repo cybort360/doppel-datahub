@@ -151,7 +151,8 @@ class CatalogService:
 
                 def _field_value(field_ref: str) -> str:
                     if field_ref.startswith("urn:li:schemaField:"):
-                        return schema_field_urn_to_key(field_ref).fieldPath
+                        key = schema_field_urn_to_key(field_ref)
+                        return key.fieldPath if key is not None else field_ref
                     return field_ref
 
                 source_fields = getattr(fk, "sourceFields", None)

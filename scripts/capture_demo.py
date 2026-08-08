@@ -5,13 +5,13 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Page, sync_playwright
 
 BASE = "http://127.0.0.1:8000"
 OUTPUT = Path(__file__).parent.parent / "examples"
 
 
-def wait_for_verification(page):
+def wait_for_verification(page: Page) -> None:
     page.wait_for_selector("#verdictStatus", state="visible", timeout=120_000)
     # Poll until the verdict is no longer the placeholder.
     page.wait_for_function(

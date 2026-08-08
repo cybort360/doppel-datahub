@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import re
-from collections.abc import Iterable
 from dataclasses import dataclass
+from typing import cast
 
 import numpy as np
 import pandas as pd
@@ -84,6 +84,7 @@ class SyntheticGenerator:
             if name in conditional_numeric:
                 continue
             column = columns[name]
+            values: object
             if name in numeric_samples:
                 values = numeric_samples[name]
             else:
@@ -111,26 +112,30 @@ class SyntheticGenerator:
         column: ColumnContext,
         source: pd.Series,
         count: int,
-    ) -> Iterable[object]:
+    ) -> object:
         semantic = column.semantic_type
         null_mask = self.rng.random(count) < float(source.isna().mean())
 
         if semantic == SemanticType.IDENTIFIER:
             prefix = re.sub(r"[^A-Z0-9]", "", table.name.upper())[:4] or "ROW"
-            values = [f"SYN-{prefix}-{self.seed:04d}-{i + 1:07d}" for i in range(count)]
-            self._build_id_map(table, column, source, values)
+            values: object = [
+                f"SYN-{prefix}-{self.seed:04d}-{i + 1:07d}" for i in range(count)
+            ]
+            self._build_id_map(table, column, source, cast(list[str], values))
             return values
         if semantic == SemanticType.FOREIGN_KEY:
             return self._generate_foreign_keys(table, column, source, count)
+
+        generated_values: object = []
         if semantic == SemanticType.EMAIL:
-            values = [
+            generated_values = [
                 f"synthetic.{self.fake.unique.user_name()}.{i}@example.test"
                 for i in range(count)
             ]
         elif semantic == SemanticType.PERSON_NAME:
             first = "first" in column.name.lower()
             last = "last" in column.name.lower()
-            values = [
+            generated_values = [
                 (
                     f"{self.fake.first_name()}-SYN-{i + 1:05d}"
                     if first
@@ -141,21 +146,21 @@ class SyntheticGenerator:
                 for i in range(count)
             ]
         elif semantic == SemanticType.DATE_OF_BIRTH:
-            values = self._sample_dates(source, count, jitter_days=45, clamp_future=True)
+            generated_values = self._sample_dates(source, count, jitter_days=45, clamp_future=True)
         elif semantic == SemanticType.DATETIME:
-            values = self._sample_dates(source, count, jitter_days=14, clamp_future=False)
+            generated_values = self._sample_dates(source, count, jitter_days=14, clamp_future=False)
         elif semantic == SemanticType.POSTAL_CODE:
-            values = [f"TST-{self.fake.postcode()}-{i + 1:05d}" for i in range(count)]
+            generated_values = [f"TST-{self.fake.postcode()}-{i + 1:05d}" for i in range(count)]
         elif semantic == SemanticType.CATEGORICAL:
-            values = self._sample_categorical(source, count)
+            generated_values = self._sample_categorical(source, count)
         elif semantic == SemanticType.BOOLEAN:
             probability = float(pd.to_numeric(source, errors="coerce").mean())
-            values = self.rng.random(count) < probability
+            generated_values = self.rng.random(count) < probability
         else:
-            values = [self.fake.sentence(nb_words=6) for _ in range(count)]
+            generated_values = [self.fake.sentence(nb_words=6) for _ in range(count)]
 
-        output = np.asarray(values, dtype=object)
-        if null_mask.any() and semantic not in {SemanticType.IDENTIFIER, SemanticType.FOREIGN_KEY}:
+        output = np.asarray(generated_values, dtype=object)
+        if null_mask.any():
             output[null_mask] = None
         return output
 
@@ -186,7 +191,7 @@ class SyntheticGenerator:
         column: ColumnContext,
         source: pd.Series,
         count: int,
-    ) -> list[str | None]:
+    ) -> list[str]:
         fk = next((item for item in table.foreign_keys if item.column == column.name), None)
         if fk is None:
             raise ValueError(f"Missing foreign-key metadata for {table.name}.{column.name}")
@@ -211,7 +216,7 @@ class SyntheticGenerator:
 
         replace = count > len(synthetic_pool)
         sampled = self.rng.choice(synthetic_pool, size=count, replace=replace).tolist()
-        return sampled
+        return [str(value) for value in sampled]
 
     def _sample_categorical(self, source: pd.Series, count: int) -> np.ndarray:
         clean = source.dropna().astype(str)
@@ -228,10 +233,10 @@ class SyntheticGenerator:
         count: int,
         jitter_days: int,
         clamp_future: bool,
-    ) -> list[str | None]:
+    ) -> list[str]:
         parsed = pd.to_datetime(source, errors="coerce").dropna()
         if parsed.empty:
-            return [None] * count
+            return [""] * count
         timestamps = parsed.astype("int64").to_numpy()
         chosen = self.rng.choice(timestamps, size=count, replace=True)
         jitter = self.rng.integers(-jitter_days, jitter_days + 1, size=count) * 86_400_000_000_000
@@ -239,7 +244,7 @@ class SyntheticGenerator:
         if clamp_future:
             max_date = parsed.max()
             sampled = sampled.where(sampled <= max_date, max_date)
-        return sampled.strftime("%Y-%m-%d").tolist()
+        return [str(value) for value in sampled.strftime("%Y-%m-%d")]
 
 
     def _sample_conditional_numeric(

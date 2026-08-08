@@ -82,15 +82,17 @@ class DataHubPublisher:
                             columns.append(column)
                             continue
                         live_tags = []
-                        if getattr(live, "globalTags", None):
+                        global_tags = getattr(live, "globalTags", None)
+                        if global_tags is not None:
                             live_tags = [
                                 self._urn_to_name(association.tag)
-                                for association in live.globalTags.tags
+                                for association in global_tags.tags
                             ]
                         live_terms = []
-                        if getattr(live, "glossaryTerms", None):
+                        glossary_terms = getattr(live, "glossaryTerms", None)
+                        if glossary_terms is not None:
                             live_terms = [
-                                self._urn_to_name(term.urn) for term in live.glossaryTerms.terms
+                                self._urn_to_name(term.urn) for term in glossary_terms.terms
                             ]
                         columns.append(
                             column.model_copy(

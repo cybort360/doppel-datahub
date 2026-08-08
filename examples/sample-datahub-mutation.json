@@ -8,12 +8,12 @@
         "NON_PRODUCTION"
       ],
       "customProperties": {
-        "doppel_run_id": "0792e6ffd558",
+        "doppel_run_id": "555539e5f885",
         "privacy_score": "100.0",
         "utility_score": "98.7",
         "integrity_score": "100.0",
-        "generated_at": "2026-08-08T20:24:29.970545+00:00",
-        "expires_at": "2026-09-07T20:24:29.970545+00:00",
+        "generated_at": "2026-08-08T20:47:03.846230+00:00",
+        "expires_at": "2026-09-07T20:47:03.846230+00:00",
         "source_dataset": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)"
       },
       "lineage": {
@@ -27,12 +27,12 @@
         "NON_PRODUCTION"
       ],
       "customProperties": {
-        "doppel_run_id": "0792e6ffd558",
+        "doppel_run_id": "555539e5f885",
         "privacy_score": "100.0",
         "utility_score": "98.7",
         "integrity_score": "100.0",
-        "generated_at": "2026-08-08T20:24:29.970545+00:00",
-        "expires_at": "2026-09-07T20:24:29.970545+00:00",
+        "generated_at": "2026-08-08T20:47:03.846230+00:00",
+        "expires_at": "2026-09-07T20:47:03.846230+00:00",
         "source_dataset": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)"
       },
       "lineage": {
