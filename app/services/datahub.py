@@ -158,6 +158,7 @@ class DataHubPublisher:
         try:
             from datahub.emitter.mce_builder import (
                 make_dataset_urn,
+                make_domain_urn,
                 make_tag_urn,
                 make_user_urn,
             )
@@ -167,9 +168,13 @@ class DataHubPublisher:
                 AuditStampClass,
                 DatasetLineageTypeClass,
                 DatasetPropertiesClass,
+                DomainsClass,
                 GlobalTagsClass,
                 InstitutionalMemoryClass,
                 InstitutionalMemoryMetadataClass,
+                OwnerClass,
+                OwnershipClass,
+                OwnershipTypeClass,
                 TagAssociationClass,
                 UpstreamClass,
                 UpstreamLineageClass,
@@ -268,7 +273,29 @@ class DataHubPublisher:
                 table_name_to_source_urn=table_name_to_source_urn,
                 source_urn_to_synthetic_urn=source_urn_to_synthetic_urn,
             )
-            for aspect in (properties, tags, lineage, evidence, schema):
+            aspects: list[Any] = [properties, tags, lineage, evidence, schema]
+
+            owner = table.owner or context.owner
+            if owner:
+                owner_urn = owner if ":" in owner else make_user_urn(owner)
+                aspects.append(
+                    OwnershipClass(
+                        owners=[
+                            OwnerClass(
+                                owner=owner_urn,
+                                type=OwnershipTypeClass.TECHNICAL_OWNER,
+                            )
+                        ],
+                        lastModified=stamp,
+                    )
+                )
+
+            domain = table.domain or context.domain
+            if domain:
+                domain_urn = domain if ":" in domain else make_domain_urn(domain)
+                aspects.append(DomainsClass(domains=[domain_urn]))
+
+            for aspect in aspects:
                 emitter.emit_mcp(MetadataChangeProposalWrapper(entityUrn=urn, aspect=aspect))
             emitted.append(urn)
         emitter.close()
