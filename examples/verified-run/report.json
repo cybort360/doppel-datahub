@@ -1,11 +1,11 @@
 {
-  "run_id": "6f80e4ff1c97",
+  "run_id": "f3fb8959b38b",
   "status": "completed",
   "asset_id": "healthcare",
-  "created_at": "2026-08-08T14:53:02.401170Z",
-  "completed_at": "2026-08-08T14:53:02.401136Z",
-  "expires_at": "2026-09-07T14:53:02.401136Z",
-  "output_dir": "artifacts/runs/6f80e4ff1c97",
+  "created_at": "2026-08-08T20:23:15.028582Z",
+  "completed_at": "2026-08-08T20:23:15.028556Z",
+  "expires_at": "2026-09-07T20:23:15.028556Z",
+  "output_dir": "artifacts/runs/f3fb8959b38b",
   "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
   "source_table_urns": [
     "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)",
@@ -189,7 +189,7 @@
         },
         {
           "name": "aggregate_query:patients_by_age_group",
-          "value": 0.9683,
+          "value": 0.9742,
           "status": "pass",
           "detail": "One minus TVD of patient counts by age group."
         },
@@ -298,7 +298,7 @@
       0.8633,
       0.9898,
       0.9944,
-      0.9683,
+      0.9742,
       1.0
     ],
     "metric_names": [
@@ -321,7 +321,7 @@
       "aggregate_query:patients_by_age_group",
       "cardinality:patients_to_patient_id"
     ],
-    "mean_distribution_similarity": 0.9712,
+    "mean_distribution_similarity": 0.9715,
     "failed_gates": []
   },
   "integrity_summary": {

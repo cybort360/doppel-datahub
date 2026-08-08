@@ -3,7 +3,6 @@ from __future__ import annotations
 import re
 from collections.abc import Iterable
 from dataclasses import dataclass
-from datetime import datetime
 
 import numpy as np
 import pandas as pd
@@ -238,8 +237,8 @@ class SyntheticGenerator:
         jitter = self.rng.integers(-jitter_days, jitter_days + 1, size=count) * 86_400_000_000_000
         sampled = pd.to_datetime(chosen + jitter)
         if clamp_future:
-            now = pd.Timestamp(datetime.now())
-            sampled = sampled.where(sampled <= now, now)
+            max_date = parsed.max()
+            sampled = sampled.where(sampled <= max_date, max_date)
         return sampled.strftime("%Y-%m-%d").tolist()
 
 

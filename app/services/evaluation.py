@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 from collections.abc import Iterable
+from datetime import timedelta
 from typing import Any
 
 import numpy as np
@@ -429,8 +430,9 @@ def evaluate_relationships(
 
     # Age group -> diagnosis relationship.
     if "patients" in source_frames and "patients" in synthetic_frames:
-        source_age_diag = _age_group_diagnosis_frame(source_frames["patients"])
-        synthetic_age_diag = _age_group_diagnosis_frame(synthetic_frames["patients"])
+        reference = _reference_date(source_frames)
+        source_age_diag = _age_group_diagnosis_frame(source_frames["patients"], reference)
+        synthetic_age_diag = _age_group_diagnosis_frame(synthetic_frames["patients"], reference)
         if source_age_diag is not None and synthetic_age_diag is not None:
             score = _categorical_similarity(
                 source_age_diag["age_group_diagnosis"], synthetic_age_diag["age_group_diagnosis"]
@@ -447,14 +449,21 @@ def evaluate_relationships(
     return metrics
 
 
-def _age_group_diagnosis_frame(frame: pd.DataFrame) -> pd.DataFrame | None:
+def _reference_date(frames: dict[str, pd.DataFrame]) -> pd.Timestamp:
+    """Fixed reference date for age calculations so utility metrics are deterministic."""
+    parsed = pd.to_datetime(frames["patients"]["date_of_birth"], errors="coerce")
+    return pd.Timestamp(parsed.max()) + timedelta(days=1)
+
+
+def _age_group_diagnosis_frame(
+    frame: pd.DataFrame, reference: pd.Timestamp
+) -> pd.DataFrame | None:
     if "date_of_birth" not in frame.columns or "diagnosis_code" not in frame.columns:
         return None
     parsed = pd.to_datetime(frame["date_of_birth"], errors="coerce")
     if parsed.dropna().empty:
         return None
-    now = pd.Timestamp.now()
-    age = (now - parsed).dt.days // 365
+    age = (reference - parsed).dt.days // 365
     age_group = (age // 10 * 10).astype("Int64").astype(str) + "s"
     out = frame[["diagnosis_code"]].copy()
     out["age_group_diagnosis"] = age_group + "|" + frame["diagnosis_code"].astype(str)
@@ -515,8 +524,9 @@ def evaluate_aggregate_queries(
 
     # Patient volume by age group.
     if "patients" in source_frames and "patients" in synthetic_frames:
-        source_age = _age_group_series(source_frames["patients"])
-        synthetic_age = _age_group_series(synthetic_frames["patients"])
+        reference = _reference_date(source_frames)
+        source_age = _age_group_series(source_frames["patients"], reference)
+        synthetic_age = _age_group_series(synthetic_frames["patients"], reference)
         if source_age is not None and synthetic_age is not None:
             score = _categorical_similarity(source_age, synthetic_age)
             metrics.append(
@@ -531,14 +541,13 @@ def evaluate_aggregate_queries(
     return metrics
 
 
-def _age_group_series(frame: pd.DataFrame) -> pd.Series | None:
+def _age_group_series(frame: pd.DataFrame, reference: pd.Timestamp) -> pd.Series | None:
     if "date_of_birth" not in frame.columns:
         return None
     parsed = pd.to_datetime(frame["date_of_birth"], errors="coerce")
     if parsed.dropna().empty:
         return None
-    now = pd.Timestamp.now()
-    age = (now - parsed).dt.days // 365
+    age = (reference - parsed).dt.days // 365
     return (age // 10 * 10).astype("Int64").astype(str) + "s"
 
 
