@@ -1,4 +1,4 @@
-.PHONY: install dev test run demo fixture datahub-bootstrap clean
+.PHONY: install dev test typecheck lint run demo fixture datahub-bootstrap clean
 
 install:
 	python -m pip install -r requirements.txt
@@ -8,6 +8,12 @@ dev:
 
 test:
 	pytest
+
+typecheck:
+	python -m mypy app scripts
+
+lint:
+	ruff check app tests scripts
 
 run:
 	uvicorn app.main:app --reload

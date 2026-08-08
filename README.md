@@ -26,11 +26,11 @@ Without DataHub, every project reinvents a fragile, hand-coded mapping. With Dat
 
 ## Demo
 
-| Data asset | Verification |
-|---|---|
-| ![DOPPEL data asset screen](examples/ui-data-asset.png) | ![DOPPEL verification screen](examples/ui-verified-run.png) |
+| Data asset | Verification | DataHub lineage |
+|---|---|---|
+| ![DOPPEL data asset screen](examples/ui-data-asset.png) | ![DOPPEL verification screen](examples/ui-verified-run.png) | ![DataHub lineage screen](examples/ui-datahub-lineage.png) |
 
-The five-screen UI walks a judge through **Data Asset → Generation Plan → Live Pipeline → Verification → DataHub Writeback** in under three minutes. A one-click seeded demo uses `scale=1.00×`, `seed=42`, `expiry=30 days`, and publishes to DataHub.
+The five-screen UI walks a judge through **Data Asset → Generation Plan → Live Pipeline → Verification → DataHub Writeback** in under three minutes. A one-click seeded demo uses `scale=1.00×`, `seed=42`, `expiry=30 days`, and publishes to DataHub. The resulting source-to-synthetic lineage is visible inside DataHub.
 
 ## How it works
 

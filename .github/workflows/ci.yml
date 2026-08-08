@@ -23,6 +23,9 @@ jobs:
       - name: Lint
         run: ruff check app tests scripts
 
+      - name: Typecheck
+        run: python -m mypy app scripts
+
       - name: Run tests
         run: pytest --cov=app --cov-report=term-missing
 
