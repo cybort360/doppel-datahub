@@ -1,12 +1,11 @@
-FROM python:3.12-slim
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
 WORKDIR /app
 COPY requirements.txt ./
-RUN pip install --no-cache-dir uv && \
-    uv pip install --system --no-cache -r requirements.txt
+RUN uv pip install --system --no-cache -r requirements.txt
 COPY app ./app
 COPY data ./data
 COPY skills ./skills

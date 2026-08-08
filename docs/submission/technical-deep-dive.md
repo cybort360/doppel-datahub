@@ -79,6 +79,10 @@ For each synthetic table, DOPPEL emits:
 
 All aspects are overwritten on every run, making the pipeline idempotent.
 
+### Evidence limitation
+
+The current implementation links the evidence report as a `file://` URL in `InstitutionalMemory`. This is correct for a local demo, but a production deployment should upload `report.json` to object storage and link that URL instead.
+
 ## Reproducing the verified result
 
 ```bash

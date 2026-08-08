@@ -24,15 +24,24 @@ def main() -> int:
 
         page.goto(BASE, timeout=120_000)
         # Login form appears when not authenticated.
-        if page.locator('input[name="username"]').count() > 0:
-            page.fill('input[name="username"]', "datahub")
-            page.fill('input[name="password"]', "datahub")
-            page.click('button[type="submit"]')
+        try:
+            page.wait_for_selector("#username", timeout=30_000)
+            page.fill("#username", "datahub")
+            page.fill("#password", "datahub")
+            page.click('button:has-text("Login")')
             page.wait_for_url(lambda url: "/login" not in url, timeout=120_000)
+        except Exception:
+            pass  # Already authenticated or no login form.
 
         lineage_url = f"{BASE}/dataset/{SYNTHETIC_URN}/Lineage"
         page.goto(lineage_url, timeout=120_000)
-        page.wait_for_timeout(5_000)
+        page.wait_for_timeout(10_000)
+        # Dismiss the onboarding tour modal if it appears.
+        try:
+            page.click('button[aria-label="Close"]', timeout=5_000)
+            page.wait_for_timeout(1_000)
+        except Exception:
+            pass
         page.screenshot(path=OUTPUT, full_page=True)
         print(f"Screenshot: {OUTPUT}")
         browser.close()

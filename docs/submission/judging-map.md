@@ -22,8 +22,8 @@ This file maps each hackathon judging criterion to concrete evidence in the repo
 | Direct identifier separation | `tests/test_pipeline.py` `test_no_source_identifiers_survive` |
 | Exact-row overlap detection | `tests/test_evaluation.py` `test_render_decision_rejects_exact_row_leakage` |
 | Fail-closed decision | `app/services/evaluation.py` `render_decision()` and `tests/test_evaluation.py` rejection tests |
-| Typechecked source | `pyproject.toml` `[tool.mypy]` and CI `mypy app scripts` |
-| Clean-clone setup | `README.md` quickstart and `/tmp/doppel-clean-test` verification |
+| Typechecked source | `pyproject.toml` `[tool.mypy]`; `python -m mypy app scripts` passes |
+| Clean-clone setup | `README.md` quickstart; verified in `/tmp/doppel-clean-test` |
 
 ## 3. Originality
 
