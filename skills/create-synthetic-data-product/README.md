@@ -42,6 +42,38 @@ Then ask your agent:
 
 > Generate a synthetic twin of `urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.patients,PROD)`.
 
+## Upstream contribution commands
+
+To open a PR against `datahub-project/datahub-skills`:
+
+```bash
+# 1. Fork https://github.com/datahub-project/datahub-skills in the GitHub UI.
+# 2. Clone your fork and enter it.
+git clone https://github.com/<your-username>/datahub-skills.git
+cd datahub-skills
+
+# 3. Copy this skill into the upstream skills tree.
+cp -r /path/to/doppel-datahub/skills/create-synthetic-data-product skills/
+
+# 4. Verify the skill layout matches upstream conventions.
+ls skills/create-synthetic-data-product/
+# expected: SKILL.md, README.md, templates/, references/
+
+# 5. Commit, push, and open the PR.
+git checkout -b add-create-synthetic-data-product-skill
+git add skills/create-synthetic-data-product/
+git commit -m "Add create-synthetic-data-product skill
+
+Teaches an agent to resolve a DataHub asset, inspect schema/governance/lineage,
+identify sensitive columns, build a generation strategy, generate a privacy-safe
+synthetic twin, run privacy/utility/integrity verification, fail closed when
+unsafe, and publish the twin back to DataHub with lineage and evidence."
+git push origin add-create-synthetic-data-product-skill
+
+# 6. Open https://github.com/datahub-project/datahub-skills/compare/main...<your-username>:add-create-synthetic-data-product-skill
+#    and submit the pull request.
+```
+
 ## License
 
 Apache 2.0. See `LICENSE` in the repository root.

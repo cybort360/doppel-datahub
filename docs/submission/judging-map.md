@@ -10,7 +10,7 @@ This file maps each hackathon judging criterion to concrete evidence in the repo
 | Uses governance tags to drive generation strategy | `app/services/catalog.py` `_infer_semantic_type()` and `_strategy_for_semantic()` |
 | Publishes synthetic datasets with tags, lineage, scores, expiry | `app/services/datahub.py` `_publish_live()` |
 | Evidence linked as `InstitutionalMemory` | `app/services/datahub.py` lines 250–262 |
-| Live path exercised | `examples/verified-run/` produced from `DOPPEL_MODE=datahub` run `6f80e4ff1c97` |
+| Live path exercised | `examples/verified-run/` produced from `DOPPEL_MODE=datahub` run `74c961384fd0` |
 | DataHub Skill contribution | `skills/create-synthetic-data-product/` |
 
 ## 2. Technical Execution
