@@ -22,6 +22,11 @@ class Settings(BaseSettings):
         "urn:li:dataset:(urn:li:dataPlatform:postgres,clinical.encounters,PROD)"
     )
 
+    # LLM planner (OpenAI-compatible gateway) for the DOPPEL agent.
+    opencode_api_key: str | None = None
+    opencode_base_url: str = "https://opencode.ai/zen/go/v1"
+    opencode_model: str = "deepseek-v4-pro"
+
     @property
     def live_datahub(self) -> bool:
         return self.doppel_mode.lower() == "datahub"

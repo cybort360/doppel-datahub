@@ -10,7 +10,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 import pandas as pd
 
 from app.config import settings
-from app.models import GenerateRequest, RunReport
+from app.models import DatasetContext, GenerateRequest, RunReport
 from app.services.catalog import CatalogService
 from app.services.datahub import DataHubPublisher
 from app.services.evaluation import (
@@ -36,14 +36,19 @@ class DoppelPipeline:
         self,
         request: GenerateRequest,
         event_callback: Callable[[str, str, str], None] | None = None,
+        context_override: DatasetContext | None = None,
     ) -> RunReport:
         def emit(stage: str, status: str, message: str) -> None:
             if event_callback:
                 event_callback(stage, status, message)
 
         emit("context", "running", "Reading DataHub context")
-        context = self.catalog.get_asset(request.asset_id)
-        context = self.publisher.enrich_context(context)
+        if context_override is not None:
+            # The agent supplies an LLM-reviewed context; trust it as-is.
+            context = context_override
+        else:
+            context = self.catalog.get_asset(request.asset_id)
+            context = self.publisher.enrich_context(context)
         emit("context", "complete", f"Loaded {len(context.tables)} tables from {context.domain}")
 
         emit("plan", "running", "Building generation plan")
