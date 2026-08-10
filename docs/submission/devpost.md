@@ -4,6 +4,11 @@
 
 DOPPEL reads DataHub-governed metadata for a sensitive dataset, generates a privacy-safe synthetic twin, proves it is safe and useful, then writes the twin back into DataHub with lineage, scores, and evidence.
 
+## Try it out
+
+- **Live demo:** https://doppel-datahub.vercel.app
+- **Source code:** https://github.com/cybort360/doppel-datahub
+
 ## Inspiration
 
 Product teams, contractors, and agents constantly need realistic data to build and test against. The source data usually contains direct identifiers, protected health information, financial records, or other restricted attributes. Handing over production rows exposes the organization; handing over naive fake rows breaks application logic because keys, distributions, correlations, and relationships no longer match.
@@ -70,4 +75,5 @@ The healthcare demo turns ~1,200 patients and ~4,200 encounters into a VERIFIED 
 - DataHub (`acryl-datahub` Python SDK + REST emitter)
 - HTML/CSS/JS dashboard
 - Docker + Docker Compose
+- Vercel (serverless deployment of the live demo)
 - pytest, ruff, mypy
