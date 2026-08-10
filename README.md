@@ -1,5 +1,10 @@
 # DOPPEL
 
+[![CI](https://github.com/cybort360/doppel-datahub/actions/workflows/ci.yml/badge.svg)](https://github.com/cybort360/doppel-datahub/actions/workflows/ci.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)](pyproject.toml)
+[![Code style: ruff](https://img.shields.io/badge/lint-ruff-261230.svg)](https://github.com/astral-sh/ruff)
+
 ## One-sentence value proposition
 
 **Turn governed DataHub assets into privacy-safer synthetic twins for development and testing.**
