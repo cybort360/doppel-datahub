@@ -9,6 +9,12 @@ DOPPEL reads DataHub-governed metadata for a sensitive dataset, generates a priv
 - **Live demo:** https://doppel-datahub.vercel.app
 - **Source code:** https://github.com/cybort360/doppel-datahub
 
+## Challenge fit
+
+**Primary — Open / Wildcard.** DOPPEL uses DataHub as the governance foundation for a creative use case: turning catalog-governed sensitive datasets into privacy-safe synthetic twins for development and testing, and contributing a reusable DataHub Skill to the open-source stack.
+
+**Also — Agents That Do Real Work.** DOPPEL reads DataHub to understand what is connected to what, takes action (generates a fail-closed, verified twin), and writes results back — `UpstreamLineage`, `InstitutionalMemory` evidence, `SYNTHETIC`/`NON_PRODUCTION` tags, scores, and expiry — so the next person or agent inherits the knowledge in the catalog. It ships both as an app and as a reusable Agent Skill (`skills/create-synthetic-data-product/`) so any compatible agent can run the same read → generate → verify → write-back loop.
+
 ## Inspiration
 
 Product teams, contractors, and agents constantly need realistic data to build and test against. The source data usually contains direct identifiers, protected health information, financial records, or other restricted attributes. Handing over production rows exposes the organization; handing over naive fake rows breaks application logic because keys, distributions, correlations, and relationships no longer match.
