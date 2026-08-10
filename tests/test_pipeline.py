@@ -20,8 +20,9 @@ def isolated_artifacts(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
 
 def test_generator_replaces_identifiers_and_preserves_foreign_keys() -> None:
     context = CatalogService().get_asset("healthcare")
+    asset_dir = settings.doppel_data_dir / "healthcare"
     frames = {
-        table.name: pd.read_csv(settings.doppel_data_dir / table.file)
+        table.name: pd.read_csv(asset_dir / table.file)
         for table in context.tables
     }
     generated = SyntheticGenerator(seed=7).generate_dataset(context, frames, scale=0.25)
@@ -106,7 +107,7 @@ def test_different_seeds_produce_different_data(isolated_artifacts: Path) -> Non
 
 
 def test_no_source_identifiers_survive(isolated_artifacts: Path) -> None:
-    source = pd.read_csv(settings.doppel_data_dir / "patients.csv")
+    source = pd.read_csv(settings.doppel_data_dir / "healthcare" / "patients.csv")
     report = DoppelPipeline().generate(
         GenerateRequest(asset_id="healthcare", scale=1.0, seed=55, expiry_days=7)
     )
@@ -132,3 +133,22 @@ def test_synthetic_encounters_reference_synthetic_patients(isolated_artifacts: P
     child_ids = set(encounters["patient_id"].astype(str))
     orphan_count = len(child_ids - parent_ids)
     assert orphan_count == 0
+
+
+def test_catalog_discovers_multiple_assets() -> None:
+    assets = CatalogService().list_assets()
+    asset_ids = {asset.id for asset in assets}
+    assert {"healthcare", "finance", "retail"}.issubset(asset_ids)
+
+
+@pytest.mark.parametrize("asset_id", ["finance", "retail"])
+def test_new_assets_verify(isolated_artifacts: Path, asset_id: str) -> None:
+    report = DoppelPipeline().generate(
+        GenerateRequest(asset_id=asset_id, scale=1.0, seed=42, expiry_days=7)
+    )
+    assert report.decision == "VERIFIED"
+    assert report.exact_row_overlap == 0
+    assert report.fk_integrity == 100.0
+    assert report.privacy_score == 100.0
+    assert report.integrity_score == 100.0
+    assert report.utility_score > 70

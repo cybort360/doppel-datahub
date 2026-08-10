@@ -132,8 +132,9 @@ def test_foreign_key_integrity_detects_orphans():
 
 def test_cardinality_preserved_at_full_scale():
     context = CatalogService().get_asset("healthcare")
+    asset_dir = settings.doppel_data_dir / "healthcare"
     frames = {
-        table.name: pd.read_csv(settings.doppel_data_dir / table.file)
+        table.name: pd.read_csv(asset_dir / table.file)
         for table in context.tables
     }
     generated = SyntheticGenerator(seed=99).generate_dataset(context, frames, scale=1.0)

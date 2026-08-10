@@ -1,0 +1,260 @@
+{
+  "id": "finance",
+  "name": "Retail Banking Twin",
+  "description": "Synthetic customer and transaction data for privacy-safe financial development and testing.",
+  "domain": "Retail Banking",
+  "owner": "Data Platform Team",
+  "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,finance.customer_operations,PROD)",
+  "governance_summary": [
+    "Direct identifiers are tagged and must never be copied.",
+    "Customer-to-transaction relationships must remain valid.",
+    "Generated assets expire after a declared non-production window.",
+    "Aggregate distributions should remain useful for product testing."
+  ],
+  "tables": [
+    {
+      "name": "customers",
+      "file": "customers.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,finance.customers,PROD)",
+      "description": "Customer registry containing direct identifiers and account segmentation.",
+      "domain": "Retail Banking",
+      "owner": "Customer Data Team",
+      "tags": [
+        "PII",
+        "RESTRICTED"
+      ],
+      "primary_key": "customer_id",
+      "foreign_keys": [],
+      "columns": [
+        {
+          "name": "customer_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY",
+            "PII"
+          ],
+          "description": "Internal customer identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "first_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "Customer given name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "last_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "Customer family name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "email",
+          "dtype": "object",
+          "semantic_type": "email",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "Customer email address.",
+          "strategy": "reserved_domain_email"
+        },
+        {
+          "name": "phone",
+          "dtype": "object",
+          "semantic_type": "direct_identifier",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "Customer phone number.",
+          "strategy": "faker_phone"
+        },
+        {
+          "name": "address",
+          "dtype": "object",
+          "semantic_type": "direct_identifier",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "Customer street address.",
+          "strategy": "faker_address"
+        },
+        {
+          "name": "city",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Customer city.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "postal_code",
+          "dtype": "object",
+          "semantic_type": "postal_code",
+          "nullable": false,
+          "tags": [
+            "PII",
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "Customer postal code.",
+          "strategy": "faker_postcode"
+        },
+        {
+          "name": "date_of_birth",
+          "dtype": "object",
+          "semantic_type": "date_of_birth",
+          "nullable": false,
+          "tags": [
+            "PII",
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "Customer birth date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "risk_score",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [],
+          "description": "Customer risk score.",
+          "strategy": "gaussian_copula"
+        },
+        {
+          "name": "account_type",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Primary account type.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "registration_date",
+          "dtype": "object",
+          "semantic_type": "datetime",
+          "nullable": false,
+          "tags": [],
+          "description": "Account registration date.",
+          "strategy": "distribution_preserving_date"
+        }
+      ]
+    },
+    {
+      "name": "transactions",
+      "file": "transactions.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,finance.transactions,PROD)",
+      "description": "Customer transactions and payment events.",
+      "domain": "Retail Banking",
+      "owner": "Transaction Analytics Team",
+      "tags": [
+        "FINANCIAL",
+        "RESTRICTED"
+      ],
+      "primary_key": "transaction_id",
+      "foreign_keys": [
+        {
+          "column": "customer_id",
+          "references_table": "customers",
+          "references_column": "customer_id"
+        }
+      ],
+      "columns": [
+        {
+          "name": "transaction_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY"
+          ],
+          "description": "Transaction identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "customer_id",
+          "dtype": "object",
+          "semantic_type": "foreign_key",
+          "nullable": false,
+          "tags": [
+            "FOREIGN_KEY",
+            "PII"
+          ],
+          "description": "Customer foreign key.",
+          "strategy": "frequency_preserving_fk"
+        },
+        {
+          "name": "transaction_date",
+          "dtype": "object",
+          "semantic_type": "datetime",
+          "nullable": false,
+          "tags": [],
+          "description": "Transaction date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "amount",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [
+            "FINANCIAL"
+          ],
+          "description": "Transaction amount.",
+          "strategy": "conditional_on:merchant_category"
+        },
+        {
+          "name": "merchant_category",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Merchant category code.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "transaction_type",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Transaction type.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "currency",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Transaction currency.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "status",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Transaction status.",
+          "strategy": "categorical_distribution"
+        }
+      ]
+    }
+  ]
+}

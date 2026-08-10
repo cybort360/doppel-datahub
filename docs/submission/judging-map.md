@@ -44,7 +44,7 @@ This file maps each hackathon judging criterion to concrete evidence in the repo
 | Honest limitations documented | `README.md` *Limitations / threat model* and `docs/THREAT_MODEL.md` |
 
 Known real-world limitations (documented, not hidden):
-- Only one demo asset is wired end-to-end (`healthcare`). Generalizing to arbitrary assets requires extending `CatalogService` and source-row connectors.
+- Fixtures ship with `healthcare`, `finance`, and `retail` assets; additional domains require a new `data/<asset>/context.json` plus source CSVs.
 - Source rows are still read from local CSV files in the demo; a production deployment would stream from the source system.
 
 ## 5. Submission Quality

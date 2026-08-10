@@ -47,11 +47,30 @@ button { color: inherit; }
 .quiet-button { border: 1px solid var(--line); background: transparent; padding: 10px 14px; cursor: pointer; font-size: 12px; font-weight: 700; }
 .quiet-button:hover { border-color: var(--ink); }
 
+.asset-picker { position: relative; }
+.asset-select-button { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--line); background: var(--white); padding: 9px 13px; cursor: pointer; font-size: 12px; font-weight: 700; color: var(--ink); transition: border-color .18s ease; }
+.asset-select-button:hover, .asset-select-button[aria-expanded="true"] { border-color: var(--ink); }
+.asset-select-tag { font: 700 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); border-right: 1px solid var(--line); padding-right: 10px; }
+.asset-select-value { letter-spacing: -.01em; }
+.asset-select-caret { width: 6px; height: 6px; margin-left: 2px; border-right: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); transform: translateY(-2px) rotate(45deg); transition: transform .2s ease; }
+.asset-select-button[aria-expanded="true"] .asset-select-caret { transform: translateY(1px) rotate(-135deg); }
+
+.asset-select-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 260px; margin: 0; padding: 6px; list-style: none; background: var(--white); border: 1px solid var(--ink); box-shadow: 0 20px 44px -26px rgba(17, 17, 15, .55); z-index: 60; }
+.asset-select-menu[hidden] { display: none; }
+.asset-option { display: flex; align-items: center; gap: 10px; padding: 11px 12px; font-size: 13px; font-weight: 600; cursor: pointer; border-left: 3px solid transparent; outline: none; transition: background .12s ease, border-color .12s ease; }
+.asset-option:hover, .asset-option:focus-visible { background: var(--paper-2); border-left-color: var(--signal); }
+.asset-option[aria-selected="true"] { border-left-color: var(--signal); font-weight: 800; }
+.asset-option-check { width: 11px; color: transparent; font-weight: 800; }
+.asset-option[aria-selected="true"] .asset-option-check { color: var(--signal); }
+.asset-option-meta { margin-left: auto; font: 700 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+
 .screen { display: none; }
 .screen.active { display: block; }
 
 .hero { padding: 64px 0 42px; max-width: 900px; }
 .hero.small { padding: 48px 0 32px; }
+.hero-lead { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 20px; font-size: 13px; font-weight: 700; letter-spacing: -.005em; color: var(--signal); }
+.hero-lead::before { content: ""; width: 8px; height: 8px; background: var(--signal); transform: rotate(45deg); }
 .hero h2 { margin: 0 0 16px; font-size: clamp(42px, 5.5vw, 78px); line-height: .95; letter-spacing: -.075em; font-weight: 770; }
 .hero p { max-width: 620px; color: var(--muted); font-size: 17px; line-height: 1.6; margin: 0; }
 
@@ -179,6 +198,21 @@ button { color: inherit; }
 
 .loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 80px 20px; color: var(--muted); }
 .empty-state { border: 1px dashed var(--line); padding: 40px; text-align: center; color: var(--muted); }
+
+/* --- Motion & interaction polish (restrained, on-theme) --- */
+.screen.active { animation: screen-in .42s cubic-bezier(.22, .61, .36, 1) both; }
+@keyframes screen-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.asset-card { transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+.asset-card:hover { border-color: var(--ink); transform: translateY(-2px); box-shadow: 0 18px 40px -30px rgba(17, 17, 15, .5); }
+.primary-button, .primary-link { transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
+.primary-button:hover, .primary-link:hover { transform: translateY(-1px); box-shadow: 0 14px 28px -18px rgba(49, 92, 255, .65); }
+.primary-button:active, .primary-link:active { transform: translateY(0); box-shadow: none; }
+.metric-grid article { transition: background .18s ease; }
+.metric-grid article:hover { background: var(--white); }
+@media (prefers-reduced-motion: reduce) {
+  .screen.active { animation: none; }
+  .asset-card:hover, .primary-button:hover, .primary-link:hover { transform: none; box-shadow: none; }
+}
 
 @media (max-width: 1160px) {
   :root { --rail: 76px; }

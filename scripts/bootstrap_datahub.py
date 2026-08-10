@@ -15,12 +15,15 @@ def main() -> None:
     parser.add_argument("--server", default=settings.datahub_gms_url)
     parser.add_argument("--token", default=settings.datahub_token)
     parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument(
+        "--asset",
+        help="Asset id to bootstrap (e.g., healthcare, finance, retail). Default: all assets.",
+    )
     args = parser.parse_args()
 
     try:
         from datahub.emitter.mce_builder import (
             make_data_platform_urn,
-            make_dataset_urn,
             make_domain_urn,
             make_tag_urn,
             make_user_urn,
@@ -56,16 +59,24 @@ def main() -> None:
             "Install the live integration first: pip install -r requirements-datahub.txt"
         ) from exc
 
-    context_path = Path(settings.doppel_data_dir) / "context.json"
-    context = DatasetContext.model_validate(json.loads(context_path.read_text()))
+    data_dir = Path(settings.doppel_data_dir)
+    if args.asset:
+        context_paths = [data_dir / args.asset / "context.json"]
+    else:
+        context_paths = sorted(data_dir.glob("*/context.json"))
+
+    contexts: list[DatasetContext] = []
+    for context_path in context_paths:
+        if not context_path.exists():
+            raise FileNotFoundError(f"Asset context not found: {context_path}")
+        contexts.append(DatasetContext.model_validate(json.loads(context_path.read_text())))
+
     emitter = DatahubRestEmitter(gms_server=args.server, token=args.token)
     _wait_for_datahub(emitter, timeout_sec=args.timeout)
     audit = AuditStampClass(time=int(time.time() * 1000), actor=make_user_urn("doppel"))
 
     # Ensure shared governance entities exist (idempotent aspect writes).
     _ensure_platform(emitter, "postgres")
-    domain_urn = make_domain_urn("clinical-operations")
-    _ensure_domain(emitter, domain_urn, "Clinical Operations")
 
     known_tags = {
         "PII",
@@ -79,8 +90,16 @@ def main() -> None:
     for tag in known_tags:
         _ensure_tag(emitter, make_tag_urn(tag), tag)
 
-    for table in context.tables:
-        _ensure_user(emitter, make_user_urn(table.owner.lower().replace(" ", "-")))
+    domain_urns: dict[str, str] = {}
+    for context in contexts:
+        domain_key = context.domain.lower().replace(" ", "-")
+        domain_urn = make_domain_urn(domain_key)
+        domain_urns[context.id] = domain_urn
+        _ensure_domain(emitter, domain_urn, context.domain)
+
+    for context in contexts:
+        for table in context.tables:
+            _ensure_user(emitter, make_user_urn(table.owner.lower().replace(" ", "-")))
 
     def field_type(semantic: SemanticType) -> Any:
         if semantic == SemanticType.NUMERIC:
@@ -93,41 +112,49 @@ def main() -> None:
             return TimeTypeClass()
         return StringTypeClass()
 
-    table_by_name: dict[str, Any] = {}
-    for table in context.tables:
-        dataset_name = f"clinical.{table.name}"
-        urn = make_dataset_urn(platform="postgres", name=dataset_name, env=settings.datahub_env)
-        table_by_name[table.name] = {"urn": urn, "dataset_name": dataset_name, "table": table}
+    table_by_key: dict[tuple[str, str], Any] = {}
+    for context in contexts:
+        domain_urn = domain_urns[context.id]
+        for table in context.tables:
+            urn = table.urn
+            table_by_key[(context.id, table.name)] = {
+                "urn": urn,
+                "dataset_name": urn.rsplit(",", 2)[1],
+                "table": table,
+                "context": context,
+                "domain_urn": domain_urn,
+            }
 
-    for table in context.tables:
-        info = table_by_name[table.name]
-        urn = info["urn"]
-        dataset_name = info["dataset_name"]
+    for context in contexts:
+        domain_urn = domain_urns[context.id]
+        for table in context.tables:
+            info = table_by_key[(context.id, table.name)]
+            urn = info["urn"]
 
-        properties = DatasetPropertiesClass(
-            name=table.name,
-            description=table.description,
-            customProperties={
-                "doppel_fixture": "true",
-                "doppel_source_table": table.name,
-                "doppel_source_file": table.file,
-                "primary_key": table.primary_key,
-            },
-        )
-        tags = GlobalTagsClass(
-            tags=[TagAssociationClass(tag=make_tag_urn(tag)) for tag in table.tags]
-        )
-        ownership = OwnershipClass(
-            owners=[
-                OwnerClass(
-                    owner=make_user_urn(table.owner.lower().replace(" ", "-")),
-                    type=OwnershipTypeClass.TECHNICAL_OWNER,
-                    source=None,
-                )
-            ],
-            lastModified=audit,
-        )
-        domains = DomainsClass(domains=[domain_urn])
+            properties = DatasetPropertiesClass(
+                name=table.name,
+                description=table.description,
+                customProperties={
+                    "doppel_fixture": "true",
+                    "doppel_source_table": table.name,
+                    "doppel_source_file": table.file,
+                    "primary_key": table.primary_key,
+                },
+            )
+            tags = GlobalTagsClass(
+                tags=[TagAssociationClass(tag=make_tag_urn(tag)) for tag in table.tags]
+            )
+            ownership = OwnershipClass(
+                owners=[
+                    OwnerClass(
+                        owner=make_user_urn(table.owner.lower().replace(" ", "-")),
+                        type=OwnershipTypeClass.TECHNICAL_OWNER,
+                        source=None,
+                    )
+                ],
+                lastModified=audit,
+            )
+            domains = DomainsClass(domains=[domain_urn])
 
         fields = []
         for column in table.columns:
@@ -183,10 +210,10 @@ def main() -> None:
                 ForeignKeyConstraintClass(
                     name=f"{fk.column}_to_{fk.references_table}",
                     sourceFields=[make_schema_field_urn(urn, fk.column)],
-                    foreignDataset=table_by_name[fk.references_table]["urn"],
+                    foreignDataset=table_by_key[(context.id, fk.references_table)]["urn"],
                     foreignFields=[
                         make_schema_field_urn(
-                            table_by_name[fk.references_table]["urn"],
+                            table_by_key[(context.id, fk.references_table)]["urn"],
                             fk.references_column,
                         )
                     ],
@@ -199,19 +226,24 @@ def main() -> None:
             emitter.emit_mcp(MetadataChangeProposalWrapper(entityUrn=urn, aspect=aspect))
         print(f"Published source dataset {urn}")
 
-    # Patients -> encounters lineage.
-    if "encounters" in table_by_name and "patients" in table_by_name:
-        encounters_urn = table_by_name["encounters"]["urn"]
-        lineage = UpstreamLineageClass(
-            upstreams=[
-                UpstreamClass(
-                    dataset=table_by_name["patients"]["urn"],
-                    type=DatasetLineageTypeClass.TRANSFORMED,
+    # Parent -> child lineage edges within each asset.
+    for context in contexts:
+        for table in context.tables:
+            for fk in table.foreign_keys:
+                child_urn = table_by_key[(context.id, table.name)]["urn"]
+                parent_urn = table_by_key[(context.id, fk.references_table)]["urn"]
+                lineage = UpstreamLineageClass(
+                    upstreams=[
+                        UpstreamClass(
+                            dataset=parent_urn,
+                            type=DatasetLineageTypeClass.TRANSFORMED,
+                        )
+                    ]
                 )
-            ]
-        )
-        emitter.emit_mcp(MetadataChangeProposalWrapper(entityUrn=encounters_urn, aspect=lineage))
-        print(f"Published lineage: {encounters_urn} -> patients")
+                emitter.emit_mcp(
+                    MetadataChangeProposalWrapper(entityUrn=child_urn, aspect=lineage)
+                )
+                print(f"Published lineage: {child_urn} -> {fk.references_table}")
 
     emitter.close()
     print("Source context is ready. Start DOPPEL with DOPPEL_MODE=datahub.")

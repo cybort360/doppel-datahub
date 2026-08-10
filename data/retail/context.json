@@ -1,0 +1,239 @@
+{
+  "id": "retail",
+  "name": "E-Commerce Twin",
+  "description": "Synthetic user and order data for privacy-safe retail development and testing.",
+  "domain": "E-Commerce",
+  "owner": "Data Platform Team",
+  "source_urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,retail.commerce_operations,PROD)",
+  "governance_summary": [
+    "Direct identifiers are tagged and must never be copied.",
+    "User-to-order relationships must remain valid.",
+    "Generated assets expire after a declared non-production window.",
+    "Aggregate distributions should remain useful for product testing."
+  ],
+  "tables": [
+    {
+      "name": "users",
+      "file": "users.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,retail.users,PROD)",
+      "description": "User registry containing direct identifiers and loyalty segmentation.",
+      "domain": "E-Commerce",
+      "owner": "Customer Data Team",
+      "tags": [
+        "PII",
+        "RESTRICTED"
+      ],
+      "primary_key": "user_id",
+      "foreign_keys": [],
+      "columns": [
+        {
+          "name": "user_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY",
+            "PII"
+          ],
+          "description": "Internal user identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "first_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "User given name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "last_name",
+          "dtype": "object",
+          "semantic_type": "person_name",
+          "nullable": false,
+          "tags": [
+            "PII"
+          ],
+          "description": "User family name.",
+          "strategy": "faker_name"
+        },
+        {
+          "name": "email",
+          "dtype": "object",
+          "semantic_type": "email",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "User email address.",
+          "strategy": "reserved_domain_email"
+        },
+        {
+          "name": "phone",
+          "dtype": "object",
+          "semantic_type": "direct_identifier",
+          "nullable": true,
+          "tags": [
+            "PII"
+          ],
+          "description": "User phone number.",
+          "strategy": "faker_phone"
+        },
+        {
+          "name": "postal_code",
+          "dtype": "object",
+          "semantic_type": "postal_code",
+          "nullable": false,
+          "tags": [
+            "PII",
+            "QUASI_IDENTIFIER"
+          ],
+          "description": "User postal code.",
+          "strategy": "faker_postcode"
+        },
+        {
+          "name": "registration_date",
+          "dtype": "object",
+          "semantic_type": "datetime",
+          "nullable": false,
+          "tags": [],
+          "description": "Account registration date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "country",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "User country.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "loyalty_tier",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Loyalty program tier.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "lifetime_value",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [
+            "FINANCIAL"
+          ],
+          "description": "Estimated lifetime value.",
+          "strategy": "gaussian_copula"
+        }
+      ]
+    },
+    {
+      "name": "orders",
+      "file": "orders.csv",
+      "urn": "urn:li:dataset:(urn:li:dataPlatform:postgres,retail.orders,PROD)",
+      "description": "User orders and purchase events.",
+      "domain": "E-Commerce",
+      "owner": "Order Analytics Team",
+      "tags": [
+        "FINANCIAL",
+        "RESTRICTED"
+      ],
+      "primary_key": "order_id",
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "user_id"
+        }
+      ],
+      "columns": [
+        {
+          "name": "order_id",
+          "dtype": "object",
+          "semantic_type": "identifier",
+          "nullable": false,
+          "tags": [
+            "PRIMARY_KEY"
+          ],
+          "description": "Order identifier.",
+          "strategy": "surrogate_id"
+        },
+        {
+          "name": "user_id",
+          "dtype": "object",
+          "semantic_type": "foreign_key",
+          "nullable": false,
+          "tags": [
+            "FOREIGN_KEY",
+            "PII"
+          ],
+          "description": "User foreign key.",
+          "strategy": "frequency_preserving_fk"
+        },
+        {
+          "name": "order_date",
+          "dtype": "object",
+          "semantic_type": "datetime",
+          "nullable": false,
+          "tags": [],
+          "description": "Order date.",
+          "strategy": "distribution_preserving_date"
+        },
+        {
+          "name": "total_amount",
+          "dtype": "float64",
+          "semantic_type": "numeric",
+          "nullable": false,
+          "tags": [
+            "FINANCIAL"
+          ],
+          "description": "Order total amount.",
+          "strategy": "conditional_on:category"
+        },
+        {
+          "name": "category",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Order product category.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "status",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Order fulfillment status.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "payment_method",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Payment method.",
+          "strategy": "categorical_distribution"
+        },
+        {
+          "name": "shipping_country",
+          "dtype": "object",
+          "semantic_type": "categorical",
+          "nullable": false,
+          "tags": [],
+          "description": "Shipping destination country.",
+          "strategy": "categorical_distribution"
+        }
+      ]
+    }
+  ]
+}

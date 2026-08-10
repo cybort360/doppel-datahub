@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_prefix="", extra="ignore")
 
     doppel_mode: str = "fixture"
-    doppel_data_dir: Path = Path("data/healthcare")
+    doppel_data_dir: Path = Path("data")
     doppel_artifact_dir: Path = Path("artifacts/runs")
     doppel_target_env: str = "NON_PROD"
     datahub_gms_url: str = "http://localhost:8080"

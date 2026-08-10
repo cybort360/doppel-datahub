@@ -16,20 +16,25 @@ except ImportError:
 class CatalogService:
     def __init__(self, data_dir: Path | None = None) -> None:
         self.data_dir = data_dir or settings.doppel_data_dir
-        self._context_path = self.data_dir / "context.json"
 
     def list_assets(self) -> list[DatasetContext]:
-        return [self.get_asset("healthcare")]
+        assets: list[DatasetContext] = []
+        for context_path in sorted(self.data_dir.glob("*/context.json")):
+            assets.append(DatasetContext.model_validate(json.loads(context_path.read_text())))
+        if not assets:
+            raise RuntimeError(f"No asset contexts found under {self.data_dir}")
+        return assets
 
     def get_asset(self, asset_id: str) -> DatasetContext:
-        if asset_id != "healthcare":
+        context_path = self.data_dir / asset_id / "context.json"
+        if not context_path.exists():
             raise KeyError(f"Unknown asset: {asset_id}")
         if settings.live_datahub:
-            return self._load_from_datahub()
-        payload = json.loads(self._context_path.read_text())
+            return self._load_from_datahub(asset_id)
+        payload = json.loads(context_path.read_text())
         return DatasetContext.model_validate(payload)
 
-    def _load_from_datahub(self) -> DatasetContext:
+    def _load_from_datahub(self, asset_id: str) -> DatasetContext:
         if DataHubGraph is None:
             raise RuntimeError("Live DataHub mode requires: pip install '.[datahub]'")
 
@@ -47,19 +52,20 @@ class CatalogService:
             )
         )
 
-        tables: list[TableContext] = []
-        for urn in settings.source_dataset_urns:
-            table = self._table_from_datahub(graph, urn)
-            tables.append(table)
+        # Start from the fixture context so asset-level metadata and source URNs
+        # are stable even when reading live DataHub metadata.
+        context_path = self.data_dir / asset_id / "context.json"
+        base_context = DatasetContext.model_validate(json.loads(context_path.read_text()))
 
-        # Use the first source dataset as the parent asset metadata source.
-        parent_urn = settings.source_dataset_urns[0]
-        name = "Clinical Operations Twin"
-        description = (
-            "Synthetic patient and encounter data for privacy-safe development and testing."
-        )
-        domain = "Clinical Operations"
-        owner = "Data Platform Team"
+        tables: list[TableContext] = []
+        for table in base_context.tables:
+            tables.append(self._table_from_datahub(graph, table))
+
+        parent_urn = base_context.source_urn
+        name = base_context.name
+        description = base_context.description
+        domain = base_context.domain
+        owner = base_context.owner
 
         properties = graph.get_aspect(parent_urn, DatasetPropertiesClass)
         if properties:
@@ -75,22 +81,17 @@ class CatalogService:
             owner = self._urn_to_name(ownership.owners[0].owner)
 
         return DatasetContext(
-            id="healthcare",
+            id=asset_id,
             name=name,
             description=description,
             domain=domain,
             owner=owner,
             source_urn=parent_urn,
             tables=tables,
-            governance_summary=[
-                "Direct identifiers are tagged and must never be copied.",
-                "Patient-to-encounter relationships must remain valid.",
-                "Generated assets expire after a declared non-production window.",
-                "Aggregate distributions should remain useful for product testing.",
-            ],
+            governance_summary=base_context.governance_summary,
         )
 
-    def _table_from_datahub(self, graph: Any, urn: str) -> TableContext:
+    def _table_from_datahub(self, graph: Any, base: TableContext) -> TableContext:
         from datahub.metadata.schema_classes import (
             DatasetPropertiesClass,
             DomainsClass,
@@ -99,18 +100,16 @@ class CatalogService:
             SchemaMetadataClass,
         )
 
-        dataset_name = self._dataset_urn_to_name(urn)
+        urn = base.urn
+        dataset_name = base.name
+        source_file = base.file
 
-        # Source file mapping: bootstrap stores the local fixture filename so DOPPEL
-        # can read source values even when metadata is served by DataHub.
-        source_file = f"{dataset_name}.csv"
         properties = graph.get_aspect(urn, DatasetPropertiesClass)
-        if properties and properties.customProperties:
-            source_file = properties.customProperties.get("doppel_source_file", source_file)
-
-        description = ""
-        if properties and properties.description:
-            description = properties.description
+        if properties:
+            if properties.customProperties:
+                source_file = properties.customProperties.get("doppel_source_file", source_file)
+            if properties.description:
+                base.description = properties.description
 
         tags: list[str] = []
         try:
@@ -120,7 +119,7 @@ class CatalogService:
         except Exception:
             pass
 
-        domain = ""
+        domain = base.domain
         try:
             domains = graph.get_aspect(urn, DomainsClass)
             if domains and domains.domains:
@@ -128,7 +127,7 @@ class CatalogService:
         except Exception:
             pass
 
-        owner = ""
+        owner = base.owner
         try:
             ownership = graph.get_aspect(urn, OwnershipClass)
             if ownership and ownership.owners:
@@ -138,14 +137,15 @@ class CatalogService:
 
         schema = graph.get_aspect(urn, SchemaMetadataClass)
         columns: list[ColumnContext] = []
-        primary_key = ""
-        foreign_keys: list[ForeignKey] = []
+        primary_key = base.primary_key
+        foreign_keys: list[ForeignKey] = base.foreign_keys.copy()
 
         if schema and schema.fields:
-            primary_key = (schema.primaryKeys or [None])[0] or ""
+            primary_key = (schema.primaryKeys or [primary_key or None])[0] or primary_key
             for field in schema.fields:
                 columns.append(self._column_from_field(field, primary_key))
 
+            datahub_fks: list[ForeignKey] = []
             for fk in schema.foreignKeys or []:
                 from datahub.emitter.mce_builder import schema_field_urn_to_key
 
@@ -167,13 +167,15 @@ class CatalogService:
                 else:
                     foreign_field = ""
 
-                foreign_keys.append(
+                datahub_fks.append(
                     ForeignKey(
                         column=source_field,
                         references_table=self._dataset_urn_to_name(fk.foreignDataset),
                         references_column=foreign_field,
                     )
                 )
+            if datahub_fks:
+                foreign_keys = datahub_fks
 
         # Fallback: infer foreign keys from column names when DataHub does not
         # materialize SchemaMetadata.foreignKeys.
@@ -184,13 +186,13 @@ class CatalogService:
             name=dataset_name,
             file=source_file,
             urn=urn,
-            description=description,
+            description=base.description,
             domain=domain,
             owner=owner,
-            tags=tags,
+            tags=tags or base.tags,
             primary_key=primary_key,
             foreign_keys=foreign_keys,
-            columns=columns,
+            columns=columns or base.columns,
         )
 
     def _column_from_field(self, field: Any, table_primary_key: str) -> ColumnContext:
@@ -251,6 +253,10 @@ class CatalogService:
             "name" in name or "first" in name or "last" in name
         ):
             return SemanticType.PERSON_NAME
+        if "PHONE" in hints or "phone" in name or "mobile" in name:
+            return SemanticType.DIRECT_IDENTIFIER
+        if "ADDRESS" in hints or "address" in name or "street" in name:
+            return SemanticType.DIRECT_IDENTIFIER
         if name == "date_of_birth" or "DOB" in hints or "BIRTH" in hints:
             return SemanticType.DATE_OF_BIRTH
         if type_class is DateTypeClass or type_class is TimeTypeClass or "date" in name:
@@ -281,6 +287,8 @@ class CatalogService:
         if semantic == SemanticType.POSTAL_CODE:
             return "faker_postcode"
         if semantic == SemanticType.NUMERIC:
+            # Conditional generation can be declared explicitly in fixture contexts.
+            # In live DataHub mode we preserve the known healthcare conditional.
             if column_name == "claim_amount":
                 return "conditional_on:procedure_code"
             return "gaussian_copula"
@@ -297,15 +305,19 @@ class CatalogService:
         for column in columns:
             if column.semantic_type != SemanticType.FOREIGN_KEY:
                 continue
-            # Patient/encounter demo: patient_id references patients.patient_id.
-            if column.name == "patient_id" and table_name == "encounters":
-                fks.append(
-                    ForeignKey(
-                        column="patient_id",
-                        references_table="patients",
-                        references_column="patient_id",
+            # Heuristic: a column like customer_id references customers.customer_id.
+            prefix = column.name.replace("_id", "")
+            candidate_tables = [f"{prefix}s", prefix]
+            for candidate in candidate_tables:
+                if candidate and candidate != table_name:
+                    fks.append(
+                        ForeignKey(
+                            column=column.name,
+                            references_table=candidate,
+                            references_column=column.name,
+                        )
                     )
-                )
+                    break
         return fks
 
     @staticmethod

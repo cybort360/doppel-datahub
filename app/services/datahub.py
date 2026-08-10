@@ -236,7 +236,7 @@ class DataHubPublisher:
                     "expires_at": expires_at,
                     "expires_in_days": str(report.generation_plan["expiry_days"]),
                     "source_dataset": table.urn,
-                    "source_asset": context.source_urn,
+                    "source_asset": table.urn,
                     "synthetic_generation_strategy": "metadata_governed",
                 },
             )

@@ -151,6 +151,8 @@ class SyntheticGenerator:
             generated_values = self._sample_dates(source, count, jitter_days=14, clamp_future=False)
         elif semantic == SemanticType.POSTAL_CODE:
             generated_values = [f"TST-{self.fake.postcode()}-{i + 1:05d}" for i in range(count)]
+        elif semantic == SemanticType.DIRECT_IDENTIFIER:
+            generated_values = self._generate_direct_identifier(column, count)
         elif semantic == SemanticType.CATEGORICAL:
             generated_values = self._sample_categorical(source, count)
         elif semantic == SemanticType.BOOLEAN:
@@ -217,6 +219,20 @@ class SyntheticGenerator:
         replace = count > len(synthetic_pool)
         sampled = self.rng.choice(synthetic_pool, size=count, replace=replace).tolist()
         return [str(value) for value in sampled]
+
+    def _generate_direct_identifier(
+        self, column: ColumnContext, count: int
+    ) -> list[str]:
+        name = column.name.lower()
+        if "phone" in name:
+            return [self.fake.unique.phone_number() for _ in range(count)]
+        if "address" in name and "street" not in name:
+            return [self.fake.unique.street_address() for _ in range(count)]
+        if "street" in name:
+            return [self.fake.unique.street_address() for _ in range(count)]
+        if "city" in name:
+            return [self.fake.unique.city() for _ in range(count)]
+        return [f"SYN-{self.fake.unique.word()}-{i + 1:05d}" for i in range(count)]
 
     def _sample_categorical(self, source: pd.Series, count: int) -> np.ndarray:
         clean = source.dropna().astype(str)

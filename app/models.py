@@ -12,6 +12,7 @@ class SemanticType(StrEnum):
     FOREIGN_KEY = "foreign_key"
     EMAIL = "email"
     PERSON_NAME = "person_name"
+    DIRECT_IDENTIFIER = "direct_identifier"
     DATE_OF_BIRTH = "date_of_birth"
     POSTAL_CODE = "postal_code"
     DATETIME = "datetime"

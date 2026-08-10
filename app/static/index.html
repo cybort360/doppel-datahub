@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="DOPPEL creates governed synthetic data products from DataHub context." />
   <title>DOPPEL — Safe Data Twins</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -30,10 +31,18 @@
     <main class="main">
       <header class="topbar">
         <div>
-          <span class="eyebrow">DataHub Agent Hackathon · DOPPEL</span>
           <h1 id="pageTitle">Production healthcare data</h1>
         </div>
         <div class="top-actions">
+          <div class="asset-picker" id="assetPicker">
+            <button type="button" class="asset-select-button" id="assetSelectButton"
+                    aria-haspopup="listbox" aria-expanded="false" aria-label="Select source asset">
+              <span class="asset-select-tag">Asset</span>
+              <span class="asset-select-value" id="assetSelectValue">—</span>
+              <span class="asset-select-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="asset-select-menu" id="assetSelectMenu" role="listbox" aria-label="Source asset" hidden></ul>
+          </div>
           <a href="/docs" target="_blank" rel="noreferrer">API</a>
           <button id="refreshButton" class="quiet-button">Refresh</button>
         </div>
@@ -42,8 +51,9 @@
       <!-- SCREEN 1: DATA ASSET -->
       <section id="screen-0" class="screen active">
         <div class="hero">
-          <h2>This production dataset contains sensitive patient information.</h2>
-          <p>DOPPEL creates a useful development twin without exposing the patients.</p>
+          <span class="hero-lead">DOPPEL turns governed DataHub datasets into privacy-safe synthetic twins.</span>
+          <h2 id="heroTitle">This production dataset contains sensitive information.</h2>
+          <p id="heroSubtitle">DOPPEL creates a useful development twin without exposing the source records.</p>
         </div>
 
         <div class="restricted-banner">
@@ -51,51 +61,9 @@
           <span id="assetHeaderLine">Clinical Operations · Patient Data Team</span>
         </div>
 
-        <div class="asset-grid">
-          <article class="asset-card" id="patientsCard">
-            <div class="asset-card-head">
-              <div>
-                <span class="eyebrow">Source table</span>
-                <h3>healthcare.patients</h3>
-              </div>
-              <span class="row-count" id="patientsRowCount">—</span>
-            </div>
-            <div class="pills" id="patientsTags"></div>
-            <div class="field-list" id="patientsFields"></div>
-          </article>
+        <div class="asset-grid" id="assetGrid"></div>
 
-          <article class="asset-card" id="encountersCard">
-            <div class="asset-card-head">
-              <div>
-                <span class="eyebrow">Source table</span>
-                <h3>healthcare.encounters</h3>
-              </div>
-              <span class="row-count" id="encountersRowCount">—</span>
-            </div>
-            <div class="pills" id="encountersTags"></div>
-            <div class="field-list" id="encountersFields"></div>
-          </article>
-        </div>
-
-        <div class="lineage-panel">
-          <div class="lineage-node source">
-            <span>PROD</span>
-            <strong>clinical.patients</strong>
-            <small>Owner: Patient Data Team · Domain: Clinical Operations</small>
-          </div>
-          <div class="lineage-connector"><i></i></div>
-          <div class="lineage-node source">
-            <span>PROD</span>
-            <strong>clinical.encounters</strong>
-            <small>Owner: Claims Analytics Team · Domain: Clinical Operations</small>
-          </div>
-          <div class="lineage-connector"><i></i></div>
-          <div class="lineage-node target">
-            <span>RESTRICTED</span>
-            <strong>patient_id → encounter_id</strong>
-            <small>One-to-many relationship</small>
-          </div>
-        </div>
+        <div class="lineage-panel" id="assetLineage"></div>
 
         <div class="cta-bar">
           <div class="seed-summary">
@@ -171,7 +139,7 @@
           <article><span>Referential integrity</span><strong id="metricIntegrity">—</strong><small>foreign-key validity</small></article>
           <article><span>Singling-out risk</span><strong id="metricSingling">—</strong><small>quasi-identifier uniqueness</small></article>
           <article><span>Correlation similarity</span><strong id="metricCorrelation">—</strong><small>pairwise numeric correlations</small></article>
-          <article><span>Conditional similarity</span><strong id="metricConditional">—</strong><small>claim amount by procedure</small></article>
+          <article><span>Conditional similarity</span><strong id="metricConditional">—</strong><small id="conditionalLabel">grouped conditional means</small></article>
         </div>
 
         <div class="reasons-panel" id="reasonsPanel"></div>
@@ -196,33 +164,7 @@
           <p>The synthetic twin is registered in DataHub with lineage and evidence.</p>
         </div>
 
-        <div class="writeback-diagram">
-          <div class="lineage-node source">
-            <span>SOURCE</span>
-            <strong>clinical.patients</strong>
-            <small>PROD · Restricted</small>
-          </div>
-          <div class="lineage-connector down"><i></i></div>
-          <div class="lineage-node target large">
-            <span>NON_PROD</span>
-            <strong>doppel.healthcare.patients_synthetic</strong>
-            <small id="writebackPatientsMeta">SYNTHETIC · NON_PRODUCTION</small>
-          </div>
-        </div>
-
-        <div class="writeback-diagram">
-          <div class="lineage-node source">
-            <span>SOURCE</span>
-            <strong>clinical.encounters</strong>
-            <small>PROD · Restricted</small>
-          </div>
-          <div class="lineage-connector down"><i></i></div>
-          <div class="lineage-node target large">
-            <span>NON_PROD</span>
-            <strong>doppel.healthcare.encounters_synthetic</strong>
-            <small id="writebackEncountersMeta">SYNTHETIC · NON_PRODUCTION</small>
-          </div>
-        </div>
+        <div id="writebackDiagrams"></div>
 
         <div class="writeback-details">
           <div class="detail-card">

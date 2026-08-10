@@ -50,8 +50,9 @@ def get_asset(asset_id: str) -> dict[str, object]:
 
     previews: dict[str, list[dict[str, object]]] = {}
     row_counts: dict[str, int] = {}
+    asset_dir = settings.doppel_data_dir / asset_id
     for table in asset.tables:
-        frame = pd.read_csv(settings.doppel_data_dir / table.file)
+        frame = pd.read_csv(asset_dir / table.file)
         previews[table.name] = frame.head(8).fillna("").to_dict(orient="records")
         row_counts[table.name] = len(frame)
     payload = asset.model_dump()
@@ -157,6 +158,18 @@ def download_run(run_id: str) -> FileResponse:
     if not bundle.exists():
         bundle = pipeline._build_bundle(report)
     return FileResponse(bundle, filename=bundle.name, media_type="application/zip")
+
+
+@app.get("/api/runs/{run_id}/datahub-preview")
+def datahub_preview(run_id: str) -> FileResponse:
+    try:
+        report = pipeline.get_report(run_id)
+    except KeyError as exc:
+        raise HTTPException(404, f"Unknown run: {run_id}") from exc
+    preview = Path(report.output_dir, "datahub-mutation-preview.json")
+    if not preview.exists():
+        raise HTTPException(404, "No DataHub mutation preview for this run.")
+    return FileResponse(preview, filename=preview.name, media_type="application/json")
 
 
 app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")

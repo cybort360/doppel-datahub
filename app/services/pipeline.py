@@ -51,8 +51,9 @@ class DoppelPipeline:
         output_dir = settings.doppel_artifact_dir / run_id
         output_dir.mkdir(parents=True, exist_ok=False)
 
+        asset_dir = settings.doppel_data_dir / request.asset_id
         frames = {
-            table.name: pd.read_csv(settings.doppel_data_dir / table.file)
+            table.name: pd.read_csv(asset_dir / table.file)
             for table in context.tables
         }
         generator = SyntheticGenerator(seed=request.seed)

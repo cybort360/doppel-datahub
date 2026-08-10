@@ -1,0 +1,1001 @@
+customer_id,first_name,last_name,email,phone,address,city,postal_code,date_of_birth,risk_score,account_type,registration_date
+CUST-000001,Danielle,Johnson,john21@example.net,001-581-896-0013x3890,9402 Peterson Drives,Jackson,28722,2005-11-28,68.88,checking,2019-12-20
+CUST-000002,Christopher,Davis,cassandra07@example.net,361-284-9593,1316 Chavez Village,Salem,48320,1955-11-07,65.89,checking,2020-02-26
+CUST-000003,Elizabeth,Miles,lynchgeorge@example.net,527.264.8350,4139 Lewis Parks Suite 724,Winchester,18802,1961-02-21,69.71,investment,2022-03-20
+CUST-000004,Jose,Richards,icox@example.net,610.212.2691x6697,845 Kelly Estate,Franklin,59971,1945-10-22,64.8,investment,2023-10-28
+CUST-000005,Jennifer,Stanton,williamrodriguez@example.net,289-332-5288x0957,3039 Christopher Oval Apt. 822,Arlington,86975,1975-07-19,56.52,checking,2022-02-06
+CUST-000006,Joseph,Brennan,ibrandt@example.net,001-734-265-7871x331,301 Jeremy Bypass,Milford,43810,1950-01-25,51.32,investment,2018-12-25
+CUST-000007,Elizabeth,Lewis,jenniferkhan@example.net,337.263.1165x6670,513 James Mission Apt. 624,Springfield,61138,1961-05-05,27.94,investment,2025-11-01
+CUST-000008,Scott,Callahan,williamsyvette@example.org,432-867-7360,4746 Moore Hill,Auburn,29035,2006-08-19,41.07,savings,2022-05-24
+CUST-000009,Amy,Adkins,williamsthomas@example.net,(808)312-1913,909 Robert Prairie,Salem,74586,1978-07-16,38.5,checking,2025-12-13
+CUST-000010,James,Moran,josephanderson@example.net,675-410-7991x1838,35427 Carr Valley Apt. 841,Cleveland,18102,1962-04-07,53.8,checking,2025-07-02
+CUST-000011,Julia,Moore,cassandra53@example.net,+1-648-474-0164x0052,680 Charles Spurs Apt. 805,Harrison,76851,1980-05-31,39.3,checking,2020-11-25
+CUST-000012,Bobby,Diaz,nolanjason@example.org,+1-815-586-9232x26025,16073 Lisa Mount Suite 433,Cleveland,03602,1987-03-10,55.66,savings,2020-08-02
+CUST-000013,Joshua,Jones,michael86@example.net,+1-350-814-2940,569 Paul Ports Apt. 406,Greenville,00722,1978-05-11,55.65,savings,2024-09-01
+CUST-000014,Gloria,Bentley,michaeljones@example.net,895-814-8465x64823,946 Kevin Fords,Lexington,56847,1995-02-09,53.72,savings,2022-09-02
+CUST-000015,Marco,Ramos,williamleon@example.net,(514)589-5134,03791 Perry Roads,Riverside,75955,1957-11-08,47.64,savings,2023-07-26
+CUST-000016,Troy,Sanchez,staffordmichelle@example.org,001-763-928-7083x17278,727 Green Gateway Suite 873,Franklin,36493,1973-04-25,31.56,investment,2023-09-27
+CUST-000017,Jimmy,Rogers,taylorjesse@example.net,(231)566-5876,9096 Smith Knoll Suite 668,Washington,98479,1991-11-20,59.96,savings,2024-08-07
+CUST-000018,Rachael,Freeman,ryan06@example.com,+1-462-972-9806x99016,46537 Rogers Light,Dayton,36972,1992-12-24,31.71,checking,2024-12-03
+CUST-000019,Johnny,Miller,currybrett@example.com,510.403.3092,193 Lyons Trafficway Suite 299,Harrison,98533,1990-11-11,70.0,savings,2024-05-19
+CUST-000020,Frank,Collins,hickmanbarbara@example.com,(831)793-1491x9058,506 Garcia Lake,Franklin,83808,2001-10-10,59.34,checking,2021-03-14
+CUST-000021,Eric,Thompson,christina87@example.com,(294)953-1473x79965,73545 Beard Squares Suite 808,Greenville,25543,1950-12-31,37.97,savings,2023-10-21
+CUST-000022,Tracy,Chang,fbrewer@example.com,9147363495,855 Nelson Glen Apt. 135,Madison,16171,1992-05-28,61.28,savings,2026-02-10
+CUST-000023,Hannah,Lee,lhill@example.net,+1-641-234-3524x082,427 Monique Ports,Marion,37769,1975-03-06,52.98,investment,2021-01-03
+CUST-000024,Jack,Williams,ewilson@example.com,519.802.2941x3186,4964 Chelsea Streets Apt. 334,Jackson,87064,1950-09-20,61.44,checking,2019-01-01
+CUST-000025,Andrea,Moore,mhayes@example.com,503-444-7134x9361,10249 Gonzales Mountain Suite 648,Lexington,71277,1976-09-17,37.74,checking,2017-05-28
+CUST-000026,Bill,Reynolds,cassandra01@example.org,+1-899-904-9027x87429,5655 Mia Isle,Madison,54456,1989-04-22,36.09,savings,2019-06-26
+CUST-000027,Sierra,Cervantes,gibsonleonard@example.com,768-908-7603,34824 Gilmore Oval Apt. 093,Oxford,93533,1955-08-01,45.73,investment,2022-02-10
+CUST-000028,Andrea,Davis,murraydavid@example.org,448.346.7737x8263,5840 Barber Villages Suite 278,Auburn,63984,1967-05-07,83.91,checking,2022-02-14
+CUST-000029,Amy,Gibson,molly39@example.com,260.457.6627,71870 Robert Shoal Apt. 174,Lincoln,44876,1984-11-13,38.46,checking,2020-07-30
+CUST-000030,Christopher,Murphy,ofinley@example.net,001-478-609-1343x16117,50455 Thomas Pines,Salem,54509,1981-04-04,72.91,checking,2024-07-12
+CUST-000031,George,Miller,pharvey@example.com,001-623-474-7407,5946 Bryant Hollow,Chester,26612,2008-07-25,45.49,investment,2025-02-19
+CUST-000032,Daniel,James,bailey40@example.net,(640)490-9743x9533,047 Bethany Street,Harrison,17725,1951-04-14,53.23,savings,2019-07-22
+CUST-000033,Julie,Thompson,kristinwalter@example.com,784.324.7451x71236,48175 Richards View Suite 137,Georgetown,03781,1984-08-20,41.57,investment,2026-01-13
+CUST-000034,Mark,Bishop,reidsteven@example.net,861-920-0471x1382,869 Nicole Shoal Apt. 796,Burlington,37167,1947-08-31,37.53,checking,2020-04-22
+CUST-000035,Scott,Sampson,cory58@example.net,(706)543-1713x900,318 Brenda Via,Fairview,31040,1966-04-21,65.85,investment,2018-01-29
+CUST-000036,Rachel,Smith,vanessafernandez@example.org,402-605-3950,68117 Strickland Passage,Fairview,78313,1952-06-22,69.07,investment,2021-08-22
+CUST-000037,Sonia,Williams,stephen00@example.com,(761)877-1159x2124,8961 Melissa Run Apt. 673,Dayton,54740,1966-12-16,32.12,savings,2021-02-19
+CUST-000038,Robert,Davis,qedwards@example.com,(471)211-1615,165 Parrish Stravenue Apt. 494,Salem,46591,1952-02-17,58.63,checking,2021-09-04
+CUST-000039,Eric,Olson,bellangela@example.org,001-649-636-8998x09402,0229 Jones Streets Apt. 183,Milford,49809,1972-01-20,24.83,checking,2020-01-05
+CUST-000040,Mitchell,Griffith,wareeric@example.net,6145767976,6149 Rose Inlet,Clinton,06453,1959-07-01,51.03,investment,2026-06-13
+CUST-000041,Brian,Harris,katrinaduran@example.com,810-276-2268x38851,71596 Mckinney Mall Suite 160,Madison,43069,1956-06-06,54.11,checking,2026-01-29
+CUST-000042,Steve,Norris,christopher13@example.com,001-468-316-4535,835 Luna Viaduct,Oxford,85100,1996-12-13,34.84,savings,2018-12-19
+CUST-000043,Dwayne,Gonzalez,kathleenrios@example.org,001-977-699-7995x52717,058 Lance Mission Apt. 054,Lexington,10558,1986-03-21,68.4,investment,2026-05-18
+CUST-000044,Christopher,Wheeler,jford@example.net,2799359782,1820 Jasmine Mill,Springfield,69191,1978-07-15,49.55,investment,2018-03-10
+CUST-000045,Nathan,Campbell,rschroeder@example.net,4517518644,254 Anderson Station,Winchester,11605,1965-02-08,73.45,savings,2020-05-15
+CUST-000046,Latasha,Li,lucasrodney@example.com,4544235733,1888 Ebony Wells,Cleveland,81507,1953-11-10,70.56,investment,2020-05-15
+CUST-000047,Francis,Guerra,jenniferwilliams@example.com,+1-937-994-7383x47359,8862 Laurie Dam Suite 075,Chester,73185,2004-06-19,62.25,savings,2023-09-19
+CUST-000048,Zachary,Martinez,hinesjoshua@example.net,(861)737-5060,1530 Galvan Villages,Springfield,94178,1986-07-21,60.33,investment,2024-07-07
+CUST-000049,Devin,Mitchell,ihorton@example.net,379.601.0432x8986,1036 Brown Villages,Winchester,66014,1983-03-14,48.51,checking,2016-10-07
+CUST-000050,Zachary,Allen,kellysmith@example.com,296.821.8518,65405 Michael Street Apt. 952,Milford,06312,1967-10-19,67.61,checking,2019-12-27
+CUST-000051,Dawn,Greer,epollard@example.net,(221)770-4303,687 Johnson Rue Apt. 450,Jackson,86449,1966-07-07,43.58,investment,2017-11-05
+CUST-000052,Micheal,Preston,ykline@example.com,(877)458-4161,1154 Griffin Stravenue Suite 275,Georgetown,59107,1948-04-09,70.43,checking,2025-04-21
+CUST-000053,Michael,Bolton,danielle01@example.net,+1-765-782-0297x0213,092 Rush Landing Suite 192,Marion,69898,1968-09-20,51.47,investment,2019-09-30
+CUST-000054,Joshua,Horne,fitzgeraldvictor@example.com,+1-514-347-3947,72715 Mckinney Plaza,Springfield,71564,1963-11-24,31.38,investment,2019-08-08
+CUST-000055,Eric,Mckinney,laurahicks@example.org,923.470.5895,46786 Morrow Cliffs,Chester,16927,2006-11-12,42.71,savings,2023-01-10
+CUST-000056,Shannon,Frazier,david89@example.org,001-626-380-1824x22535,84249 Wayne Extension Apt. 299,Washington,44753,1998-09-07,50.52,checking,2022-03-28
+CUST-000057,Marcia,Johnson,frykelli@example.com,+1-639-969-0784x4736,027 Washington Ford,Riverside,45090,1983-10-28,51.11,checking,2019-09-23
+CUST-000058,Jennifer,Gross,theresa25@example.net,+1-415-337-1473,6963 Lisa Ports,Franklin,95020,1965-04-21,69.39,investment,2024-03-26
+CUST-000059,Tyrone,Robertson,fkoch@example.org,268-673-3950,748 Melanie Meadows Apt. 456,Manchester,48465,1948-06-15,66.7,investment,2017-02-10
+CUST-000060,Anna,Cox,charles87@example.net,599-812-1655x852,02578 Hernandez Passage,Cleveland,18822,1966-04-07,12.08,checking,2022-09-25
+CUST-000061,Francisco,Ewing,brittney88@example.net,994.670.5516x9409,097 Alexandria Stravenue,Clinton,81731,1994-05-28,30.48,checking,2020-05-27
+CUST-000062,Lorraine,Allen,leescott@example.com,(563)768-9702,652 Barr Junctions Suite 497,Fairview,25701,2005-12-01,19.35,investment,2019-05-24
+CUST-000063,Kenneth,David,kellie37@example.com,258.644.1986x6524,7473 Maria Groves,Lexington,74165,1989-06-18,40.83,investment,2017-12-22
+CUST-000064,Christina,Matthews,brentstein@example.org,+1-930-916-5712x0826,5401 Amanda Stream,Cleveland,05389,2003-02-20,54.81,investment,2018-05-09
+CUST-000065,Nicole,Thompson,osbornrandy@example.com,(640)904-9915,87431 Martin Mount Suite 205,Harrison,39170,1981-05-17,53.92,investment,2024-03-05
+CUST-000066,Gregory,Chase,gwilcox@example.com,661-822-7530,4549 Jose Lake,Jackson,91303,1960-06-28,62.36,savings,2023-04-13
+CUST-000067,Steven,Moore,hannah45@example.net,932.572.7956,918 Rice Lake,Burlington,10738,2003-05-23,63.28,checking,2017-09-21
+CUST-000068,Maria,Leach,ashleyhernandez@example.com,971.239.7187x07286,406 Velasquez Summit Apt. 910,Salem,56035,1967-04-23,40.31,checking,2017-03-28
+CUST-000069,Virginia,Michael,andersenthomas@example.com,(422)865-6766x18251,300 Ford Stravenue,Chester,71862,1972-04-28,68.89,investment,2020-05-24
+CUST-000070,Jerry,Murray,joshuapineda@example.net,001-210-569-0331x19079,7383 Donald Highway,Salem,31193,1996-12-31,52.51,checking,2023-12-02
+CUST-000071,Luis,Harper,joel28@example.org,(744)808-9268x70568,46287 Melissa Hills Apt. 708,Franklin,54591,2006-07-29,48.63,checking,2022-03-05
+CUST-000072,Dennis,Sanchez,markmiller@example.com,(518)930-4699x013,4033 Julie Throughway,Riverside,63274,2003-03-20,44.96,savings,2023-07-24
+CUST-000073,Jane,Sanders,andrearowe@example.com,585.744.5877x175,0932 Jose Prairie Suite 423,Franklin,43737,1960-02-04,37.93,savings,2022-04-20
+CUST-000074,John,Pierce,jonathan77@example.com,(252)328-7280,62312 Jeffery Motorway,Georgetown,49417,1949-05-31,48.92,investment,2022-12-24
+CUST-000075,Sarah,Durham,ismith@example.net,(400)584-8408x62118,845 Norton Common,Clinton,49397,2006-01-15,44.83,investment,2021-03-11
+CUST-000076,John,Terry,gabriella10@example.org,(366)287-0021x7659,97401 Lam Port,Manchester,86760,1947-09-05,19.4,checking,2025-11-21
+CUST-000077,Leonard,Ali,karenmarquez@example.com,842-493-9685,501 Hall Club,Manchester,45143,1983-09-24,53.45,checking,2022-09-28
+CUST-000078,Caitlin,Novak,anthony47@example.com,658.566.2961,42626 Ward Course,Lincoln,01181,2005-01-04,40.88,savings,2021-01-18
+CUST-000079,Kathleen,Garcia,lopezshane@example.net,861.801.5819x95604,839 Gina Extension,Marion,18699,1962-07-19,35.08,investment,2019-04-15
+CUST-000080,Dustin,Jackson,robert71@example.com,737-899-3712x406,5692 Flores Square Apt. 752,Riverside,52699,2006-08-20,57.77,investment,2019-07-08
+CUST-000081,Heather,Henry,markramirez@example.com,(619)339-8280x737,724 Johnny Drives Suite 617,Jackson,78873,1975-10-18,56.79,savings,2020-08-11
+CUST-000082,William,Knapp,ystephens@example.com,001-789-811-3529x096,14388 Sean Lock,Winchester,61195,1994-04-06,49.32,savings,2022-06-28
+CUST-000083,Vincent,Cooper,webbkenneth@example.org,725-945-7387,7514 Lisa Crescent,Greenville,03461,1999-02-07,50.08,savings,2023-01-31
+CUST-000084,Erica,Martin,zacharyarnold@example.com,+1-267-536-2266,660 Jamie Terrace Apt. 918,Clinton,25006,1968-08-25,59.74,savings,2018-07-28
+CUST-000085,Daniel,Lambert,orose@example.com,+1-369-469-1557x924,34125 William Manor Apt. 966,Madison,24848,1976-04-06,47.97,checking,2021-12-23
+CUST-000086,Samantha,Arias,angelaburns@example.org,(557)890-5072,7677 Christopher Burgs Apt. 404,Burlington,29971,1979-06-22,61.19,investment,2018-04-14
+CUST-000087,Stephen,Newton,hdunn@example.net,848-358-0783,0745 Scott Crest,Greenville,31557,1958-10-29,104.22,checking,2023-12-24
+CUST-000088,Hannah,Callahan,imartin@example.org,709.658.4982,481 Sydney Turnpike Suite 042,Franklin,92438,2000-03-02,67.84,checking,2019-02-06
+CUST-000089,Jennifer,Poole,kburns@example.net,766-271-1684x577,751 Robinson Meadow,Madison,28268,1976-10-08,35.7,savings,2019-10-31
+CUST-000090,Justin,Kelley,ashleewashington@example.com,+1-600-417-0127x70632,54152 Randy Inlet Apt. 611,Riverside,00643,1959-01-19,59.53,checking,2017-05-19
+CUST-000091,Brittney,Stone,ssmith@example.com,362-771-3611,2622 Alyssa Branch Apt. 753,Oxford,82824,1992-09-29,64.92,savings,2025-10-20
+CUST-000092,Christina,Ramos,christophergarcia@example.org,001-565-665-2341,438 Julie Hill,Washington,85195,1949-01-15,50.2,savings,2025-08-01
+CUST-000093,Stephanie,Simpson,allendanielle@example.org,305.252.6965x82710,00684 Henderson Locks Apt. 889,Harrison,20513,1963-01-31,97.47,investment,2019-09-14
+CUST-000094,William,Harris,amandamyers@example.net,001-614-463-0316x17990,20275 Jackson Crossroad,Lincoln,98775,1994-10-25,36.95,investment,2019-04-16
+CUST-000095,Olivia,Wise,rogersruben@example.net,949-417-7850,41913 Bradley Wall Apt. 307,Manchester,48208,1969-09-24,57.09,checking,2018-02-07
+CUST-000096,Sarah,Mathews,pwalker@example.com,001-854-319-5180x2380,4518 Smith Flats Suite 949,Dayton,32296,1974-10-31,60.4,investment,2022-07-09
+CUST-000097,Trevor,Barton,jessicapayne@example.org,(206)803-8505,38367 Teresa Divide Suite 103,Auburn,68626,1971-08-17,62.07,checking,2025-07-23
+CUST-000098,Stephen,Adkins,wagnerdana@example.com,799-806-2344,7431 Derek Trail Apt. 212,Dayton,59426,1974-12-19,54.86,savings,2020-08-31
+CUST-000099,Amanda,Oconnell,shannonford@example.org,524-790-3521,044 Anthony Lodge Suite 883,Milford,12916,1974-09-18,66.14,checking,2024-08-22
+CUST-000100,Donald,Smith,davidcolon@example.com,+1-219-994-1013x72151,96670 Vega Extensions,Milford,46893,1959-02-17,41.04,checking,2018-06-22
+CUST-000101,Joshua,Stephenson,mendezchristina@example.net,576-287-0146x2638,578 Cooper Port Suite 642,Madison,03917,1965-09-10,55.11,checking,2018-10-17
+CUST-000102,Paula,Osborne,stokesthomas@example.com,001-493-421-3348x03965,559 Jade Knoll,Oxford,74904,1981-02-10,52.35,checking,2022-03-27
+CUST-000103,Jacob,Travis,lweaver@example.com,2107393087,52500 Brenda Divide,Dayton,15039,1998-12-07,50.48,investment,2025-03-18
+CUST-000104,Susan,Brooks,vwillis@example.com,622-667-5289x53926,09690 Carrie Valleys,Franklin,80635,1959-07-10,70.15,savings,2022-04-04
+CUST-000105,Sharon,Taylor,youngtoni@example.org,+1-215-870-4331x5410,626 Macias Keys Suite 179,Lincoln,85824,1993-05-16,34.22,savings,2018-11-10
+CUST-000106,Shannon,Lloyd,phillipslucas@example.org,952-262-1815,296 Brian Isle Apt. 368,Georgetown,95139,2003-12-01,40.84,investment,2022-01-02
+CUST-000107,Donna,Evans,williamsashley@example.com,(505)306-1497,24171 Glover Mountains,Harrison,64607,2001-12-25,45.37,checking,2019-04-03
+CUST-000108,Darlene,Hughes,nicole52@example.com,4473743490,586 Angela Ville,Lincoln,51239,1997-03-01,60.84,investment,2020-10-15
+CUST-000109,Amanda,Camacho,parmstrong@example.com,416-508-9899x2172,06163 Mary Green,Washington,42411,2002-12-26,16.74,checking,2025-09-29
+CUST-000110,Carl,Hughes,rarnold@example.net,309.398.6162x299,8564 Pena Ports,Springfield,80318,1975-05-29,59.16,savings,2018-04-29
+CUST-000111,Richard,Montgomery,vwilliams@example.net,607.945.0544,24754 Jacobs Corners,Lexington,25134,1973-06-07,99.95,checking,2025-09-26
+CUST-000112,Richard,Washington,lori82@example.org,986-228-9023x3030,345 Wagner Roads Apt. 035,Auburn,64567,1983-01-11,49.51,checking,2018-05-18
+CUST-000113,Monica,Matthews,max41@example.com,6608293333,072 Carolyn Branch,Milford,29830,1961-07-03,46.67,checking,2024-08-26
+CUST-000114,Kevin,Rasmussen,rodney65@example.com,637-648-9691x085,1545 Green Station,Salem,85890,1964-06-05,84.74,savings,2018-02-06
+CUST-000115,Kathy,Yoder,rguerrero@example.org,001-507-944-6660x9935,428 Kelly Mountains Apt. 482,Washington,89592,2002-04-12,65.56,investment,2023-02-23
+CUST-000116,Jeffrey,Walker,robert55@example.com,001-347-917-0999,168 Gutierrez Ways,Washington,20263,1954-04-04,73.77,investment,2018-08-09
+CUST-000117,Robert,Hudson,tthomas@example.org,001-917-352-5007x43292,666 Sanford Lights,Jackson,01112,1947-12-25,28.1,investment,2018-08-06
+CUST-000118,Nathan,Smith,katherine83@example.org,+1-203-635-4216x89421,8985 Barron Dale Suite 753,Washington,22112,2005-05-02,45.97,investment,2025-10-14
+CUST-000119,Richard,Perez,jasonjohnson@example.net,(215)306-4890,16761 Wells Drives,Greenville,27435,1989-05-27,57.47,checking,2022-11-27
+CUST-000120,Kevin,Stanley,cindy26@example.org,891.641.1739x34835,87375 Aaron Skyway,Greenville,12166,2002-09-27,46.98,investment,2024-12-15
+CUST-000121,Elizabeth,Hernandez,chancharles@example.net,443-274-4701,5611 Alec Dam Apt. 557,Auburn,82002,1962-07-05,56.83,checking,2023-12-07
+CUST-000122,Nathan,Cooper,moralessuzanne@example.com,(976)421-2021x6979,9027 Rodriguez Loop Suite 014,Harrison,86349,1965-05-26,60.11,savings,2023-08-25
+CUST-000123,Erica,Saunders,tiffanysantiago@example.com,489.916.3756x28900,17535 Williams Fork Suite 631,Georgetown,60675,1973-08-03,38.76,investment,2022-05-02
+CUST-000124,Christopher,Jimenez,david70@example.org,(960)788-0199x4883,37589 Moran Lakes Suite 113,Manchester,00788,1967-02-09,22.87,savings,2024-11-25
+CUST-000125,Tamara,Carter,jacqueline02@example.com,(561)949-3316,516 Sara Villages,Riverside,88599,1982-09-13,63.17,savings,2024-04-28
+CUST-000126,Shannon,Barrett,tamarasmith@example.net,4863978292,995 Barnes Rest Apt. 465,Riverside,39058,1974-02-18,58.63,checking,2017-12-08
+CUST-000127,Robert,Graves,megan85@example.net,001-383-733-9452x2885,968 Rich Manors Apt. 810,Chester,50422,1954-10-05,52.83,savings,2023-04-22
+CUST-000128,James,Christensen,tonyavega@example.org,5438805719,406 Butler Turnpike,Madison,90304,1965-04-20,28.83,investment,2022-02-14
+CUST-000129,Alexander,King,ogreer@example.net,001-459-389-3347x212,64842 Brandy Glens Apt. 572,Burlington,05736,1955-04-15,34.98,checking,2019-10-30
+CUST-000130,Brent,Randolph,tracy98@example.com,858-832-8182,3355 Carter Terrace,Greenville,81540,1979-01-10,44.94,checking,2026-07-27
+CUST-000131,Madison,Zavala,wilsonmichael@example.org,+1-799-930-5616x4840,43581 Gary Trail Apt. 133,Harrison,90338,1972-04-30,65.51,savings,2017-08-22
+CUST-000132,Amanda,Park,elucas@example.net,+1-520-675-0110x24819,7665 Perry Crest Apt. 919,Dayton,06466,1989-10-04,39.31,investment,2017-04-30
+CUST-000133,Sarah,Rodriguez,catherine47@example.com,(207)428-3268x4245,09968 Kevin Summit,Clinton,97681,2002-07-12,46.03,savings,2020-01-16
+CUST-000134,Robert,Brewer,eugenewalker@example.com,612.390.8781,39755 Emily Freeway Apt. 491,Riverside,25863,1965-08-16,51.87,savings,2021-02-09
+CUST-000135,Christina,Torres,arianadiaz@example.com,(720)653-3645x25777,129 Meagan Walks Apt. 834,Georgetown,96648,2001-06-11,40.79,savings,2017-05-14
+CUST-000136,Charles,Smith,hessbeth@example.net,808.548.8725,78816 Shaw Shore Apt. 928,Cleveland,18899,1973-09-18,29.75,investment,2018-05-24
+CUST-000137,Stacy,Hopkins,jillwebb@example.com,5377314530,7005 Jane Pike Suite 498,Arlington,75233,1956-07-22,74.62,checking,2023-02-20
+CUST-000138,Michael,Valdez,blacknicholas@example.org,665.557.7908x27231,25913 Shepherd Stravenue,Madison,15356,1975-12-10,45.92,checking,2021-05-23
+CUST-000139,Jason,Martin,cjohnson@example.org,001-492-628-0920,699 Natalie Stream,Arlington,87237,1997-05-07,74.2,savings,2026-01-28
+CUST-000140,Jay,Obrien,kdillon@example.org,(592)892-9842x57991,10388 Serrano Rest Apt. 279,Arlington,79119,1948-01-24,53.8,investment,2024-06-10
+CUST-000141,Wesley,Wilson,mhopkins@example.net,9688650863,916 Jonathan Trafficway Apt. 149,Winchester,71768,1971-05-08,54.4,investment,2018-06-29
+CUST-000142,Jenna,Clarke,meyernicholas@example.org,001-756-651-2694x486,68872 Hansen Orchard Suite 495,Greenville,92971,1970-09-08,39.03,savings,2017-12-25
+CUST-000143,Michelle,Wilson,seanlyons@example.org,838-265-8902,79611 Walker Common,Riverside,80327,1947-12-25,56.71,savings,2020-06-11
+CUST-000144,Tracey,Mendez,jennifer90@example.org,+1-477-203-8430x9883,02146 Caldwell Lodge Apt. 801,Marion,12319,1980-03-24,41.74,savings,2023-11-12
+CUST-000145,Angie,Aguilar,sylvia43@example.net,376.390.4268,1848 Benson Lane Suite 357,Salem,89838,1974-08-18,53.73,savings,2022-06-21
+CUST-000146,Anthony,Wilson,reyeskristina@example.org,+1-335-465-8804x34165,5394 Stacey Springs Apt. 733,Chester,96895,1960-11-07,71.72,savings,2019-04-04
+CUST-000147,Jermaine,Conley,eric11@example.org,+1-479-608-0759x57947,92086 Ayers Bypass Suite 627,Franklin,16277,1989-08-05,61.87,investment,2021-03-15
+CUST-000148,Hannah,Smith,nicolasgarcia@example.com,+1-942-884-3479x552,5564 White Curve,Milford,75984,1988-10-27,47.49,savings,2024-09-29
+CUST-000149,Jennifer,Brock,mchase@example.org,001-627-202-6728x8574,20347 Shannon Isle Suite 558,Lincoln,73572,2004-04-23,68.46,checking,2019-03-07
+CUST-000150,Andrew,Martinez,barbarasantos@example.net,(645)958-7716,56996 Christian Junctions,Greenville,30413,1965-05-09,47.8,savings,2023-02-18
+CUST-000151,Jennifer,Jacobs,cnelson@example.com,001-498-876-2202x3413,17800 Warren Corner,Madison,14123,1962-02-20,12.4,checking,2018-02-26
+CUST-000152,Diana,Mcclure,jerome47@example.net,(928)620-0557,82997 Mills Route Suite 578,Greenville,30271,1996-04-20,29.15,investment,2021-01-08
+CUST-000153,Michael,Green,alex82@example.com,778-507-7406x4930,663 Jennifer Rue Suite 634,Arlington,10883,1972-03-16,35.09,savings,2018-12-31
+CUST-000154,Kathy,Kent,justin84@example.com,612.924.1797,0208 Jacob Cove,Lexington,37478,1962-07-25,71.74,investment,2023-10-03
+CUST-000155,Jessica,Hall,alexisrobinson@example.com,975-470-5120x4618,6013 Wise Mills,Greenville,32897,1992-01-28,35.23,savings,2016-12-08
+CUST-000156,Steven,Wise,thomasmaldonado@example.com,520-888-1474x35031,24916 Albert Canyon Suite 925,Riverside,12229,1961-04-10,62.99,investment,2021-08-08
+CUST-000157,Gina,Morgan,browndeanna@example.net,+1-512-273-5857,2407 Hansen Plains Suite 392,Arlington,71754,1967-07-05,84.19,investment,2023-12-05
+CUST-000158,Joshua,Guerra,caseymoore@example.com,585-770-8620x959,863 Cannon Drives,Lincoln,80853,1963-06-11,50.36,investment,2020-09-13
+CUST-000159,Marc,Davis,williamssharon@example.org,9316731096,3910 Diana Village,Winchester,10981,1975-02-03,49.19,savings,2022-12-28
+CUST-000160,Michael,Paul,yshort@example.net,3943801413,633 Ashley Fall,Franklin,73694,1992-10-20,40.1,investment,2020-10-02
+CUST-000161,Daniel,Fowler,emily61@example.org,(786)785-2897,6659 Anna Forest Suite 845,Chester,59798,1973-10-18,34.17,checking,2020-07-28
+CUST-000162,Jessica,Bird,holmesvictoria@example.com,4433350488,5224 Preston Gateway,Winchester,31040,1961-09-30,34.53,savings,2019-08-10
+CUST-000163,Ashley,Carroll,jessicacummings@example.com,(379)219-4096,6613 Cynthia Roads Suite 048,Milford,05898,1965-09-20,44.41,savings,2022-04-02
+CUST-000164,Mark,Wolfe,brentdennis@example.com,399.981.3646x225,641 Shaw Trail,Harrison,91972,1953-10-26,64.32,savings,2017-12-13
+CUST-000165,Anita,Freeman,annshea@example.net,831.846.5911,3559 Kayla Extension Suite 979,Auburn,19613,1973-05-09,60.92,savings,2025-11-05
+CUST-000166,Jesus,Jennings,katherinefarrell@example.org,001-703-592-4051x4770,88487 Heather Skyway,Lincoln,02911,1969-05-01,61.24,investment,2025-08-30
+CUST-000167,Alison,Scott,campbellkristina@example.net,507-801-6451x046,7981 James Mount,Madison,73991,2003-12-19,40.51,investment,2016-10-25
+CUST-000168,John,Moreno,tracy20@example.com,+1-455-743-8404x60843,216 Robert Ports Apt. 649,Springfield,43661,1973-11-25,41.58,savings,2017-12-02
+CUST-000169,Denise,Carpenter,michelleparker@example.net,226.729.2518x81252,4742 Daniel Ferry Apt. 994,Washington,79878,1981-04-30,56.52,investment,2018-11-29
+CUST-000170,Jesse,Mcdaniel,christopher72@example.net,+1-875-226-7722x330,3331 Sara Mill Suite 573,Jackson,56541,1971-02-10,75.51,savings,2017-01-07
+CUST-000171,Jill,James,phillip99@example.net,208.517.7038x86086,6447 Roberto Ridge Apt. 827,Burlington,85186,1974-01-23,28.98,investment,2023-10-30
+CUST-000172,Daniel,Osborne,phillipmorris@example.org,(379)337-1452,751 Acosta Pass,Manchester,80726,2005-06-09,58.05,investment,2020-05-22
+CUST-000173,Oscar,Tate,ariana22@example.org,(406)544-7421,407 Foley Plains,Madison,01254,1983-11-28,43.36,investment,2021-07-15
+CUST-000174,Jay,Keller,fortiz@example.net,+1-703-284-9830x220,99451 Daniel Fall,Jackson,21647,1987-12-12,39.7,investment,2022-09-18
+CUST-000175,Heather,Larson,tammycurry@example.com,3146556168,14586 Heather Ridge Apt. 198,Chester,11992,1976-01-28,80.78,checking,2023-06-28
+CUST-000176,Sarah,Andersen,ronald54@example.net,001-995-429-9787,430 Andrew Road,Lincoln,15957,1992-01-24,70.47,savings,2018-09-04
+CUST-000177,Christina,Perry,cookann@example.net,703.244.1448,556 Marilyn Fields,Salem,43822,1998-02-19,52.95,checking,2025-10-29
+CUST-000178,Timothy,Wells,brewertimothy@example.net,285.576.0849x588,1240 Terrell Road Apt. 996,Salem,25061,1983-02-06,42.06,savings,2025-04-01
+CUST-000179,Karen,Thornton,jennifer46@example.org,335.974.3842x1503,8235 Oconnor Pine,Lexington,41180,1994-06-18,53.42,savings,2018-01-13
+CUST-000180,Monica,Short,jamiejohnson@example.com,001-681-204-0915x701,353 Justin Place Suite 714,Jackson,20072,1955-07-12,45.28,investment,2017-09-30
+CUST-000181,Susan,Castro,clarkmichael@example.com,224-493-2149x587,0160 Ronald Fall,Georgetown,92864,1983-02-28,47.08,savings,2022-07-13
+CUST-000182,Mary,Lyons,larry38@example.org,001-679-721-7174x77332,55770 Thomas Keys Suite 724,Salem,46194,1983-09-07,35.53,checking,2017-11-16
+CUST-000183,Dakota,Roth,nguyendebra@example.com,+1-476-996-3938,53966 Stephens Freeway Apt. 197,Jackson,15485,1982-11-29,37.9,checking,2021-03-26
+CUST-000184,Angela,Short,kylesullivan@example.net,296-457-0132,8469 Gonzalez Springs,Cleveland,41998,1964-06-27,20.71,savings,2024-07-18
+CUST-000185,Erin,Sellers,wrobbins@example.org,001-209-286-2405,40369 Garrett Station Suite 666,Salem,71950,1958-11-29,66.96,investment,2018-05-03
+CUST-000186,Don,Peters,mary24@example.net,(320)410-2762,9692 Hicks Plaza Suite 653,Burlington,24853,1972-05-13,83.74,checking,2016-09-04
+CUST-000187,Tyrone,Simon,robert89@example.com,4096751971,189 John Roads Apt. 894,Auburn,80853,1948-12-05,50.15,savings,2020-01-14
+CUST-000188,Kimberly,Harrison,vberry@example.com,(444)220-9494x079,904 Miller Parkways Apt. 442,Clinton,81214,1963-04-22,79.13,savings,2025-03-07
+CUST-000189,Alexis,Rodriguez,reneestevenson@example.net,452.943.7280x512,3723 Brown Greens Apt. 027,Lincoln,52765,1975-08-10,31.17,savings,2021-05-13
+CUST-000190,Stacy,Nielsen,noahthornton@example.com,728-860-4765x801,4414 Murray Spring Apt. 938,Cleveland,44725,1988-04-19,46.27,savings,2026-07-15
+CUST-000191,Lawrence,Smith,deckeralexander@example.org,517.353.4430x09109,92692 Heather Glen,Lexington,39110,1975-01-09,62.57,savings,2025-12-18
+CUST-000192,Danielle,Livingston,kayla54@example.org,001-514-806-6504x42717,712 Robinson Row,Auburn,14427,2003-02-06,20.96,savings,2023-10-04
+CUST-000193,Dakota,Jones,kimberly07@example.org,+1-800-864-2569x0877,306 Martinez Plain,Madison,47545,1966-08-11,49.32,savings,2019-08-19
+CUST-000194,Brian,Shea,diazmelissa@example.com,674-832-8063,571 Moss Dam,Cleveland,05180,1957-10-08,32.99,checking,2023-10-20
+CUST-000195,Brittany,Burns,sparksdawn@example.com,+1-370-505-0506,829 Sandy Camp Apt. 707,Jackson,81552,1948-06-27,45.56,savings,2023-08-13
+CUST-000196,David,Jackson,conwaylori@example.org,592.891.1179x931,651 Marc Underpass Apt. 092,Jackson,44476,1949-08-02,75.63,checking,2019-05-05
+CUST-000197,Katherine,Jackson,angela73@example.net,2212962071,94672 Douglas Groves,Fairview,69063,1973-12-24,27.95,checking,2018-12-29
+CUST-000198,Greg,Holt,jennifersalazar@example.org,+1-545-960-8331x8195,0312 Jimenez Estate,Fairview,88337,2003-09-25,58.75,savings,2017-02-21
+CUST-000199,Michael,Clark,matthew70@example.org,001-708-822-0781x1379,531 Perez Freeway,Chester,97199,1971-08-07,54.81,checking,2018-08-08
+CUST-000200,Patricia,Jones,bbrown@example.org,797.626.5273,2090 Taylor Walk,Salem,61519,1974-06-30,46.17,savings,2018-04-25
+CUST-000201,Matthew,Tanner,kristinelittle@example.net,(998)931-6873,63356 Patricia Ramp Apt. 906,Harrison,06297,1948-02-16,55.97,savings,2021-04-23
+CUST-000202,Kayla,Johnson,zmendoza@example.net,477-731-8063,10742 Hodge Summit Apt. 772,Arlington,92662,1971-02-21,58.53,savings,2024-07-02
+CUST-000203,Mitchell,Marshall,daltonchad@example.net,780-246-4989x31950,5790 Richardson Rue,Auburn,73742,1990-01-04,44.74,savings,2022-03-18
+CUST-000204,Kim,Taylor,john17@example.net,001-993-935-5486x40155,8847 Marsh Square,Oxford,09102,1957-06-21,51.14,investment,2025-06-11
+CUST-000205,Christopher,Myers,keithfrye@example.org,(641)827-2380,5670 Lopez Brooks,Harrison,30952,1998-03-16,80.7,investment,2021-10-19
+CUST-000206,Matthew,Lane,todd88@example.com,449.724.2437x540,2928 White Extensions Apt. 231,Oxford,05894,2008-03-18,53.79,savings,2022-05-07
+CUST-000207,Scott,Wood,annajohnson@example.com,(425)978-2841x067,08854 Kemp Throughway Apt. 975,Springfield,90828,1952-09-05,61.82,savings,2021-05-23
+CUST-000208,Billy,Gregory,parkerrichard@example.org,251.350.9398x343,186 Tracy Rapids Apt. 562,Arlington,94343,1999-05-24,45.55,investment,2020-04-19
+CUST-000209,Nathan,Mitchell,kyle78@example.org,376.474.2662,7851 Davis Lodge,Winchester,84230,2003-03-19,47.41,checking,2020-09-30
+CUST-000210,Angela,Page,jamescollier@example.com,+1-570-249-4787,44714 White Spurs,Manchester,85014,1961-01-08,23.22,checking,2017-10-18
+CUST-000211,Joshua,Gamble,georgemichael@example.com,001-664-471-5890,57252 Joseph Manor,Fairview,83895,2003-01-25,46.65,savings,2020-02-29
+CUST-000212,Keith,Moreno,palmerkatie@example.org,001-419-228-5544x51895,457 Peterson Estates,Lincoln,13925,1959-05-01,51.43,investment,2021-08-20
+CUST-000213,Marie,Pope,butlersabrina@example.org,(707)454-5279,13223 Martinez Curve Apt. 611,Oxford,02965,1994-05-30,45.36,checking,2024-03-05
+CUST-000214,Brad,Rodriguez,harrisonrebekah@example.org,440-711-9393,24955 Melissa Tunnel,Lexington,95994,1984-03-21,21.64,investment,2021-08-26
+CUST-000215,Carlos,Weiss,ricejennifer@example.com,(480)913-8759,56638 Rick Trace,Springfield,41694,1953-05-23,66.75,investment,2017-09-14
+CUST-000216,Derek,Farmer,angela01@example.com,516.347.9473x8646,520 Powers Locks Suite 811,Springfield,19292,1970-06-24,38.91,checking,2023-07-21
+CUST-000217,Tiffany,Figueroa,calvinhester@example.com,696.813.6749,9678 Hernandez Motorway Apt. 147,Jackson,65679,1960-02-23,22.86,checking,2026-01-10
+CUST-000218,Anthony,Rojas,jimenezanthony@example.org,(695)924-9911x8773,485 Stephanie Bypass Suite 167,Riverside,41730,1999-05-03,63.06,savings,2021-01-10
+CUST-000219,Barry,Thompson,nicole27@example.com,(946)971-9788,064 Garza Lane,Oxford,81364,1988-03-22,42.28,savings,2024-04-07
+CUST-000220,Justin,Brown,andersonmichael@example.net,001-705-261-6556,34911 Wilson Extension,Cleveland,03084,1979-07-11,64.61,savings,2016-12-22
+CUST-000221,Diane,Henderson,sadams@example.com,001-905-369-6591,7852 Cox Mews,Fairview,26945,1976-11-29,50.36,savings,2025-01-28
+CUST-000222,Kristin,Pittman,karlwilliams@example.net,(839)519-1954x1987,48468 Gonzalez Locks Suite 987,Franklin,88523,1993-09-13,21.67,savings,2018-05-29
+CUST-000223,Andrew,Warner,barbaralewis@example.net,548.496.9083x572,6513 Adams Heights Apt. 493,Springfield,53698,1960-08-17,49.97,savings,2018-02-06
+CUST-000224,Anthony,Robles,steven86@example.com,+1-203-224-2044x8207,9416 Powers Course,Salem,52522,2005-01-09,45.09,investment,2023-11-05
+CUST-000225,Donald,Rodriguez,boydmaria@example.net,571-439-1559x636,34764 Tracy Landing,Franklin,92201,2005-05-16,54.25,checking,2019-10-08
+CUST-000226,Rodney,Vega,natasha25@example.com,001-754-309-0034x864,6064 Davis View,Salem,99678,1960-06-09,28.63,checking,2018-09-15
+CUST-000227,Pamela,Moon,natasha60@example.com,377-765-6124,857 Kathleen Row Apt. 720,Springfield,53016,1958-03-17,41.99,savings,2019-08-29
+CUST-000228,Barbara,Rodriguez,zacharybooker@example.net,001-329-865-7724x29543,66930 Sandra Rue Apt. 173,Lincoln,34813,1989-10-13,42.35,checking,2018-04-16
+CUST-000229,Richard,Patterson,edward52@example.net,508-667-7133,762 Gates Rapid Apt. 436,Dayton,24142,1971-05-05,65.88,savings,2018-01-23
+CUST-000230,Kelly,Green,xsolomon@example.net,+1-371-207-2563x66941,3759 Adam Parkways,Cleveland,81720,1969-08-08,44.59,savings,2026-05-18
+CUST-000231,Emily,Anderson,carpenterjorge@example.net,457.921.5862x4150,564 Austin Trace Suite 856,Madison,22125,1965-06-25,19.61,investment,2026-07-20
+CUST-000232,Kathryn,Hernandez,jbrown@example.org,920.274.2761,8777 Meghan Way Apt. 151,Greenville,27204,2000-04-19,26.15,checking,2018-05-29
+CUST-000233,Gary,Hicks,anna93@example.net,7892261371,165 Mary Drives Apt. 177,Washington,60014,1985-03-11,52.66,savings,2019-04-18
+CUST-000234,Diane,Rivera,douglasstephanie@example.com,001-892-630-4501x8961,61032 Chan Haven,Dayton,85326,1993-01-06,52.15,investment,2023-02-22
+CUST-000235,David,Henry,tfitzgerald@example.net,+1-825-315-8377x674,9266 Billy Junctions Suite 327,Oxford,69612,1985-04-07,31.07,checking,2021-11-06
+CUST-000236,Kelly,Kim,ievans@example.net,838-864-9081x0818,9454 Kayla Brook,Dayton,15434,1992-04-04,64.37,investment,2021-03-25
+CUST-000237,Kristi,Cameron,millernancy@example.com,897-279-4523x21941,1027 Holt Ways,Jackson,86709,2006-06-14,51.04,savings,2022-08-15
+CUST-000238,Tommy,Montgomery,hannah64@example.org,(920)431-0303,8314 Hernandez Manors,Lincoln,03360,1952-12-09,73.16,investment,2025-08-17
+CUST-000239,Joanne,Wallace,cruiz@example.net,834.896.0501,998 Johnson Locks Suite 899,Greenville,89455,2002-08-16,55.55,checking,2025-04-12
+CUST-000240,Jesse,Brown,hendersonleslie@example.org,567-917-9576x024,3839 Dorsey Walk Suite 246,Marion,55139,1998-02-02,31.43,investment,2023-05-02
+CUST-000241,Jessica,Flynn,christycampbell@example.net,872-923-2971,38005 Kelly Estate Apt. 801,Arlington,44768,1972-09-25,47.01,investment,2022-10-11
+CUST-000242,David,Walker,victoria50@example.net,328-291-0771x199,13524 Gill Parks,Chester,96518,2000-06-11,45.18,checking,2018-02-22
+CUST-000243,Michael,Fuentes,allisonscott@example.com,001-403-875-4821x45653,66678 Acevedo Mills,Arlington,19583,1994-02-14,53.11,savings,2023-10-12
+CUST-000244,Zachary,Jones,leroy26@example.org,(202)690-8466x8455,673 Terry Valleys,Jackson,85534,1971-02-02,43.63,savings,2018-07-29
+CUST-000245,Kevin,Johnson,peter28@example.net,631-588-4852x0089,681 Mckenzie Green Suite 101,Harrison,59317,1964-05-17,55.35,investment,2023-12-21
+CUST-000246,Shawn,Bird,michaelmitchell@example.net,001-526-783-1589,26611 Roger Curve Suite 371,Jackson,48905,1988-03-30,57.66,savings,2020-08-18
+CUST-000247,Angelica,Maxwell,breanna67@example.net,962.928.2772x8813,285 Carolyn Lodge,Lexington,14962,1953-03-21,56.67,savings,2022-04-27
+CUST-000248,Billy,Hernandez,kevin54@example.com,302.729.6044x3270,67949 Mccullough Tunnel,Burlington,49955,1975-07-18,32.59,savings,2023-10-21
+CUST-000249,Catherine,Gill,qgill@example.com,(751)299-6636,412 Ashley Underpass Suite 818,Winchester,11662,1957-09-22,38.94,checking,2022-10-16
+CUST-000250,Barbara,Brown,karenshaw@example.org,382-704-3397,070 Kim Mall Apt. 856,Franklin,34209,1951-05-04,42.74,savings,2026-05-27
+CUST-000251,Amber,Mitchell,jonathandavis@example.com,(720)695-2004x61526,03399 Trevor Terrace Suite 140,Burlington,42225,1974-11-21,50.65,investment,2020-09-03
+CUST-000252,Timothy,Russell,robinsmith@example.net,001-313-582-4967,8238 Ali Point,Lincoln,59711,1948-03-27,66.76,savings,2024-09-23
+CUST-000253,Susan,Oliver,aaronmahoney@example.com,394-665-3984x028,1284 Clark Parkways,Chester,42221,2001-04-17,78.79,checking,2026-01-21
+CUST-000254,Cynthia,Petty,qnelson@example.com,937-895-0209x70026,180 Chambers Knoll,Manchester,49833,1997-09-25,55.25,checking,2020-03-07
+CUST-000255,Gregory,Tate,martinezmitchell@example.org,903.704.5319x433,7930 Tracey Route,Marion,52416,1952-08-04,54.05,investment,2019-05-18
+CUST-000256,Vincent,Jackson,donnaknight@example.net,+1-692-519-2124x938,894 Smith Meadow,Harrison,84513,1988-01-04,36.93,savings,2023-02-07
+CUST-000257,Melissa,Morris,rhill@example.net,275.880.3046x875,1903 Rosario Gateway,Auburn,26306,1955-12-19,86.41,checking,2019-09-17
+CUST-000258,Connie,Davis,breynolds@example.net,+1-954-331-7350x5831,110 Nicholas Vista Apt. 207,Salem,07682,1964-08-06,52.33,investment,2022-11-12
+CUST-000259,Cameron,Byrd,phillipspatrick@example.org,+1-363-799-0767x699,8593 Curtis Ranch,Arlington,93994,1949-11-10,24.79,investment,2024-06-30
+CUST-000260,James,Berry,michael79@example.com,(732)600-2496,74954 Cordova Path,Manchester,77366,1987-01-14,51.81,investment,2018-01-18
+CUST-000261,John,Fuentes,hendersonjames@example.org,+1-631-853-7795x9959,17073 Danielle Square Apt. 793,Harrison,31829,1975-11-22,23.42,checking,2024-04-14
+CUST-000262,Lisa,Aguirre,lharris@example.org,(701)250-8124x739,34234 Matthew Plaza,Washington,32740,1956-11-07,51.53,checking,2016-10-25
+CUST-000263,Megan,Lozano,deckerderrick@example.net,853-347-3552,23386 Stewart Meadow,Oxford,83881,1961-01-04,45.41,investment,2017-01-23
+CUST-000264,Christina,Lopez,kristine53@example.org,+1-842-789-7317x9128,725 Fox Orchard Suite 749,Marion,53053,1985-10-21,38.02,savings,2024-07-05
+CUST-000265,Debra,Clark,shannonyoung@example.org,766-592-5481x2147,8956 Mcdonald Lodge,Auburn,48671,1996-04-15,34.5,investment,2019-10-10
+CUST-000266,Patrick,White,josephjones@example.org,588-781-4311x1508,544 Lee Rapids,Auburn,18571,2008-07-03,46.95,savings,2024-02-16
+CUST-000267,Jodi,Gaines,carrillojuan@example.com,(969)907-8263x3373,53663 Cole Point Apt. 529,Marion,17323,1964-11-08,46.52,savings,2023-12-25
+CUST-000268,Vincent,Hopkins,matthew66@example.net,001-868-845-9090x22599,1863 Rodriguez Port,Salem,59684,1985-11-11,38.6,checking,2019-08-25
+CUST-000269,George,Leonard,antoniobarker@example.com,3239164334,8025 Myers Creek,Winchester,17427,1979-05-27,52.67,investment,2021-05-21
+CUST-000270,Casey,Friedman,davidharris@example.com,001-272-499-4938x743,69385 Stevens Ports Apt. 147,Cleveland,45954,1989-09-21,57.08,investment,2023-09-20
+CUST-000271,Kenneth,Austin,robertwhite@example.net,001-667-362-9160x3248,6815 Karina Parkways,Madison,43232,1971-06-10,58.82,savings,2018-04-02
+CUST-000272,Jared,Williams,jonesheather@example.net,965.963.6004x125,18372 Hoover Ville Apt. 209,Winchester,13675,1956-10-08,72.93,investment,2017-11-04
+CUST-000273,Judith,Jackson,byrderic@example.com,(830)683-7081,90063 Nicholas Garden Apt. 106,Cleveland,04163,2007-12-06,37.91,checking,2019-12-22
+CUST-000274,James,Caldwell,susandavis@example.net,(520)568-1558,1331 Morris Bridge Suite 506,Georgetown,28388,1974-07-04,48.11,savings,2017-04-06
+CUST-000275,Lisa,Santos,bradley36@example.com,001-497-718-9241x95625,50997 Dixon Streets Apt. 890,Salem,30989,1946-12-10,41.83,investment,2024-03-11
+CUST-000276,David,Young,ntodd@example.org,2255743263,524 Schneider Trace Apt. 864,Auburn,98877,1947-02-05,59.76,checking,2025-01-26
+CUST-000277,Mark,Allen,knoxelizabeth@example.org,+1-439-568-5270x17130,29833 Ronald Mountain,Fairview,41325,1955-12-12,54.82,savings,2018-07-30
+CUST-000278,Roger,Obrien,justin73@example.com,915.266.2776x8962,1498 Angela Extensions Suite 674,Harrison,59955,1963-06-13,51.42,checking,2022-03-23
+CUST-000279,Timothy,Cook,mgonzalez@example.org,9856766656,0169 James Mews,Jackson,33958,1994-03-12,61.81,checking,2024-02-13
+CUST-000280,Michael,Fletcher,heather66@example.net,937.405.0249,99201 Dawn Lights Suite 918,Dayton,25250,2000-10-16,37.18,savings,2018-04-05
+CUST-000281,Ronald,Holt,uwillis@example.com,001-311-395-2436x40270,646 Gregory Ferry Apt. 372,Manchester,66379,2005-05-11,36.43,checking,2021-02-09
+CUST-000282,Lisa,Lopez,bradylisa@example.org,367-791-2141x614,377 Albert Grove,Fairview,99040,2005-10-13,51.83,savings,2023-04-04
+CUST-000283,Kristina,Williams,alexasmith@example.net,847.275.9655x55356,1076 Anthony Crossing Suite 357,Greenville,81549,1988-10-31,56.64,checking,2025-04-20
+CUST-000284,Zachary,Keller,andersensusan@example.com,3507573976,1649 Jennifer Ways Apt. 271,Dayton,39999,1998-01-16,36.35,investment,2026-07-26
+CUST-000285,Vanessa,Owens,efriedman@example.net,+1-433-732-1160,3471 Sandra Roads Suite 153,Lincoln,75994,1993-11-19,58.05,investment,2022-08-11
+CUST-000286,Dawn,Bennett,yvaldez@example.net,(733)441-4111x59319,9040 Melanie Manors Suite 528,Washington,87499,1983-07-04,52.82,checking,2018-10-28
+CUST-000287,Randall,Medina,sstewart@example.org,972.594.2095x4814,6052 Melanie Valleys Apt. 027,Salem,95842,1970-04-15,68.76,investment,2026-06-12
+CUST-000288,Donna,Allison,kelleymatthew@example.net,756.261.8443x8612,2927 Carter Drive Apt. 330,Lexington,47978,1991-05-05,67.28,investment,2022-05-11
+CUST-000289,Erika,Hinton,nicholasmcgrath@example.net,(701)857-2018,630 John Overpass,Salem,40175,1988-12-12,52.36,savings,2026-02-23
+CUST-000290,Denise,Bennett,stricklandmichelle@example.net,(947)650-1111x7830,267 Evans Crossroad,Washington,13534,1966-02-03,35.51,investment,2023-09-28
+CUST-000291,Michelle,Medina,bhess@example.com,+1-588-371-8981,208 Mcbride Crossing,Arlington,05631,1953-09-20,42.87,investment,2018-08-31
+CUST-000292,Evan,Hart,millerdavid@example.com,(482)960-3408x487,598 Hailey Shore Apt. 303,Winchester,19069,1964-06-26,69.64,checking,2024-12-05
+CUST-000293,Susan,Guzman,brittanyramirez@example.net,+1-861-484-4626x714,43598 Robert Drives,Cleveland,41966,2008-02-17,52.71,investment,2020-12-09
+CUST-000294,Anthony,Munoz,nelsonamanda@example.net,+1-561-651-5542,63611 Alisha Wells,Franklin,40681,1982-09-13,59.97,checking,2024-09-02
+CUST-000295,Cody,Bailey,andrea91@example.org,(956)425-8896,82226 Brown Stream Suite 396,Salem,93140,1974-06-12,52.73,checking,2020-12-28
+CUST-000296,Michael,Harrison,joshua68@example.net,541.346.5111,014 Stokes Branch,Arlington,56073,1988-04-04,55.26,savings,2025-12-05
+CUST-000297,Derek,Jimenez,sullivanchristina@example.net,9684538909,15285 Roberto Light,Harrison,22846,1969-02-13,39.65,checking,2017-09-25
+CUST-000298,Robin,Wright,robertstimothy@example.com,909.263.4807,97545 Adam Stravenue Apt. 650,Washington,13783,1972-09-29,43.08,investment,2018-07-30
+CUST-000299,Allison,Roach,fmartinez@example.org,(443)676-5456,7225 Smith Ways,Washington,93459,1958-02-08,45.2,investment,2018-07-01
+CUST-000300,Billy,Foster,rachel23@example.com,+1-341-267-8725x68621,58030 Jordan Ranch,Salem,97157,1946-02-09,34.21,savings,2021-05-28
+CUST-000301,Justin,Miller,jwright@example.net,523.441.4363x71892,26043 Ronald Ridges,Jackson,26668,1951-05-02,27.12,checking,2017-02-10
+CUST-000302,Richard,Torres,jeffreysimmons@example.org,260.241.4545x63502,534 Ramirez Rest,Arlington,13708,1972-10-01,35.52,checking,2019-02-15
+CUST-000303,Travis,Cook,davisalexander@example.net,001-325-355-9895x34396,910 James Mission,Auburn,13429,1950-04-28,51.34,savings,2022-01-25
+CUST-000304,Matthew,Swanson,amandahernandez@example.org,868.348.5571,8802 Horton Curve Suite 090,Clinton,91439,1957-08-02,58.41,checking,2024-09-30
+CUST-000305,Troy,Patel,martinkaren@example.com,+1-566-294-3202,844 Kenneth Grove Apt. 230,Riverside,70436,1960-08-11,56.48,investment,2016-12-28
+CUST-000306,Eddie,Stephenson,josephgibbs@example.net,338.610.5955,9450 Madison Forges,Dayton,96246,2006-05-31,61.11,savings,2018-05-15
+CUST-000307,Teresa,Medina,sharphailey@example.net,998-537-3543x962,2717 Stephen Via Apt. 397,Burlington,96115,1956-12-20,66.27,investment,2019-06-04
+CUST-000308,Kyle,Mcclure,mmcdaniel@example.org,(216)337-6182,0100 John Corner Suite 290,Oxford,01732,2005-12-07,66.14,savings,2017-08-31
+CUST-000309,Jill,Morgan,harristimothy@example.net,224.257.2308x481,418 Thomas Fork,Milford,03646,1959-11-20,34.41,investment,2020-06-15
+CUST-000310,Michael,Mitchell,tmcdaniel@example.org,221.431.4519x5151,8592 Hernandez Shores,Riverside,90568,1964-08-08,46.0,savings,2024-10-11
+CUST-000311,Michael,Garcia,qstanley@example.net,302-325-2677,421 Cooley Falls Suite 557,Winchester,56053,1975-12-04,45.0,checking,2026-05-01
+CUST-000312,Carolyn,Fields,leahvaldez@example.org,(868)578-8788x3619,50305 Rosario Creek,Salem,08309,2003-01-08,60.23,investment,2020-03-18
+CUST-000313,Melinda,Osborne,kenneththomas@example.net,(333)930-2126x06501,25213 Alexander Village,Dayton,55091,1955-01-14,47.38,investment,2018-06-05
+CUST-000314,Julia,Adkins,theodore57@example.net,001-804-812-0092x820,498 Fletcher Manors Apt. 418,Fairview,49988,2007-03-20,48.4,investment,2017-11-08
+CUST-000315,Jason,Montgomery,philipcarson@example.net,+1-617-375-6620x563,59503 Martin Coves,Riverside,09062,1958-12-15,50.77,investment,2016-09-17
+CUST-000316,Renee,Lopez,daniellejohnson@example.com,399-609-7005,4683 Walton Stream,Jackson,47141,2006-12-16,40.72,savings,2023-08-18
+CUST-000317,Connor,Russell,shawkimberly@example.org,001-367-390-4227,22889 West Curve,Fairview,44937,1963-12-05,58.31,investment,2022-11-02
+CUST-000318,Shelby,Williams,nallen@example.net,329-971-0248,5242 Joshua Lakes,Manchester,46817,1951-03-24,68.09,checking,2018-05-24
+CUST-000319,Kelsey,Scott,wgood@example.com,+1-721-797-0546x6927,68740 Joyce Gardens Apt. 214,Manchester,49760,1955-07-28,42.2,investment,2020-08-05
+CUST-000320,Charles,Price,wcaldwell@example.com,387.711.2166x365,737 Joshua Camp Apt. 723,Greenville,42468,1981-05-27,61.03,checking,2026-06-25
+CUST-000321,Kim,Brown,kristine73@example.org,606.844.2121,7683 White Center,Chester,12617,2001-12-26,35.09,investment,2020-11-20
+CUST-000322,Tabitha,Phillips,michaelbarnes@example.com,+1-526-359-6089,5027 Victor Island,Oxford,15391,1995-07-03,59.25,investment,2023-05-05
+CUST-000323,Jose,Bowen,iharding@example.net,791.503.3682x963,905 Smith Inlet,Riverside,66310,1997-03-16,37.49,savings,2017-11-06
+CUST-000324,Victor,Duarte,wjenkins@example.net,(885)612-7652x89286,491 Linda Cove Apt. 096,Greenville,14089,1976-11-16,53.65,savings,2024-02-14
+CUST-000325,Sara,Garcia,zgordon@example.org,+1-846-833-7861x37157,3844 Parker Underpass,Milford,54858,1988-01-09,50.33,investment,2016-08-23
+CUST-000326,Regina,Johnson,hernandeznicholas@example.net,001-295-852-9638x6396,626 Holmes Mews,Burlington,30774,1951-11-17,49.36,savings,2024-08-12
+CUST-000327,William,Welch,ocameron@example.com,+1-425-231-1060,602 Walters Tunnel,Riverside,47440,1957-05-10,55.43,savings,2023-02-16
+CUST-000328,Jeffrey,Lee,jessicaroman@example.com,001-440-641-2091x17911,11753 Garcia Underpass Apt. 617,Jackson,82510,1950-05-31,63.14,savings,2023-06-23
+CUST-000329,Nicholas,Edwards,lstokes@example.com,2294901557,39080 Javier Lakes Apt. 305,Cleveland,18662,1959-06-13,61.21,checking,2023-11-18
+CUST-000330,Shelby,Adams,fgonzalez@example.com,001-684-877-6863x423,942 Stephanie Oval,Washington,57316,2001-03-23,53.77,savings,2020-11-02
+CUST-000331,Julie,Cabrera,lawsonruben@example.net,(751)872-0849x649,25625 Charles Shoals,Harrison,49215,1969-01-14,46.39,investment,2024-05-25
+CUST-000332,David,Flores,lovejason@example.net,338-816-4938x31849,5330 Jimenez Harbor Suite 117,Lexington,22932,1983-06-30,50.35,checking,2022-07-07
+CUST-000333,Joel,Smith,schneidermelissa@example.org,342.860.8805x017,5561 Snyder Causeway Suite 477,Harrison,84530,2006-07-15,60.33,investment,2017-10-25
+CUST-000334,Nathaniel,Williamson,walkermargaret@example.org,256-232-1358,10414 Watts Turnpike Suite 422,Arlington,76975,1974-08-18,65.92,checking,2017-11-12
+CUST-000335,Michelle,Mullins,qwalsh@example.org,783.597.7457x31441,117 Jason Skyway,Salem,28830,1975-02-05,83.1,savings,2020-06-14
+CUST-000336,Tony,Peterson,kathleen47@example.net,(581)823-5679,46249 Dylan Wells,Greenville,14548,1992-07-16,48.39,investment,2019-01-03
+CUST-000337,Patricia,Lopez,alvarezalyssa@example.com,718-215-6326x868,5106 Lee Field Suite 294,Clinton,69911,1983-11-15,26.18,investment,2021-10-15
+CUST-000338,Daniel,Williams,susanrobinson@example.org,8948318143,34732 Michael Heights Suite 012,Harrison,66461,2002-10-17,50.24,savings,2022-10-28
+CUST-000339,Jocelyn,Phelps,georgemaldonado@example.org,(457)620-7650,09579 Tracy Gateway,Arlington,62441,1952-06-30,71.33,checking,2024-10-16
+CUST-000340,Ashley,Mooney,aliciajackson@example.org,001-211-745-7758x47457,589 Rodriguez Spur Apt. 263,Burlington,86925,2008-03-25,13.79,investment,2020-03-04
+CUST-000341,Anthony,Lane,vhoward@example.org,761.748.7824,644 Blake Pike Suite 916,Clinton,60142,1981-04-21,24.79,investment,2024-07-12
+CUST-000342,Michael,Rodriguez,portergina@example.com,+1-228-549-8247x41407,107 Smith Knoll Apt. 042,Winchester,46404,2000-12-18,72.62,checking,2024-06-15
+CUST-000343,Wayne,Mullen,stephaniereeves@example.org,001-836-391-4307x5366,9429 Shelton Islands Apt. 342,Franklin,55067,1980-07-10,45.65,savings,2019-08-12
+CUST-000344,Christopher,Knight,ygardner@example.com,828-975-8575,7080 Davis Dam Suite 398,Chester,49405,1953-08-15,76.14,investment,2022-01-13
+CUST-000345,Ariana,Carter,qmartinez@example.org,987.701.0415x914,98038 Anna Park,Fairview,18379,1959-09-08,55.25,savings,2023-05-12
+CUST-000346,Melissa,Turner,jennifer07@example.net,001-331-910-2918x133,760 Kevin Orchard,Dayton,24624,1997-04-13,38.95,investment,2025-01-07
+CUST-000347,Amy,Underwood,nvillarreal@example.org,(320)922-3288x37744,466 Steven Via Suite 204,Lincoln,60411,1953-03-04,41.51,investment,2020-06-30
+CUST-000348,Beverly,Johnson,wwilliams@example.org,374.402.5883x586,9572 Glover Shoals,Manchester,40206,2003-10-14,50.55,savings,2017-04-14
+CUST-000349,Mary,Webb,lobrien@example.net,001-388-242-5995x996,231 Victor Springs,Chester,62945,1965-12-29,32.21,savings,2018-12-01
+CUST-000350,Kelsey,Stark,danielgilmore@example.net,(461)709-4101x7590,762 James Overpass,Chester,57846,1988-05-15,43.98,checking,2018-11-09
+CUST-000351,Judy,Hamilton,christopherjohnson@example.net,330-720-5698,873 Ashley Mountains,Harrison,66148,1967-10-15,51.04,savings,2022-10-15
+CUST-000352,Angelica,Taylor,gonzalescolleen@example.org,001-212-784-1173,44651 Tammy Club,Riverside,70548,1981-11-07,64.7,savings,2025-02-18
+CUST-000353,Sarah,Porter,imontgomery@example.net,597-740-0564,38503 Jones Port,Winchester,80455,1989-11-24,17.29,savings,2024-04-04
+CUST-000354,Austin,Zavala,ngeorge@example.org,+1-572-740-1078,4300 Kim Valleys Apt. 896,Oxford,89884,1988-09-02,55.61,investment,2016-10-13
+CUST-000355,Timothy,Hughes,bdominguez@example.net,(582)317-1955x35603,68900 Lisa Club,Jackson,07926,1953-08-02,67.42,checking,2018-05-29
+CUST-000356,Bradley,Bailey,whitneyanderson@example.com,611.514.8375x3745,8810 Mccullough Squares Suite 413,Clinton,18475,1998-08-13,47.89,investment,2021-10-24
+CUST-000357,Kevin,Tran,watsonlisa@example.org,6378710704,04967 Michelle Lights Suite 033,Dayton,50220,1957-03-22,46.6,savings,2020-11-29
+CUST-000358,Brett,Torres,sharon95@example.com,001-993-805-9660x18648,67320 Marsh Harbor Apt. 384,Greenville,44742,1981-08-01,56.0,investment,2016-12-27
+CUST-000359,Joshua,Adams,kimberly90@example.org,995-542-7707x0705,91498 Ashley Mill Apt. 444,Burlington,65372,1953-08-14,58.33,investment,2022-11-27
+CUST-000360,Dylan,Williamson,halldiamond@example.org,+1-287-595-0830x44058,18718 Joel Islands Suite 616,Clinton,37605,1954-08-14,50.81,checking,2019-11-13
+CUST-000361,Kristin,Rogers,xmerritt@example.com,790-725-0429x0193,9026 Stephanie Fork,Manchester,74609,1977-04-28,52.32,investment,2022-05-07
+CUST-000362,Amy,Barnes,abbottallison@example.org,+1-578-787-5439x435,5137 Cox Knoll,Harrison,73961,1977-06-17,38.46,savings,2025-10-01
+CUST-000363,Denise,Jacobs,ohartman@example.net,(783)769-2944,66829 Chen Trail,Jackson,26466,2002-04-18,61.72,investment,2025-05-14
+CUST-000364,Alexis,Martinez,kathy71@example.org,8607212886,8341 Merritt Junction,Auburn,78027,1983-12-16,56.47,savings,2017-09-05
+CUST-000365,Jennifer,Jones,stephanie67@example.net,(847)722-9812x09957,89413 Snyder Causeway Suite 456,Chester,42257,1993-04-25,28.08,savings,2026-02-20
+CUST-000366,Bobby,Landry,russellramirez@example.net,315-542-1447x73244,13882 Carmen Canyon Apt. 070,Auburn,48937,1958-05-27,27.58,checking,2026-01-08
+CUST-000367,Ashley,Dennis,mariahphillips@example.org,001-517-367-4124x151,85478 Jasmine Island Apt. 618,Lexington,42119,1957-08-07,69.26,savings,2022-03-08
+CUST-000368,Mary,Garrett,sanchezbrenda@example.org,+1-234-872-7274x23183,8932 Robert Greens,Salem,80897,1969-07-24,58.83,investment,2022-06-10
+CUST-000369,Dana,Washington,nataliepittman@example.com,+1-977-769-5874x13146,612 Huber Shore,Franklin,15382,1967-07-03,43.75,investment,2020-08-01
+CUST-000370,David,Khan,rburke@example.org,6447836085,7664 Joseph Stream Apt. 504,Harrison,59173,1971-06-04,52.75,checking,2022-04-30
+CUST-000371,Garrett,Harris,gouldchristina@example.com,(398)200-6155,8328 Heath Forks,Burlington,38536,1996-02-01,56.35,checking,2025-09-16
+CUST-000372,Martin,Lewis,shelbyjohnson@example.org,001-681-386-7024x40330,624 Charles Parkways Suite 008,Riverside,79782,2003-07-02,60.95,savings,2017-07-23
+CUST-000373,Brianna,Myers,kristen68@example.net,8446731497,36847 Velez Place Apt. 607,Riverside,95863,1970-05-28,46.09,checking,2020-04-30
+CUST-000374,Amy,Rodriguez,beckyjohnson@example.org,557.991.4521x182,26978 Brian Park,Salem,33534,1971-07-21,64.0,investment,2024-01-04
+CUST-000375,Mary,Johnson,rsavage@example.net,987.387.5357,1620 April Crossing,Arlington,22284,1958-01-14,25.65,checking,2025-04-20
+CUST-000376,Daniel,Mcclure,zjackson@example.net,728.466.0416x4485,8395 Kennedy Fords,Madison,43777,2004-01-05,39.29,checking,2023-10-21
+CUST-000377,Melissa,Taylor,asmith@example.org,(971)704-3318,97921 Fields Fork,Lexington,45715,1985-03-21,64.36,checking,2025-11-18
+CUST-000378,Joshua,Hoover,tsilva@example.com,+1-464-688-3192x134,89659 Levy Street,Manchester,81226,1987-09-20,34.87,investment,2021-05-03
+CUST-000379,Gary,Logan,christopherpratt@example.org,(927)805-1028,4813 Bennett Lights Suite 548,Clinton,42047,1979-01-14,52.39,savings,2025-06-08
+CUST-000380,Megan,Moses,jennifer68@example.com,541.886.5205x7563,03758 Adam Inlet Suite 154,Fairview,66403,2003-08-31,71.25,investment,2022-09-02
+CUST-000381,Arthur,Hill,ssanders@example.net,340-290-7977x278,92221 Flowers Crest Apt. 705,Springfield,13277,1999-08-26,63.51,savings,2019-05-18
+CUST-000382,Melissa,Rios,cookemily@example.com,001-429-658-0660x138,70493 Thompson Summit,Lincoln,00923,1965-03-17,40.04,investment,2022-03-17
+CUST-000383,David,Owens,knightsteven@example.org,521-725-9020,34324 Nicolas Heights Apt. 429,Madison,41859,1971-09-08,82.33,investment,2024-12-15
+CUST-000384,Joshua,Gonzalez,jordan74@example.org,559.855.8720x9628,435 Davis Trail Apt. 437,Washington,34690,1947-08-02,66.18,investment,2017-10-03
+CUST-000385,Dominique,Lopez,tannermorris@example.net,(490)751-5026x7551,78207 Watkins Square Suite 673,Arlington,33606,1991-03-06,43.93,savings,2022-08-12
+CUST-000386,Timothy,Morales,arellanonatalie@example.net,466-649-6902,225 Tara Inlet,Georgetown,19042,1996-02-06,34.58,savings,2021-03-10
+CUST-000387,Frederick,Smith,jamesjackson@example.com,723-236-1328,51786 Roberta Skyway Suite 731,Manchester,51301,1953-09-12,61.52,savings,2024-03-26
+CUST-000388,Dennis,Mejia,lori69@example.com,+1-515-779-0392,8099 Melendez Rue Apt. 273,Dayton,06300,1958-11-29,59.13,savings,2020-12-15
+CUST-000389,Matthew,Valdez,thernandez@example.com,+1-870-246-2268x17151,2986 Smith Shoal,Harrison,88344,1970-11-29,38.38,investment,2024-04-25
+CUST-000390,Kevin,Green,munozleah@example.com,757.658.5126x86120,976 Steven Canyon,Oxford,16432,2000-04-13,89.77,savings,2021-03-16
+CUST-000391,Brendan,Greene,johnny54@example.org,+1-642-245-6075,0863 Christopher Court,Springfield,17023,1991-05-24,29.11,investment,2022-12-07
+CUST-000392,Ryan,Hill,pbarker@example.net,797.601.5502x91681,0241 Sanford Underpass Apt. 944,Riverside,81186,1977-12-27,40.81,investment,2025-02-22
+CUST-000393,John,Lindsey,ashley36@example.com,001-224-880-9624x4063,4795 Jeffrey Brook,Winchester,93432,1966-01-20,17.52,savings,2017-03-28
+CUST-000394,Keith,Joseph,omatthews@example.net,586-478-0555x57277,6091 Hoffman Key Apt. 385,Cleveland,40351,1963-12-28,50.67,checking,2019-10-03
+CUST-000395,Emily,Johnson,claudiacunningham@example.com,001-504-587-3682x69116,422 Pierce Knoll,Lexington,98972,1959-04-28,53.38,checking,2025-08-10
+CUST-000396,Joshua,Townsend,beckgloria@example.net,001-858-688-6367x74722,572 Patrick Shoal,Lexington,55302,2006-12-25,40.01,savings,2020-09-14
+CUST-000397,Dana,Montgomery,chelseagordon@example.org,+1-296-805-9329x715,75327 Marcus Hill,Lincoln,08996,2001-12-15,50.9,investment,2018-09-03
+CUST-000398,Steven,Sanchez,yfritz@example.org,981.895.2371x006,4819 Samuel Views,Clinton,95663,1949-05-15,24.39,investment,2024-09-20
+CUST-000399,Maria,Hardy,coxjennifer@example.net,+1-476-511-2491x2565,41517 Goodwin Throughway Suite 547,Greenville,43841,1995-03-18,67.76,savings,2023-08-07
+CUST-000400,Ashley,Wheeler,earlroberts@example.org,(495)444-2947x742,4303 Hernandez Bridge Suite 588,Burlington,53695,1975-08-27,37.66,checking,2025-08-08
+CUST-000401,Teresa,Schneider,alexandra67@example.net,(587)627-6015,24913 Porter Port,Dayton,84208,2002-09-13,44.74,savings,2025-01-01
+CUST-000402,Megan,Logan,judithcox@example.org,(515)581-4888x1079,233 Thompson Rest Suite 841,Chester,97901,1957-07-29,55.98,investment,2024-11-28
+CUST-000403,Bryce,Leach,bruce33@example.net,001-997-571-8051x37171,939 Evans Branch,Arlington,76747,1972-09-05,53.6,investment,2025-08-26
+CUST-000404,Jennifer,Ramos,briannareid@example.com,9466947258,8354 Garrett Creek Apt. 705,Marion,67288,1975-03-31,57.13,investment,2018-03-26
+CUST-000405,Cameron,Reynolds,cody75@example.net,+1-682-531-3348x45871,2362 Chelsea Estate,Milford,43188,2005-11-16,74.19,savings,2026-06-01
+CUST-000406,Desiree,Kramer,jeremy47@example.com,(224)855-5746x966,5274 Lori Flats,Manchester,27843,1987-04-25,35.38,savings,2019-02-28
+CUST-000407,Marissa,Johnson,ugibbs@example.net,+1-533-498-7411,797 Kimberly Loaf Suite 349,Winchester,77324,1969-03-25,68.59,savings,2017-08-13
+CUST-000408,Danielle,Hill,samuel41@example.com,(515)362-2949,59848 Norris Dam Apt. 557,Franklin,98447,2001-05-02,30.3,checking,2018-06-11
+CUST-000409,Taylor,Murray,james44@example.net,001-202-816-6670x8085,587 Andrews Roads,Cleveland,09297,1991-11-16,79.1,investment,2022-04-04
+CUST-000410,Terri,Norman,laurenmathis@example.org,001-479-731-6477,95786 Richard Hill,Lincoln,01333,1984-11-23,43.78,savings,2020-07-02
+CUST-000411,Alan,Morris,jonathanwalker@example.net,001-358-273-9592x32342,85155 Dominique Flats,Auburn,40206,1955-11-22,32.36,checking,2026-07-07
+CUST-000412,Jesse,Gillespie,anthony71@example.com,5738607763,28981 Katherine Crest,Fairview,64609,1992-04-06,69.81,investment,2020-03-09
+CUST-000413,Wanda,Perry,traciemarsh@example.com,648.317.0066x6155,431 Liu Brook Suite 502,Greenville,33137,1956-10-11,28.48,investment,2016-09-10
+CUST-000414,April,Taylor,dfarmer@example.net,445.496.2622,20734 Garrett Ville Suite 950,Fairview,03886,1966-06-30,56.28,investment,2025-06-28
+CUST-000415,Austin,Wiggins,ywilliams@example.net,001-982-821-0531x6117,90477 Anderson Shoals Suite 917,Oxford,65093,1992-10-09,65.65,checking,2025-02-14
+CUST-000416,James,Robinson,lindathomas@example.net,416-649-1334,798 Wolf Curve Suite 652,Lincoln,76439,1991-12-31,18.01,checking,2025-02-09
+CUST-000417,Julie,Marsh,bauertiffany@example.org,(903)726-5097,967 Shawn Greens,Manchester,72050,1973-04-25,80.77,investment,2024-01-20
+CUST-000418,Diana,Robertson,matthew24@example.com,387.515.8415x6082,18425 Chavez Plaza Apt. 826,Chester,67466,1957-11-18,54.88,investment,2025-01-01
+CUST-000419,Jeffrey,Smith,alicia29@example.net,408.858.3825x21293,0646 English Mountain,Salem,42695,1954-03-07,37.22,savings,2025-12-26
+CUST-000420,Aaron,King,jason99@example.org,8628272362,51342 Martinez Streets,Harrison,77299,2005-02-05,32.95,savings,2018-02-13
+CUST-000421,Scott,Chambers,alex18@example.com,619.273.7418x97215,1769 Nancy Square Suite 438,Jackson,14007,1951-03-09,43.1,checking,2023-12-03
+CUST-000422,Susan,Grimes,mollyortega@example.net,(360)914-4485x64510,739 Wade Cove,Washington,93369,1976-05-04,54.48,savings,2022-09-02
+CUST-000423,Ariel,Obrien,gwilliams@example.net,+1-919-911-3599x6605,6039 Andrew Isle,Greenville,13451,1964-01-07,75.68,checking,2020-09-21
+CUST-000424,Anthony,Bryant,michael55@example.org,770-457-4238x856,55983 Poole Courts Apt. 659,Oxford,65669,1985-11-21,67.97,savings,2024-03-02
+CUST-000425,James,Chase,zbell@example.com,(422)850-1394x884,11964 Jennifer Place,Marion,46874,1970-08-07,38.15,investment,2025-10-25
+CUST-000426,Dale,Blanchard,christina15@example.org,903.582.4073x333,43097 Perry Plaza,Arlington,74961,1957-09-18,28.29,investment,2018-06-18
+CUST-000427,April,Ross,tfrancis@example.com,465-353-5851x253,519 Jennifer Stravenue Apt. 749,Winchester,07474,1974-08-07,45.43,investment,2020-12-24
+CUST-000428,Brittany,Brown,andrewwest@example.net,6572215149,2637 Ryan Spring Suite 539,Greenville,67079,2005-03-21,19.11,savings,2018-01-16
+CUST-000429,Amber,Maldonado,michelle90@example.net,001-459-211-9186x23392,151 Sophia Ports Suite 667,Lexington,18655,1998-12-25,19.08,checking,2018-06-07
+CUST-000430,Larry,Thompson,fkoch@example.org,(346)633-5157,080 Davis Alley,Harrison,69853,1946-05-25,70.14,savings,2019-11-15
+CUST-000431,Kevin,Marsh,michele23@example.net,+1-972-483-5129x592,0908 Lindsay Inlet,Georgetown,38699,1952-05-24,15.52,savings,2023-06-08
+CUST-000432,Brittany,Jackson,jimenezcarrie@example.net,578-867-1815x35237,0791 Elizabeth Islands,Greenville,69620,1981-01-27,62.81,investment,2023-08-17
+CUST-000433,Aimee,Sherman,justintaylor@example.org,866-666-1707x1587,0803 Kurt Radial Apt. 508,Marion,04166,1948-07-30,10.2,savings,2019-08-19
+CUST-000434,Jacob,Brandt,colongabrielle@example.com,001-388-528-5031x7235,99006 Rachel Crescent Suite 035,Riverside,23708,2007-10-16,38.58,savings,2024-11-13
+CUST-000435,Nathan,Monroe,moorecarol@example.net,+1-946-694-3460x66643,607 Elizabeth Fork,Fairview,09744,1985-10-09,52.83,savings,2017-10-03
+CUST-000436,Rachel,Freeman,amandajackson@example.net,364-984-4941x163,80771 Jeremy Village,Franklin,51365,1957-03-24,57.12,investment,2024-03-24
+CUST-000437,Lindsay,Allen,samuel27@example.net,001-908-533-5090x25425,6248 Jeffrey Road,Georgetown,25973,1966-10-07,37.27,checking,2023-10-25
+CUST-000438,Anthony,Alexander,carolynroberts@example.org,(285)401-1688,0213 Patrick Port Apt. 691,Riverside,29929,1993-08-15,34.28,savings,2016-12-14
+CUST-000439,Amy,Smith,ppineda@example.com,796-573-7945x7727,2642 Singh Meadows,Salem,39803,1954-09-04,76.31,checking,2021-03-15
+CUST-000440,Jennifer,Weaver,vanessamartinez@example.net,(736)866-7776x755,833 Jennifer Port,Franklin,26007,2005-04-30,48.15,investment,2023-11-24
+CUST-000441,Kristen,Cox,wkelley@example.com,(243)562-7187x496,8268 White Mills,Georgetown,03625,1989-04-28,26.48,checking,2020-06-17
+CUST-000442,Elizabeth,Nelson,danielleandrews@example.org,(265)373-2759,00051 Huynh Knolls,Chester,27109,1992-06-13,35.81,checking,2026-03-08
+CUST-000443,Kyle,Jones,brandy77@example.com,001-824-441-8222x618,431 Regina Court Apt. 267,Lexington,50225,1975-08-25,79.65,checking,2024-04-10
+CUST-000444,Brenda,Huerta,sarah99@example.org,607.895.5151x229,35415 Smith Ramp,Clinton,55254,2008-01-31,50.53,investment,2020-04-03
+CUST-000445,Johnny,Palmer,burnsrebecca@example.org,+1-234-447-6504x7158,904 Gonzalez Mountains,Fairview,50310,1970-01-27,52.17,checking,2023-07-22
+CUST-000446,Joseph,Brooks,linda66@example.net,325-248-3744x17158,31251 Ashley Freeway,Clinton,11954,2000-01-07,43.09,checking,2016-09-12
+CUST-000447,Alexander,Roman,mooreconnie@example.com,+1-851-591-0231x2110,16583 Roth Station,Marion,65421,1983-10-01,52.75,savings,2018-06-18
+CUST-000448,Keith,Lowe,ramoswilliam@example.org,(534)428-9311,26949 Hunter Heights Apt. 645,Springfield,96897,1960-10-09,39.29,checking,2016-09-02
+CUST-000449,Pamela,Sutton,karen10@example.org,350.696.1701x5959,5757 Hines Island Apt. 392,Fairview,06097,1989-02-16,73.36,investment,2020-09-12
+CUST-000450,Nichole,Nguyen,dford@example.com,(826)760-2562,2292 Cody Lock,Greenville,62404,1955-01-18,57.98,investment,2019-12-23
+CUST-000451,Andrew,Myers,maria84@example.org,779.376.6270,7942 April Park,Franklin,28865,1971-11-01,24.26,investment,2016-09-24
+CUST-000452,Kyle,Moore,gabriella69@example.org,+1-928-745-5259x710,35357 Peters Ports Suite 325,Dayton,83427,1981-08-28,53.87,checking,2025-09-19
+CUST-000453,Jean,Lynch,tracyharrison@example.org,981-862-9518x77941,2507 Jeffrey Alley,Burlington,43389,1968-01-16,13.84,checking,2022-10-23
+CUST-000454,Anna,Bowers,todd59@example.net,639.591.4038,0443 Kenneth Burgs Suite 157,Winchester,19849,1973-09-29,49.13,investment,2020-06-03
+CUST-000455,Eric,Wallace,daniel47@example.com,397.242.9250,752 Decker Lane Apt. 656,Milford,23831,1966-03-07,43.13,checking,2024-12-18
+CUST-000456,Austin,Campbell,warebrian@example.net,001-727-711-2218x231,65176 Alicia Row Suite 281,Riverside,27666,1973-11-10,70.42,savings,2017-10-03
+CUST-000457,Rhonda,Green,brianvega@example.org,7377003322,608 Vasquez Skyway Suite 810,Oxford,26731,1982-10-02,43.59,investment,2018-09-09
+CUST-000458,Brandi,Smith,perkinsmicheal@example.org,(532)680-9448x5862,54614 Johnson Rapids Suite 321,Burlington,05961,1970-01-05,53.2,checking,2017-09-01
+CUST-000459,Sarah,Harris,marissa39@example.com,(470)739-4380x403,6576 Samantha Neck,Franklin,74010,1983-03-14,46.28,checking,2024-07-21
+CUST-000460,Elizabeth,Pace,jensennicole@example.org,+1-700-540-4769x210,5146 Kenneth Bypass,Fairview,16239,1964-08-19,57.64,investment,2019-03-25
+CUST-000461,Sarah,Clay,davidfields@example.net,6726011379,971 Jason Locks,Jackson,89370,1969-05-19,29.65,savings,2016-12-21
+CUST-000462,Ryan,Owens,teresaray@example.org,+1-814-947-3404x33700,045 Carly Motorway,Lexington,62429,1979-11-30,37.9,investment,2020-05-02
+CUST-000463,Rachel,Barber,malikfowler@example.com,(896)757-5427,94255 Hayes Plains Apt. 058,Washington,82429,1954-09-28,30.4,checking,2020-01-08
+CUST-000464,Cynthia,Garner,tiffanysparks@example.net,(416)518-8081x9048,1558 Mills Viaduct Suite 395,Harrison,98782,1971-04-23,55.87,checking,2024-02-13
+CUST-000465,Daniel,Bowman,smoore@example.org,001-308-517-2143x643,04132 Carl Mission,Jackson,16092,1972-03-08,35.03,investment,2020-03-05
+CUST-000466,Richard,Wolfe,matthew53@example.com,(999)879-9070x75504,9957 Norman Oval,Georgetown,11881,1975-07-10,29.14,savings,2022-01-15
+CUST-000467,Christopher,Ramsey,gibsonkaitlyn@example.org,+1-470-254-8739x610,82749 Solis Plain Apt. 491,Burlington,92017,1978-02-27,61.83,savings,2018-05-05
+CUST-000468,Shannon,Nash,robertsmark@example.org,+1-521-737-7306x26042,71122 Joy Rapids Apt. 775,Oxford,92109,1972-09-10,39.98,savings,2023-09-08
+CUST-000469,Rachael,Richardson,barnesarthur@example.com,+1-561-411-4576,21923 Keller Plains,Winchester,49432,1980-09-19,63.08,investment,2021-05-19
+CUST-000470,Tara,Douglas,cwilson@example.org,224.326.0508,804 Luis Gardens Suite 337,Fairview,63189,1975-10-07,58.9,savings,2017-08-04
+CUST-000471,Paul,Schultz,thomasdavid@example.net,(717)581-9236,0605 Johnson Skyway Suite 679,Clinton,29955,1992-10-07,43.42,checking,2017-11-16
+CUST-000472,Christina,Tyler,wlucas@example.net,(239)884-7169,120 Ramirez Harbors,Franklin,61384,1986-07-25,34.31,checking,2026-06-21
+CUST-000473,Matthew,Huff,samantha78@example.com,(398)699-9275x1758,4983 Mcintosh Islands Apt. 935,Arlington,40654,1957-09-09,70.19,checking,2019-12-14
+CUST-000474,Erica,Ramirez,msantiago@example.net,(443)358-8537,339 White Rue Suite 536,Auburn,63984,1990-10-11,64.01,checking,2025-12-05
+CUST-000475,Stephen,Peterson,catherine41@example.com,+1-660-813-4778,0679 Thomas Loaf,Dayton,41545,1953-02-16,68.55,investment,2018-05-31
+CUST-000476,Michael,Solis,williamschad@example.org,+1-284-221-6309,9446 Jerry River,Greenville,79624,1981-07-21,44.81,savings,2019-04-09
+CUST-000477,Angela,Randall,andrewsilva@example.org,(663)989-0219,36337 Patricia Forges,Marion,37131,1952-05-15,75.02,savings,2018-12-28
+CUST-000478,Kyle,Riley,ogriffin@example.org,667-572-6960,8550 Romero Loaf Suite 935,Winchester,19442,1989-12-03,24.54,checking,2022-08-12
+CUST-000479,Holly,Gray,uclark@example.com,(243)843-6970x9317,6076 Blankenship Corners Suite 453,Washington,35775,1968-09-12,38.72,investment,2026-07-29
+CUST-000480,Timothy,Jackson,meghanwerner@example.com,3316219804,42642 Robert Expressway Apt. 319,Milford,07335,1981-09-05,41.76,checking,2024-06-07
+CUST-000481,Monica,Delacruz,keithharrison@example.com,(430)339-1114,522 John Branch Suite 248,Clinton,03216,1977-02-28,44.09,checking,2025-07-20
+CUST-000482,Phillip,Jackson,imoore@example.org,+1-259-347-3721x329,04787 Pierce Stream Suite 878,Marion,46892,1995-02-23,41.09,investment,2022-05-18
+CUST-000483,Mary,Sullivan,alexandra62@example.net,620.731.9541x9666,7303 Hampton Terrace,Marion,19790,1973-12-13,59.1,checking,2022-07-04
+CUST-000484,Katherine,Taylor,randy20@example.org,547.467.7537x260,5057 Eaton Well,Arlington,57305,1950-07-11,58.01,investment,2019-07-17
+CUST-000485,Lori,Arnold,villamisty@example.com,455-634-8201,83850 Powell Union,Cleveland,80838,1974-08-08,58.62,investment,2022-10-27
+CUST-000486,Justin,Williams,stephensonkatherine@example.com,001-580-389-8126x57422,6300 Smith Dale Apt. 693,Auburn,55235,1995-12-21,31.2,checking,2025-06-08
+CUST-000487,Ronald,Carroll,aaronjones@example.org,771-937-2711x759,885 Rose Shores Suite 933,Lexington,03414,1972-12-08,75.46,savings,2019-04-29
+CUST-000488,Shelby,Turner,lwilliams@example.com,712-883-3372x188,9541 Francisco Orchard Apt. 506,Springfield,53706,1996-12-14,37.84,checking,2018-02-21
+CUST-000489,Thomas,Johnson,david37@example.com,(793)866-3439x2529,11028 Vasquez Course,Fairview,91908,1986-06-05,46.22,savings,2026-07-10
+CUST-000490,Aaron,Thompson,kellybridges@example.net,+1-259-510-2451x09109,7149 Gilbert Pine,Marion,09896,1998-01-03,37.67,checking,2019-06-13
+CUST-000491,Calvin,Obrien,eric81@example.com,+1-634-806-5277x584,45337 Jacqueline Camp Apt. 091,Madison,19857,1952-05-21,63.26,savings,2021-02-02
+CUST-000492,Edward,Jones,gwendolyn93@example.net,566.718.9437x0526,04627 Barrett Locks,Franklin,93449,1999-12-12,35.85,checking,2021-02-05
+CUST-000493,Lisa,Mcgee,wbarrett@example.net,001-520-924-6175x202,26005 Mcbride Landing Suite 017,Winchester,66178,1958-04-24,47.49,investment,2018-01-29
+CUST-000494,Erin,Hodge,alyssa89@example.net,+1-736-207-9848x704,176 Sloan Rest Apt. 593,Milford,59387,1962-04-13,47.22,checking,2025-07-08
+CUST-000495,Melissa,Montoya,ralph08@example.org,6378360601,490 Zhang Forest,Oxford,70505,1987-04-07,38.0,savings,2019-06-24
+CUST-000496,Darrell,Young,vcastro@example.org,+1-330-461-5370,44626 Jessica Lake Apt. 448,Washington,91144,1980-03-03,56.61,investment,2017-04-15
+CUST-000497,Tonya,Marks,mckaycameron@example.com,(317)951-8878,51526 Amy Glen Apt. 911,Chester,21772,1954-10-16,53.26,checking,2018-03-16
+CUST-000498,Lisa,Nichols,writter@example.net,(905)366-1863x239,787 Morris Land,Riverside,26599,2002-04-21,30.85,checking,2016-12-18
+CUST-000499,Jacob,Duncan,huertasarah@example.net,960-957-1219x88192,90534 Carter Walks Apt. 042,Madison,91714,1961-11-16,50.13,checking,2020-05-25
+CUST-000500,Eric,Morgan,hzavala@example.com,474-346-0045,991 Wilson Greens,Fairview,44250,1965-08-28,45.21,savings,2017-11-02
+CUST-000501,Barbara,Aguilar,halljoshua@example.net,001-381-789-8484x16046,021 Stacy Radial Apt. 170,Lincoln,62003,1996-08-08,31.79,savings,2020-08-30
+CUST-000502,Daniel,Moore,christopherjackson@example.net,001-810-273-2283,378 Brian Forest Suite 384,Fairview,45624,1954-03-09,59.42,checking,2026-05-05
+CUST-000503,Robert,Lane,john16@example.com,+1-397-501-6934x2929,033 Jessica Spur,Cleveland,52237,1953-12-24,36.24,checking,2018-10-13
+CUST-000504,Susan,Andrews,jennifergreer@example.org,(915)537-2215x56684,65337 Avery Mews,Washington,06914,1961-06-27,48.93,investment,2020-12-07
+CUST-000505,Eric,Harrington,goodmanalice@example.org,(714)624-4260x78197,3476 Martin Forges,Lincoln,57927,2002-08-10,34.7,savings,2016-10-09
+CUST-000506,Jimmy,Tucker,valeriearnold@example.net,(614)858-4148,91344 Katherine Skyway,Riverside,73371,1999-07-10,39.86,checking,2022-05-07
+CUST-000507,Sandra,Weeks,amadden@example.org,4583695073,644 Courtney Skyway Suite 167,Oxford,82371,1957-12-20,55.01,checking,2019-01-19
+CUST-000508,Brandon,Rogers,iblake@example.com,936.880.1192x3603,87233 Nathan Camp,Washington,34115,1946-05-05,49.51,checking,2022-06-24
+CUST-000509,David,Ramirez,forozco@example.com,991.614.9830,073 Clay Courts,Cleveland,12128,1977-05-03,57.5,savings,2018-11-23
+CUST-000510,Barbara,Smith,sarah78@example.net,(501)290-4322,33247 Dorothy Fork,Greenville,81588,1954-01-29,58.75,checking,2017-10-12
+CUST-000511,Rhonda,Harris,mary62@example.net,427-860-2508,23126 Ryan Squares,Manchester,22283,1962-05-16,49.83,savings,2021-10-21
+CUST-000512,Angela,Byrd,olivia29@example.net,+1-593-876-2974x54930,8719 Laura Crossroad Apt. 381,Auburn,73909,1975-10-20,40.68,investment,2025-09-11
+CUST-000513,Beverly,Rojas,brianwhite@example.org,(330)789-8138,4582 Bradley Overpass,Salem,27410,1954-05-28,21.6,savings,2024-07-02
+CUST-000514,Holly,Davis,colleenjones@example.net,+1-281-357-2450x0000,91137 Scott Plain Suite 090,Franklin,94771,1955-01-15,49.95,savings,2020-02-19
+CUST-000515,Nicholas,Wilson,karen42@example.org,+1-329-498-7478,8905 Harrison Parkways,Winchester,57476,1975-01-17,52.82,checking,2017-01-16
+CUST-000516,Brandon,Stanley,nicholasfields@example.org,(684)582-6691x362,0542 Blair Plaza Apt. 706,Chester,27753,1960-09-30,50.77,investment,2022-08-16
+CUST-000517,Christina,Stevens,kristin09@example.net,222.610.4016x48188,287 Gilmore Gateway Apt. 638,Arlington,85401,1949-08-24,28.88,savings,2019-04-13
+CUST-000518,Eric,Jones,smontgomery@example.net,(889)446-4203,863 Kyle Tunnel Suite 170,Washington,51643,1963-12-23,39.5,checking,2026-06-05
+CUST-000519,Peter,Gomez,katherine02@example.com,955.882.4301,4489 Kelsey Street Apt. 538,Oxford,91911,1977-03-01,63.18,investment,2018-05-21
+CUST-000520,Toni,Rivera,stevendecker@example.org,+1-750-340-4333x35384,321 Cody Rapid Suite 871,Burlington,71853,1948-08-25,51.74,investment,2026-05-11
+CUST-000521,John,Davis,travistaylor@example.net,830-260-1198x75617,30091 Osborne Creek,Marion,72556,1953-08-30,74.61,checking,2022-07-29
+CUST-000522,Sandra,Sanchez,ocook@example.net,444.291.6093x6595,9118 Rodriguez Highway,Arlington,30102,1960-03-06,65.22,investment,2021-11-25
+CUST-000523,Matthew,Johnson,katherinerussell@example.org,001-823-399-8213x7455,0428 Shepard Canyon,Oxford,48582,1985-04-28,35.11,savings,2024-05-20
+CUST-000524,Matthew,Vasquez,ypatterson@example.net,2815126003,6910 Moore Motorway Apt. 531,Winchester,23505,1993-12-18,47.74,savings,2019-02-21
+CUST-000525,Matthew,Williams,lhicks@example.com,001-617-676-8293,34808 Deleon Junctions,Salem,39618,1960-07-24,45.46,investment,2025-03-25
+CUST-000526,Roberta,Doyle,ricklewis@example.net,(391)601-5709x085,207 Aguilar Expressway Suite 999,Jackson,82547,1972-02-10,57.89,checking,2022-11-06
+CUST-000527,Lindsey,Kane,maria99@example.net,001-771-384-2859x6932,84993 Pamela Coves Apt. 342,Milford,56845,1971-01-26,17.45,savings,2022-03-15
+CUST-000528,Sharon,Russell,branchthomas@example.com,+1-517-760-7234x8389,382 Mary Haven Apt. 561,Marion,19173,2002-06-12,47.96,investment,2022-04-07
+CUST-000529,Ryan,Johnson,richardhines@example.net,+1-926-841-8696x56130,238 Duncan Terrace,Jackson,16254,1961-06-23,54.38,checking,2018-07-10
+CUST-000530,Joseph,Weaver,brianamejia@example.net,800-327-3008x696,68311 Lisa Isle,Fairview,03841,1948-08-15,39.89,checking,2017-04-06
+CUST-000531,Allison,Salazar,christopher91@example.net,607-662-8397x62053,7794 Martin Station,Madison,59355,2001-05-21,29.72,investment,2023-11-12
+CUST-000532,Kathryn,Jenkins,caitlyncooper@example.net,677-260-2991,841 James Motorway Apt. 125,Franklin,47408,1990-08-23,34.79,checking,2018-04-25
+CUST-000533,Melvin,Woodward,mcdonaldsara@example.com,3325119206,85277 Bennett Field Apt. 718,Cleveland,39393,1964-12-13,38.38,investment,2022-07-12
+CUST-000534,Jessica,Jackson,brandon64@example.net,6163440373,8127 Contreras Extension Apt. 102,Cleveland,84264,1951-06-02,37.94,investment,2021-07-08
+CUST-000535,Lori,Herrera,curtislee@example.net,(429)785-7973x63831,53970 Floyd Radial Suite 617,Burlington,63195,1989-09-17,37.0,investment,2020-08-17
+CUST-000536,Sharon,Young,zholmes@example.org,5507682122,216 Smith Isle Suite 146,Jackson,75137,1955-01-28,21.84,investment,2017-05-01
+CUST-000537,Denise,Giles,holdendominic@example.net,(679)208-9843x6998,05093 Proctor Rapid,Chester,94446,1989-02-28,63.86,checking,2021-09-04
+CUST-000538,Kelly,Anderson,meghan98@example.net,+1-411-545-7887x0715,6738 Anthony Ridges Suite 461,Burlington,80982,1949-08-08,34.13,checking,2022-11-18
+CUST-000539,Teresa,Simpson,jcruz@example.net,001-568-972-2589,858 Raymond Ferry,Manchester,89936,1984-12-28,38.09,savings,2018-12-23
+CUST-000540,Brett,Adams,alvaradomindy@example.com,(795)679-0012x4825,86796 Donald Views Suite 232,Dayton,90092,1979-03-02,54.53,checking,2022-05-13
+CUST-000541,Joseph,Myers,michellelee@example.net,756-924-1528,6292 Shah Forges,Marion,91543,1959-08-10,37.08,savings,2021-11-25
+CUST-000542,Kimberly,Wood,michelleayers@example.org,+1-765-250-7846,4430 Kristopher Road Apt. 891,Riverside,15337,2003-03-07,49.4,checking,2022-08-05
+CUST-000543,Fred,Gonzalez,brandi40@example.org,(336)541-5471x553,9367 John Meadow,Marion,59133,1999-04-03,52.94,checking,2017-01-22
+CUST-000544,Susan,Baker,heidischneider@example.org,210-452-7698x1987,45238 Morales Dam Suite 866,Lexington,08151,2005-10-21,44.78,investment,2025-03-30
+CUST-000545,Brandy,Perry,rryan@example.com,(827)758-5485,942 Kevin Ridges Apt. 165,Milford,03829,1954-03-07,35.22,investment,2025-02-10
+CUST-000546,Nicole,Williams,nathan39@example.net,213.721.5513,0836 Evelyn Haven Suite 488,Riverside,81360,1969-09-26,63.12,savings,2022-06-20
+CUST-000547,Wanda,Henry,smccarty@example.org,(377)546-2025x82543,812 Mary Crossroad,Dayton,26739,1983-10-26,42.36,savings,2025-05-22
+CUST-000548,Deanna,Sims,brownjoanna@example.org,836.347.2387x50827,25775 Francis Lake Suite 726,Milford,20785,1999-12-16,39.22,checking,2026-01-09
+CUST-000549,Mark,Montgomery,qreyes@example.net,416.308.2717,337 Sara Shoal Apt. 052,Riverside,23116,1955-05-20,23.93,savings,2026-02-26
+CUST-000550,Renee,Lewis,gkeith@example.net,(559)714-3882x32553,6177 Robinson Valley Suite 430,Harrison,75348,1966-07-24,58.38,checking,2025-04-04
+CUST-000551,Becky,Benton,ucarr@example.org,(979)397-0292,53978 Higgins Forest,Milford,64769,1990-03-15,47.43,investment,2024-10-11
+CUST-000552,Devon,Bean,davidjohnson@example.net,001-912-956-0832x00487,358 Lopez Route Suite 003,Burlington,02773,1963-02-16,46.63,savings,2019-08-16
+CUST-000553,Sandra,Brewer,daniel15@example.org,291.302.9295,74830 Rhonda Ports Suite 713,Milford,90517,1982-12-29,41.27,savings,2017-07-13
+CUST-000554,Tammy,Thomas,schultzjessica@example.org,321.376.7201,6122 David Stravenue,Washington,04684,1973-09-25,48.74,savings,2023-11-01
+CUST-000555,Dorothy,Schaefer,mrandolph@example.net,001-930-649-3665x3802,42114 Kristine Springs,Arlington,52246,1984-12-31,53.46,checking,2018-01-03
+CUST-000556,Matthew,Smith,tina29@example.com,(720)493-5561x0399,13712 Lee Knolls Suite 856,Jackson,40732,1993-08-24,27.66,investment,2017-11-27
+CUST-000557,Meghan,Green,beasleykimberly@example.org,(570)961-5927,29907 Ryan Wall Apt. 632,Chester,17079,1999-10-14,56.12,investment,2021-11-29
+CUST-000558,Sierra,Rodriguez,jose20@example.org,001-940-730-1095x679,9157 Watson Manors Apt. 347,Oxford,14450,1954-03-24,52.69,savings,2024-09-14
+CUST-000559,Steven,Smith,peterskayla@example.net,803-606-8317,2680 Zachary Valleys,Fairview,95759,1987-10-29,46.4,investment,2021-01-29
+CUST-000560,Eddie,Johnson,mccannjanet@example.com,938-506-7130,04584 Evans Unions Suite 213,Clinton,03750,1946-09-14,28.37,savings,2020-12-14
+CUST-000561,Michael,Villarreal,sean69@example.com,603.818.0533x9627,2159 Alicia Village Apt. 700,Franklin,08048,2007-05-02,42.81,savings,2020-08-19
+CUST-000562,Ronald,Collins,courtney01@example.org,6795771400,949 Leslie Shores,Washington,93264,1949-09-30,45.88,investment,2024-06-12
+CUST-000563,Bobby,Bishop,mortonkenneth@example.net,869.687.3137x9716,6123 Mitchell Causeway,Harrison,64073,1975-11-02,45.87,investment,2019-04-07
+CUST-000564,Jesus,Thompson,samuel38@example.net,001-394-699-1970,2037 Zachary Viaduct,Franklin,71352,1998-10-17,43.29,savings,2017-08-29
+CUST-000565,Robert,Randall,mccoydonna@example.com,981-435-9989,70889 Reilly Pass,Auburn,04503,1996-12-20,31.02,checking,2025-02-12
+CUST-000566,Tara,Reilly,kevin22@example.org,458.283.9785x708,8067 Kennedy Course,Lincoln,24071,1998-08-28,68.59,investment,2020-05-28
+CUST-000567,Christopher,Larson,duranelizabeth@example.org,279.642.9688x27697,531 Conway Corners,Winchester,76650,1972-04-14,83.1,checking,2020-02-24
+CUST-000568,Bradley,Lam,gregorymitchell@example.net,+1-883-456-5179,096 Conley Lane Suite 834,Jackson,80691,1972-08-25,49.41,investment,2019-04-05
+CUST-000569,William,Hernandez,jsmith@example.com,462-225-9364,8688 Christina Mews,Arlington,18518,2007-08-30,47.13,savings,2020-07-21
+CUST-000570,Edward,Archer,eguzman@example.com,5917141319,61337 Kline Junctions,Madison,24956,2007-05-30,49.85,checking,2017-01-14
+CUST-000571,Jonathan,Hawkins,moraleskimberly@example.net,3258447241,034 Johnson Port Suite 617,Chester,99539,1992-03-30,66.39,checking,2025-07-27
+CUST-000572,Sarah,Jones,isabelwheeler@example.net,001-680-888-0678x21417,59266 Gardner Ridges,Clinton,87423,1979-07-11,44.41,checking,2024-08-25
+CUST-000573,John,Hester,jhorton@example.com,386-494-1559x4501,75360 Wilson Mountains,Franklin,10804,1972-03-21,42.5,investment,2023-11-20
+CUST-000574,Jeremy,Carlson,uclark@example.org,(221)689-4559x06700,8942 Kelly Lane,Cleveland,49658,1988-08-05,75.34,investment,2019-05-05
+CUST-000575,Rebecca,Hensley,areynolds@example.org,964-620-4565x77580,38906 John Tunnel Suite 466,Winchester,17646,1999-06-05,53.1,savings,2018-06-12
+CUST-000576,Robert,Haynes,rodriguezcynthia@example.net,+1-453-900-6221x224,7462 Austin Loaf Apt. 112,Cleveland,37323,1990-04-13,47.22,investment,2017-08-07
+CUST-000577,Nathan,Compton,amanda86@example.org,9804179867,29957 Sarah Groves,Clinton,58974,1954-02-07,42.89,checking,2023-10-14
+CUST-000578,Laura,Farrell,ujones@example.org,(803)784-3753,078 Beltran Roads Apt. 548,Harrison,23416,1965-02-12,45.02,investment,2017-11-01
+CUST-000579,Angela,Potter,natalie54@example.org,5643454752,32748 Fleming River,Madison,96634,1996-12-26,49.19,savings,2017-06-14
+CUST-000580,Samuel,Ayala,johncarter@example.net,+1-227-320-3886x21750,04530 Lynch Turnpike Apt. 588,Lincoln,19483,1962-05-30,45.59,investment,2025-07-17
+CUST-000581,Mark,Perez,alexander18@example.org,001-667-678-4816x524,4608 Lori Lake Apt. 799,Salem,29001,1973-12-22,70.23,investment,2024-06-11
+CUST-000582,Daniel,May,john91@example.org,+1-878-484-8699,5792 Garcia Villages,Burlington,59406,1988-07-05,46.09,checking,2019-02-21
+CUST-000583,Jesse,Patrick,lpage@example.com,(538)339-7283,87062 Tonya Path,Auburn,67961,2003-10-29,52.65,savings,2023-09-20
+CUST-000584,Angela,Lewis,davidvelasquez@example.org,(832)800-1867,08987 Martinez Plaza,Georgetown,11460,1997-02-16,88.85,savings,2018-06-30
+CUST-000585,Patrick,Davis,loweryjoe@example.net,753-619-8074x6823,510 James Trail Apt. 762,Lincoln,00960,1968-12-01,90.92,savings,2024-10-04
+CUST-000586,Sherry,Cisneros,ekim@example.com,2068666411,1134 Lindsey Plains Suite 169,Cleveland,78027,1962-07-17,35.88,savings,2022-10-15
+CUST-000587,Bobby,Gilbert,kendra36@example.com,+1-834-482-6899,708 Amber Point Apt. 787,Cleveland,81027,1950-03-07,36.46,checking,2016-11-27
+CUST-000588,Leah,Patterson,shawn19@example.com,(409)832-0126x5789,1809 Michael Cliffs,Georgetown,60923,1968-05-11,62.41,investment,2021-09-15
+CUST-000589,Teresa,Wilson,tbryant@example.org,+1-827-446-9211x88241,2229 Cook Radial Apt. 704,Clinton,95004,1991-09-07,53.43,savings,2019-04-08
+CUST-000590,David,Morrow,erin57@example.org,368-820-9225x70900,564 Stephen Forest,Marion,18328,1963-02-23,46.48,investment,2025-04-01
+CUST-000591,Victoria,Gordon,paige40@example.org,378-482-2473,68507 Brian Keys Apt. 119,Greenville,49233,2007-01-05,45.66,checking,2022-09-15
+CUST-000592,Megan,Blackwell,zavaladiane@example.com,(461)505-3709,71695 Adam Orchard,Washington,34111,2002-09-08,32.46,checking,2024-11-25
+CUST-000593,Desiree,Wiley,anna54@example.org,+1-629-687-6989x3652,61982 Harris Inlet Apt. 310,Cleveland,34293,1966-07-16,58.75,investment,2018-02-20
+CUST-000594,Kim,Beck,lwalker@example.org,243.857.4835x268,606 Lee Plaza Apt. 448,Clinton,66480,1957-11-26,63.85,savings,2019-08-22
+CUST-000595,Gregory,Mcbride,zmorse@example.net,762-980-5507x7406,1562 Anne Stream Apt. 908,Franklin,44188,2002-06-14,60.03,savings,2019-11-06
+CUST-000596,Brad,Fuller,jessica91@example.org,411-778-6190,760 Gary Burg Suite 953,Marion,41805,1997-02-10,46.49,checking,2025-12-04
+CUST-000597,Holly,Miller,whitneyorozco@example.net,(827)259-5002,1532 Levy Shoal,Arlington,90466,1988-11-05,66.73,checking,2019-03-14
+CUST-000598,Cynthia,Williamson,kimbradley@example.com,773-227-9805,100 Roberts Springs,Oxford,82033,1959-03-24,55.82,checking,2019-08-23
+CUST-000599,Jennifer,Harris,smithmichael@example.org,660.389.4118,599 Susan Knolls,Marion,45866,1993-06-25,52.09,checking,2019-01-14
+CUST-000600,Nathaniel,Bradley,brandonhughes@example.org,8672990069,677 Williams Square,Harrison,32172,2008-05-11,62.97,investment,2021-08-11
+CUST-000601,Heather,Martinez,eileenhudson@example.com,295-530-0677x6255,501 Lewis Light,Chester,41540,1961-09-04,52.1,savings,2025-08-04
+CUST-000602,Isaiah,Rodriguez,isaiah02@example.net,001-223-234-5110,053 Dana Plains Suite 843,Manchester,02328,1955-02-23,42.11,investment,2025-08-19
+CUST-000603,Christopher,Long,laurajensen@example.org,857-659-8875x9212,0336 Laura Square,Clinton,19043,1974-06-07,50.94,investment,2020-02-21
+CUST-000604,Jacob,Scott,swu@example.net,(207)411-5238,2192 Michael Pine,Springfield,16818,1978-07-04,33.15,checking,2025-09-13
+CUST-000605,Jennifer,Parks,hamiltonkendra@example.net,(338)855-8819x59772,053 Nichols Valley,Springfield,92168,1983-08-25,48.94,investment,2018-10-05
+CUST-000606,Amy,Bennett,williamperkins@example.org,545.640.1822x72002,322 Johnathan Harbors,Winchester,37036,1976-04-20,78.45,investment,2019-05-23
+CUST-000607,Jason,Anderson,jonesterri@example.com,001-293-602-0203,22775 Heather Cove,Milford,32443,1969-02-05,27.01,checking,2018-07-17
+CUST-000608,Rachel,Malone,butlerolivia@example.com,863-300-5937x775,10291 Fleming Via,Washington,90388,2007-03-28,62.04,checking,2017-05-05
+CUST-000609,Kenneth,Grimes,valenciaerik@example.net,331.504.3841x96622,7080 Sullivan Land,Riverside,55247,1998-08-13,51.55,investment,2025-09-04
+CUST-000610,Steven,Mullins,reyesjackie@example.org,698-665-5049,076 Petty Spur Suite 933,Burlington,74891,1971-11-12,71.35,checking,2016-09-08
+CUST-000611,Deborah,Bennett,klopez@example.com,(461)714-2436,2188 Amanda Park Apt. 962,Greenville,84317,1960-09-23,59.15,investment,2019-09-18
+CUST-000612,Lori,Miller,mbaker@example.net,532-247-2505x83334,15876 Nathaniel Stravenue,Springfield,35507,1968-11-25,34.9,investment,2021-04-09
+CUST-000613,Jessica,Hendricks,victor76@example.net,001-845-835-3659x746,3421 Matthew Land,Milford,03401,1979-05-05,28.72,savings,2025-09-07
+CUST-000614,Ashley,Schaefer,william52@example.com,+1-225-959-6647x213,35914 Paul Via Suite 048,Arlington,76984,1957-11-30,39.15,checking,2024-07-12
+CUST-000615,Eric,Perry,turnerlevi@example.com,207.296.3731,8522 Christopher Stream,Lexington,72457,1973-09-28,38.26,checking,2025-10-06
+CUST-000616,Angela,Flores,michaelmontes@example.com,001-226-887-4470x1732,237 Chavez Ports Suite 656,Lincoln,25181,1957-11-20,65.58,investment,2016-08-20
+CUST-000617,Joshua,Brown,buckleycrystal@example.com,(278)210-5580,2214 Luis Shore,Franklin,26042,1953-02-27,35.97,investment,2016-11-12
+CUST-000618,Kevin,Ponce,hammondjeff@example.com,817.420.3136x95528,297 Maurice Stravenue,Auburn,49460,2006-06-26,47.91,investment,2020-02-15
+CUST-000619,Patricia,Hopkins,reneehernandez@example.org,+1-573-793-8992x0457,36618 Stanton Mountains,Milford,52549,1951-05-18,35.93,savings,2017-02-02
+CUST-000620,Theresa,Williams,pauljimenez@example.org,001-582-436-0107x12615,6484 Mendoza Islands,Riverside,58515,1993-02-02,45.02,investment,2017-11-29
+CUST-000621,Jason,Booker,tinahaas@example.org,(480)419-4425,560 White River,Oxford,44742,1958-11-25,61.39,checking,2023-03-01
+CUST-000622,Rachel,Allen,plin@example.org,+1-518-604-6741x3075,852 Pamela Cliffs,Marion,29304,1994-06-01,48.64,checking,2018-05-07
+CUST-000623,Donna,Hicks,elizabeth39@example.net,456.315.4705x5491,64119 Rivera Groves Apt. 919,Marion,94990,1969-04-16,51.22,checking,2026-06-14
+CUST-000624,Brittany,Hayes,lhoward@example.org,402.304.2620x1971,1393 Bullock River,Cleveland,53392,1974-10-04,71.91,investment,2022-04-08
+CUST-000625,Shawn,Johnson,klewis@example.com,973.819.2276x0759,39431 Crystal Light Suite 430,Winchester,67674,1987-12-13,50.34,savings,2024-06-16
+CUST-000626,Dana,White,thomaseric@example.net,950-657-6449,00268 Foster Inlet Suite 764,Auburn,75526,1973-10-25,41.98,savings,2021-02-07
+CUST-000627,Kyle,Everett,yvelasquez@example.com,(804)650-0635x53730,277 Daniel Roads Suite 296,Jackson,29695,1965-10-31,61.82,savings,2017-02-04
+CUST-000628,Nathan,Owens,whitemichael@example.org,727.863.6431x59489,6634 Molina Well Suite 344,Harrison,10068,1995-06-25,73.23,savings,2019-08-28
+CUST-000629,David,Hudson,karensanchez@example.net,449-474-3946x408,95862 Cummings Forge,Jackson,75948,1987-10-02,53.33,investment,2021-12-07
+CUST-000630,Kaylee,Boyd,cory21@example.org,001-597-620-2170x75485,5792 Benjamin Branch Apt. 449,Cleveland,57233,1999-01-17,57.35,savings,2020-06-01
+CUST-000631,Caleb,Cummings,ashleymorrow@example.org,001-551-721-3756x5896,708 Arellano Common Apt. 145,Riverside,72924,1964-05-26,48.79,checking,2019-03-13
+CUST-000632,Mark,Hughes,jonessarah@example.net,(603)942-3622x033,46310 Hall Mission Suite 868,Riverside,04173,1947-08-30,54.32,savings,2024-07-08
+CUST-000633,Vanessa,Curtis,ashleyramirez@example.net,5212774174,50238 Valentine Estates Apt. 894,Washington,55829,1970-03-24,5.11,investment,2018-05-31
+CUST-000634,Karen,Blair,jamesanderson@example.org,+1-230-520-2569x133,34677 Jessica Crossing,Manchester,88362,2002-05-12,45.65,savings,2024-06-08
+CUST-000635,Michael,Cabrera,jchase@example.com,+1-495-553-0245x301,2303 Moran Turnpike Apt. 028,Riverside,39298,1974-06-27,50.2,savings,2026-01-25
+CUST-000636,Lauren,Pacheco,davisjennifer@example.org,+1-724-605-0764x87177,99240 Ward Plains Apt. 872,Cleveland,89320,1975-02-28,40.23,checking,2018-01-31
+CUST-000637,William,Velazquez,ericgeorge@example.net,001-556-968-4482x373,12110 Alyssa Passage,Jackson,06001,1960-06-14,46.19,savings,2020-01-26
+CUST-000638,Haley,Perry,caldwellpatricia@example.org,607.740.3925x199,517 Gerald Divide,Arlington,65018,2005-02-28,56.73,savings,2024-02-02
+CUST-000639,John,Grant,frankward@example.com,(821)562-6549,083 Theresa Hill,Winchester,40090,1973-07-02,15.1,savings,2025-08-26
+CUST-000640,Andrew,Shaw,lromero@example.com,7473020596,77492 Simmons Shoals Apt. 295,Madison,54779,1960-04-17,63.88,savings,2018-06-14
+CUST-000641,Samantha,Wells,ernesthoward@example.org,4612658129,229 Wilson Islands Suite 302,Harrison,78018,1965-08-15,15.92,investment,2024-03-05
+CUST-000642,Jacqueline,Morales,qsanchez@example.net,(362)794-2066,808 Davis Ford Apt. 380,Fairview,06216,1962-10-12,50.53,checking,2021-12-12
+CUST-000643,Melissa,Bush,calebday@example.org,(412)815-4815,764 Dalton Prairie Apt. 854,Winchester,73412,1979-06-14,35.84,checking,2020-06-30
+CUST-000644,Vanessa,Brady,williamspaul@example.net,377.887.3585x66464,42192 Stokes Fall,Auburn,10344,1957-10-13,57.27,savings,2016-10-09
+CUST-000645,Hannah,Williams,cherylpatel@example.org,678-391-1797x2699,318 Brian Wells,Chester,57122,1972-03-16,60.69,savings,2016-10-23
+CUST-000646,Haley,Jackson,brownmichael@example.org,001-428-653-8631x0505,380 Tran Estates,Washington,55279,1998-09-05,58.04,savings,2022-10-06
+CUST-000647,Donna,Cunningham,brownraymond@example.net,(927)863-3283x89633,518 Thompson Motorway,Lexington,14231,1961-03-20,48.17,savings,2022-02-15
+CUST-000648,Tammy,Rodriguez,leeelizabeth@example.org,439.921.8835,750 Cisneros Orchard,Marion,65120,1969-11-25,41.13,savings,2023-02-09
+CUST-000649,Roberto,Soto,margaret20@example.net,+1-981-843-1927,8159 Riley Place,Riverside,84813,1961-02-28,45.2,investment,2023-07-13
+CUST-000650,Michael,Jimenez,ewinglynn@example.org,001-466-756-8629x591,49899 Matthew Fork Suite 607,Arlington,97254,1964-05-15,17.31,savings,2017-12-19
+CUST-000651,Michelle,Johnson,courtney29@example.com,(994)617-9967x08089,8599 Sullivan Club Apt. 984,Jackson,15252,1971-06-30,86.18,checking,2019-01-10
+CUST-000652,Mary,Stone,jamie98@example.net,264-498-0445,52102 Taylor Mount Apt. 664,Lincoln,72967,1983-07-09,45.44,investment,2017-03-19
+CUST-000653,Mary,White,michael13@example.org,+1-589-983-0574,185 Joyce Freeway Apt. 275,Oxford,02168,1948-07-31,32.39,investment,2018-09-24
+CUST-000654,Erin,Cortez,xgarcia@example.net,(630)856-4184x937,087 Desiree Pines Suite 260,Madison,04594,1952-09-21,70.41,checking,2024-02-08
+CUST-000655,Ronald,Oneal,williamsjoseph@example.com,742-499-0674x5686,62215 Carr Mews Suite 256,Clinton,23865,1957-03-18,63.12,savings,2025-02-25
+CUST-000656,David,Smith,jasonreid@example.net,570-847-4764x8455,13835 Tracy Common Apt. 455,Riverside,29095,1952-01-03,31.62,checking,2023-08-14
+CUST-000657,Michelle,Carlson,figueroapreston@example.net,(811)673-2772,585 Spencer Extension,Franklin,24217,1982-06-04,51.9,savings,2019-08-28
+CUST-000658,Erin,Reed,craig18@example.com,359.617.1050x8054,4473 Fowler Knolls Apt. 478,Oxford,96419,1992-06-08,71.51,investment,2023-12-04
+CUST-000659,Daniel,Clarke,lwilson@example.com,001-297-534-4930x537,83611 John Row,Riverside,68811,2003-06-20,32.14,savings,2026-05-29
+CUST-000660,Ronald,Johnson,lhunter@example.net,852-478-7304,152 Sean Inlet Suite 535,Marion,96044,1959-11-14,36.13,savings,2024-09-21
+CUST-000661,Kristen,Williams,kellygina@example.org,646-571-7762x9691,2999 Oneal Roads,Cleveland,56863,1962-02-09,57.23,savings,2025-08-30
+CUST-000662,Brian,Matthews,norrisdaniel@example.net,+1-385-873-9083x521,2464 Harvey Villages Suite 957,Oxford,22874,1980-12-13,53.79,savings,2025-05-16
+CUST-000663,Madison,Wu,cynthia95@example.net,(981)390-2217,8839 Roach Mountain,Jackson,02386,2003-12-16,43.16,checking,2024-02-09
+CUST-000664,Allison,Moon,sara14@example.org,(772)886-8112x30388,93978 Joshua Junction,Winchester,76055,1946-04-27,87.52,checking,2024-10-24
+CUST-000665,Joann,Williamson,marthagriffin@example.net,5557286693,588 Karen Mountain,Manchester,98674,1946-05-09,17.02,checking,2024-12-18
+CUST-000666,Lucas,Martinez,vsmith@example.org,993-691-0382,551 Jennifer Canyon,Fairview,75732,1949-04-29,46.31,savings,2021-11-30
+CUST-000667,Margaret,Salinas,williamsmark@example.org,937-336-1587x3662,589 Carroll Fords,Harrison,46799,1960-11-06,2.56,savings,2022-10-16
+CUST-000668,Janet,Sims,theresa61@example.com,+1-747-731-5663x9792,64369 Donna Villages,Harrison,67093,2002-12-31,66.65,savings,2021-04-26
+CUST-000669,Hunter,Johnson,amyfisher@example.net,(860)353-4281x6441,97535 Ortiz Greens,Georgetown,06117,2007-01-18,71.07,savings,2026-03-28
+CUST-000670,Benjamin,Caldwell,taylortina@example.org,927-363-6281x444,530 Andrews Cape,Madison,55340,1976-10-22,70.45,investment,2019-03-16
+CUST-000671,Katelyn,Lowery,hudsonglen@example.net,001-949-387-4551x35872,3068 Kristina Throughway Suite 403,Burlington,40486,2005-04-09,77.36,savings,2022-07-05
+CUST-000672,Kathleen,Santana,eharris@example.com,+1-558-233-3647x7041,153 Costa Ferry,Lincoln,71928,1953-08-25,49.53,savings,2017-12-07
+CUST-000673,Joseph,Jackson,bradshawcarlos@example.org,619.605.7720,07941 Erik Landing,Harrison,31984,1998-07-15,67.21,savings,2023-01-13
+CUST-000674,Brian,Webb,corey22@example.com,+1-870-598-7264,51742 Keith Greens,Madison,91451,1986-04-13,57.44,investment,2018-09-28
+CUST-000675,Robert,Rodriguez,johnsonkevin@example.net,(216)230-7028x67202,66219 Gonzalez Plains Apt. 057,Harrison,62864,1983-09-18,69.18,savings,2016-11-25
+CUST-000676,Cody,Sanchez,stephanie90@example.org,539.871.3072x211,871 Simpson Ferry,Milford,16223,1947-03-06,40.58,checking,2024-11-02
+CUST-000677,Leslie,Weeks,julia17@example.org,001-528-817-0744,34422 Thomas Rue,Greenville,52577,1946-07-29,76.47,checking,2020-01-10
+CUST-000678,Jason,Matthews,thomasjessica@example.net,001-809-744-7726x9032,32761 Morrison Hills Apt. 245,Manchester,91208,1968-03-24,47.52,checking,2022-01-01
+CUST-000679,Daniel,Johnson,rodriguezelizabeth@example.com,+1-891-626-8649,686 Jason Light Apt. 088,Marion,35790,1965-04-04,36.43,investment,2019-03-11
+CUST-000680,William,Hall,daviladaniel@example.org,549.892.1640x0698,53484 Nelson Canyon,Clinton,66583,1955-07-17,45.21,investment,2018-11-04
+CUST-000681,Tammy,Ortiz,ryan20@example.org,523-572-0550,00886 Laura Summit,Franklin,94127,2008-03-25,63.84,investment,2021-02-19
+CUST-000682,Brittney,Salazar,blackashley@example.net,814-416-0091,73798 Singh River,Winchester,06363,1970-01-22,56.07,savings,2022-01-08
+CUST-000683,Jessica,Evans,bendermichelle@example.net,(874)363-0009x98433,371 Alexandra Corner,Milford,42226,1951-06-06,36.96,investment,2022-08-23
+CUST-000684,Debbie,Benson,walter94@example.org,6348015353,75699 Campbell Squares Suite 667,Franklin,19935,1990-09-20,58.18,checking,2017-07-22
+CUST-000685,Andrea,Adams,patrickjasmine@example.net,282-423-8794,08581 Baker Islands Apt. 735,Chester,84016,2006-10-10,39.73,investment,2020-09-19
+CUST-000686,Ernest,Arias,wendy00@example.com,329-818-2851,255 Justin Way,Milford,52612,1952-10-23,37.21,savings,2016-12-01
+CUST-000687,Steven,Thompson,bakerricky@example.org,328-438-2710,96151 Anthony Greens,Clinton,70277,1990-09-02,68.8,investment,2016-09-19
+CUST-000688,Jill,Graham,jeffrey44@example.com,001-304-722-7634x6019,57347 Jordan Keys,Dayton,73682,2006-02-25,31.88,checking,2017-06-07
+CUST-000689,Yvette,Nichols,shelbysherman@example.net,+1-427-626-7086x66562,768 Dixon Vista,Cleveland,35833,1995-05-20,65.61,checking,2019-07-15
+CUST-000690,Stuart,Miller,belindafowler@example.com,6064184897,54340 Barber Wells,Greenville,97352,1993-02-05,46.64,investment,2022-01-29
+CUST-000691,Stacey,Hernandez,krystal64@example.net,001-352-954-9206x4411,818 Steven Alley,Clinton,88147,1972-08-19,47.03,investment,2019-09-02
+CUST-000692,Matthew,Willis,vincent82@example.net,888-649-6806,1102 Eugene Wells,Salem,49137,1965-03-13,58.41,savings,2023-03-03
+CUST-000693,Joshua,Pham,johnjohnson@example.net,(204)298-6037x2186,03197 Christopher Valley,Milford,36679,1947-08-25,72.92,savings,2016-09-25
+CUST-000694,Kenneth,Zuniga,allenkaren@example.com,001-619-378-6016x2590,785 Morse Road Apt. 137,Georgetown,45160,1959-09-06,32.21,investment,2021-11-26
+CUST-000695,Jasmin,Johnson,angelalowe@example.com,307.927.9037x16160,39964 Henry Crest,Auburn,70686,1958-01-28,46.78,investment,2019-12-28
+CUST-000696,Jeremy,West,gcastro@example.org,(248)208-5578,443 Jason Locks,Auburn,24909,1955-10-29,70.76,checking,2024-11-04
+CUST-000697,Peter,Johnson,wmorrison@example.com,+1-757-346-7067,139 Terry Wells Apt. 150,Milford,96943,1952-11-16,37.3,investment,2020-09-01
+CUST-000698,Kenneth,Thomas,smithsarah@example.org,550.484.2431,481 Andrew Hollow Apt. 691,Clinton,02528,1965-07-15,34.45,checking,2018-11-21
+CUST-000699,Dylan,Richardson,bennettjennifer@example.net,+1-664-363-3953,50147 Green Drives,Lincoln,64802,1977-06-15,27.06,savings,2024-09-08
+CUST-000700,Kristin,Foley,floresjohn@example.com,912-381-7751x23959,4260 Martin Street Suite 024,Dayton,38868,1973-01-06,27.21,checking,2023-12-26
+CUST-000701,Vicki,Ingram,dmejia@example.org,9513710730,4783 Beck Circle Apt. 175,Springfield,40726,2007-04-06,81.88,investment,2021-11-26
+CUST-000702,Kimberly,Oneal,lori48@example.com,001-872-460-2925x468,88407 Patterson Dale Apt. 763,Fairview,19351,1975-09-25,67.85,investment,2017-04-11
+CUST-000703,Mary,Clark,jared86@example.com,(625)892-3868x79060,05534 Michael Burg,Georgetown,90587,1978-09-01,51.66,investment,2024-12-11
+CUST-000704,Kelsey,Wells,uharmon@example.net,964.905.3567x078,4261 John Tunnel Suite 227,Springfield,28033,1999-10-21,34.52,savings,2024-02-06
+CUST-000705,David,Chandler,brianthompson@example.net,(371)911-7576,2042 Wilson Grove,Jackson,72916,1971-01-24,29.38,savings,2022-02-19
+CUST-000706,Antonio,Thompson,houstonstephanie@example.org,292.320.2698,64710 Payne Ways Apt. 770,Manchester,28817,1996-05-25,43.93,checking,2017-05-28
+CUST-000707,Sandra,Griffin,beasleygina@example.org,393-932-6724x4693,476 Ruth Avenue,Lincoln,71270,1959-08-11,36.3,investment,2022-03-25
+CUST-000708,Judith,Avila,jordan25@example.net,001-498-351-9393x2727,163 Pearson Hills,Riverside,74322,1997-01-30,59.18,checking,2017-03-13
+CUST-000709,Maria,Higgins,vfoster@example.org,228.945.3974x995,864 Robert Park,Burlington,48130,1993-01-28,35.54,savings,2025-01-25
+CUST-000710,Andrew,Williams,ortegasandra@example.net,(290)622-1543,909 Glenn Estate Suite 333,Lexington,23217,1946-01-06,58.48,checking,2018-04-12
+CUST-000711,Michael,Williams,rebecca55@example.org,693-554-5036,32436 Brittany Curve,Chester,01450,1996-10-01,58.48,savings,2016-11-13
+CUST-000712,Anne,Yang,daviddecker@example.com,001-441-229-0759x65999,37631 Stevens Radial,Oxford,49219,1963-02-09,39.94,checking,2017-04-04
+CUST-000713,Alexis,White,danielle93@example.com,891-492-2671x31753,7528 King Cove Apt. 096,Cleveland,16290,1973-11-12,36.76,savings,2024-04-07
+CUST-000714,Anthony,Duncan,donnasuarez@example.com,324-603-2115x35505,219 Kevin Shores,Salem,06971,1978-03-15,64.0,savings,2021-01-07
+CUST-000715,Samantha,Murray,josejacobs@example.org,(442)221-8834x581,770 Vasquez Light Apt. 332,Greenville,77690,1982-09-30,48.76,checking,2022-03-09
+CUST-000716,Michael,Howard,martintanner@example.net,+1-746-840-8585x88382,62084 Olson Shoals Apt. 543,Riverside,84078,2000-09-21,61.25,savings,2023-12-22
+CUST-000717,Christopher,Richards,angelathompson@example.com,4188256247,420 Melissa Extension,Oxford,21803,1961-01-30,60.26,checking,2019-05-04
+CUST-000718,Karl,Berry,frenchcatherine@example.net,(862)570-2660x45095,74003 Brendan Trace,Chester,11563,1981-10-28,38.24,investment,2019-01-22
+CUST-000719,Kathryn,Ryan,dennisevans@example.com,419-936-0060,056 Ross Spur Suite 076,Winchester,17514,1970-03-26,40.23,savings,2018-10-14
+CUST-000720,Alicia,Ayers,smithmark@example.com,(334)561-7623,1094 Marquez Mews,Milford,39779,1954-04-01,73.51,savings,2018-08-08
+CUST-000721,Cory,Bailey,darren37@example.org,676.485.7606x349,6175 Garcia Plaza,Manchester,58353,1946-11-06,62.76,checking,2017-06-20
+CUST-000722,Meghan,Harvey,geraldterry@example.org,(948)437-4441,5653 Armstrong Mission,Oxford,75247,1993-07-16,37.88,investment,2016-09-16
+CUST-000723,Michael,Carter,julie62@example.com,+1-690-347-2386,95385 Olson Grove,Burlington,23357,1951-05-12,60.21,savings,2023-11-12
+CUST-000724,Jimmy,Deleon,conleyantonio@example.org,681.646.0476x1437,0661 Bridges Walks,Riverside,46560,2000-12-12,47.83,checking,2019-03-02
+CUST-000725,Robert,Mcdonald,zfischer@example.net,254-218-5899,7291 Kimberly Inlet,Washington,44347,1948-03-09,18.98,investment,2021-02-23
+CUST-000726,Maureen,Hart,robertsjoel@example.com,001-260-850-3374x69833,730 Ruiz Turnpike Apt. 822,Lincoln,96825,1957-02-27,51.0,savings,2020-09-14
+CUST-000727,Mia,Pruitt,kimberly90@example.net,588.865.3859x067,2898 Archer Burg,Washington,97742,1998-10-07,21.7,savings,2024-08-04
+CUST-000728,Dana,Charles,ashley21@example.net,504.486.1867x066,62907 Sherry Prairie,Clinton,76700,1956-10-10,43.36,savings,2024-12-21
+CUST-000729,Mary,Miller,tracyhoffman@example.com,001-653-437-1708x649,420 Jennifer Ramp Apt. 135,Winchester,40148,1988-11-21,39.86,checking,2022-12-31
+CUST-000730,Heather,Rodriguez,kimberly96@example.com,5692219587,9824 Anna Passage Suite 302,Oxford,91430,1988-05-03,61.38,checking,2024-01-03
+CUST-000731,Steven,Ryan,aruiz@example.com,+1-464-331-5890x1649,37017 Sharon Drives Suite 407,Dayton,06782,1958-06-06,36.83,savings,2021-09-25
+CUST-000732,Amber,Holmes,gibsonrichard@example.net,(296)282-4485,88959 Darlene Mountain Suite 116,Franklin,71258,1945-09-28,44.61,savings,2025-12-22
+CUST-000733,Gina,Ball,kgarrison@example.com,(262)408-0820x3917,44435 Mccoy Ferry Suite 587,Milford,01270,1950-09-21,31.96,investment,2016-09-17
+CUST-000734,Julie,Cochran,kennethsandoval@example.com,769.509.1237,84976 John Lane,Lincoln,85570,1993-07-20,55.82,investment,2016-08-10
+CUST-000735,Samantha,Carter,wflores@example.net,205-553-6481x8754,488 David Well Suite 738,Greenville,48924,1963-01-08,54.67,savings,2023-09-23
+CUST-000736,Robert,Duarte,jerryjohnson@example.com,999.486.4912x594,042 Lopez Loop,Chester,74383,1984-08-28,54.89,investment,2016-09-17
+CUST-000737,Robert,Jones,kfry@example.net,(723)956-9992x99833,877 Carr Landing Suite 041,Marion,32883,1961-08-28,50.31,investment,2018-04-30
+CUST-000738,Alexandra,Camacho,paula31@example.com,298.239.1226,44076 Mary Stream,Oxford,98410,2005-01-25,40.01,investment,2026-03-03
+CUST-000739,Kevin,Pearson,melissaharrell@example.net,001-913-741-0389,872 Brittany Plains,Riverside,57488,1986-03-15,57.82,savings,2024-12-06
+CUST-000740,Patrick,Moore,kennethsmith@example.net,001-820-382-3530x976,962 Deborah Walks Suite 682,Manchester,01066,1950-12-20,52.29,investment,2023-03-11
+CUST-000741,John,Mcconnell,agilbert@example.org,469.757.2404x34741,37956 Alexander Parks,Burlington,64751,1976-11-04,68.82,checking,2023-01-10
+CUST-000742,Charles,Ewing,bryan61@example.net,001-520-925-9991x93873,42444 Mitchell Rest,Chester,00512,1994-09-23,75.54,investment,2021-07-15
+CUST-000743,Anthony,Brady,xcline@example.org,910-576-5191x70851,951 Bell Fields,Chester,34028,1947-12-09,73.95,investment,2024-09-28
+CUST-000744,Angela,Gomez,cooperamy@example.org,001-215-974-4965x3916,04093 Jennifer Island Suite 184,Washington,02909,2008-04-03,89.08,investment,2019-02-02
+CUST-000745,Sandra,Joseph,gregorybrock@example.org,+1-239-966-2038x58864,65295 Tara Light,Chester,37526,1989-03-15,32.11,savings,2023-09-12
+CUST-000746,Jamie,Harris,matthewbutler@example.org,2398744088,89870 Blake Springs Apt. 991,Harrison,71391,1998-06-20,49.18,investment,2024-10-28
+CUST-000747,Crystal,Werner,christiangonzalez@example.org,(861)515-8485x8052,119 Johnson Motorway,Washington,90120,1987-12-15,47.29,savings,2018-03-11
+CUST-000748,Andrew,Perez,egregory@example.com,654-847-0823x171,953 Fisher Turnpike,Lincoln,64191,1996-04-01,50.43,checking,2026-07-31
+CUST-000749,David,Russell,markblake@example.com,2534026184,8703 Black Causeway Suite 063,Arlington,05944,1970-07-26,26.84,investment,2018-12-27
+CUST-000750,Maria,Watson,jessicaeaton@example.org,+1-364-409-8910x3909,302 Taylor Rest,Harrison,34880,1966-12-16,36.56,investment,2023-06-28
+CUST-000751,Katrina,Stevens,ashley95@example.org,292-460-0986,7454 Jarvis Ramp Apt. 054,Springfield,98433,1980-09-07,40.33,investment,2022-08-26
+CUST-000752,Heather,Frost,williemartinez@example.org,+1-881-889-6558x3445,95217 Williams Squares,Cleveland,53899,1969-07-15,43.26,investment,2018-12-13
+CUST-000753,Lisa,Garcia,tpittman@example.net,(707)704-7266x02351,53017 Erin Roads,Dayton,12319,1972-04-06,50.68,savings,2024-09-10
+CUST-000754,Leslie,Brown,xarmstrong@example.org,(944)613-3954,645 Colton Valleys,Madison,42427,1989-05-08,54.82,investment,2026-06-24
+CUST-000755,Taylor,Brown,vmartinez@example.org,001-589-586-6469x36561,974 Foster Avenue Suite 702,Jackson,32336,2008-03-19,45.34,savings,2023-07-18
+CUST-000756,Melanie,Solis,weaverjohn@example.org,+1-419-922-0956x7333,239 Roberts Canyon,Clinton,24886,2000-04-28,24.53,investment,2025-10-26
+CUST-000757,Marco,Hines,ddonovan@example.com,+1-792-442-7739x238,32091 Barker Alley,Salem,09054,1972-04-09,85.78,checking,2018-06-29
+CUST-000758,Kathleen,Thompson,kelly34@example.com,+1-719-498-2907x55154,75699 James Forges Apt. 006,Georgetown,37770,2007-08-22,57.19,checking,2018-09-26
+CUST-000759,Eric,Ayala,uhaney@example.org,(277)877-3316,7070 Angelica Center Apt. 605,Burlington,81026,1965-05-02,46.65,investment,2022-11-04
+CUST-000760,Laura,Taylor,christopher07@example.net,802-474-0675x8267,062 Megan Gardens Suite 385,Georgetown,83639,1998-12-18,57.92,savings,2024-09-12
+CUST-000761,Richard,Moses,sonya14@example.net,945.697.9318x399,9860 Cervantes Bridge,Milford,37475,1983-03-25,55.27,investment,2024-08-09
+CUST-000762,Jared,Colon,iphillips@example.org,001-339-746-1212x8981,534 Adam Cliffs Apt. 762,Winchester,18519,2002-11-29,16.66,checking,2024-10-08
+CUST-000763,Teresa,Warner,sheila42@example.net,(456)478-7188,8870 Sandoval Vista,Harrison,38528,1949-11-06,56.61,savings,2021-10-28
+CUST-000764,Patrick,Jones,heidiscott@example.net,(864)979-9846x058,638 Tasha Walks Suite 236,Lincoln,16141,1948-10-18,57.8,savings,2022-01-12
+CUST-000765,Audrey,Taylor,cruzdavid@example.org,(755)957-8645x78655,24764 Adam Lights Suite 586,Milford,70094,1999-07-10,23.12,savings,2019-07-07
+CUST-000766,Brian,Jones,ugomez@example.org,(924)644-1899,33868 Smith Trail,Auburn,31090,1998-04-21,76.27,savings,2024-10-22
+CUST-000767,Michelle,Cross,psmith@example.com,209.444.2386,508 Anthony Rest,Auburn,36936,1992-08-24,34.28,investment,2018-09-23
+CUST-000768,Elizabeth,Smith,mlittle@example.com,+1-779-872-4528x413,045 Steven Knoll Suite 748,Lincoln,02357,1981-09-15,70.45,investment,2021-08-02
+CUST-000769,Danielle,Walker,erica59@example.net,001-780-426-0294x42031,490 Lee Inlet Apt. 031,Harrison,74362,1992-06-25,48.44,checking,2023-04-03
+CUST-000770,Thomas,Patel,xcox@example.org,+1-741-886-4823x08829,96233 Tasha Meadow Apt. 586,Fairview,94405,1984-11-01,67.19,investment,2019-05-27
+CUST-000771,Stephen,Roberson,sarah31@example.com,306.362.9315,824 Olivia View Suite 594,Washington,54806,1984-11-04,56.34,savings,2022-07-16
+CUST-000772,Andrew,Fisher,joestevens@example.org,471.579.8902,900 Stewart Groves Suite 084,Cleveland,61582,2007-08-16,89.8,savings,2022-05-31
+CUST-000773,Jacqueline,Jones,ufisher@example.com,598.918.8907,9157 Angela Hollow,Harrison,48944,1977-09-23,56.22,savings,2022-09-08
+CUST-000774,Jennifer,Myers,nserrano@example.net,388-476-3802x076,612 Shari Turnpike,Manchester,88044,1983-07-28,72.6,savings,2022-12-03
+CUST-000775,Matthew,Davis,mooreashley@example.net,961.482.0706x69010,2982 Tran Fort,Auburn,29848,1962-12-03,74.44,savings,2023-09-01
+CUST-000776,Elizabeth,Atkinson,catherine70@example.org,001-550-767-5789x683,707 Young Courts Apt. 315,Washington,43659,1967-01-15,39.19,checking,2017-01-11
+CUST-000777,Megan,Flores,howarddawn@example.net,599.338.4440x4588,1470 Karen Forks,Dayton,85458,1995-08-01,43.48,savings,2025-02-10
+CUST-000778,James,Nichols,owilson@example.com,001-689-610-9779x78023,8446 Andrews Hill Apt. 366,Marion,39581,1996-11-29,36.87,checking,2017-04-07
+CUST-000779,Jeffery,Taylor,timothy78@example.net,415.997.5729,86830 Annette Corners,Washington,43941,1980-10-31,86.1,checking,2025-10-27
+CUST-000780,Dorothy,Day,jeremyevans@example.com,001-551-685-4839x6607,7462 Michael Roads Suite 841,Marion,82697,1976-04-15,59.77,savings,2024-01-04
+CUST-000781,Sandra,Lynch,abrown@example.com,3226181698,44760 Roth Ford,Jackson,91464,1976-04-10,49.31,checking,2021-02-05
+CUST-000782,Anthony,Davies,amandaroberts@example.net,830.426.5099,366 Stevens Rapid,Auburn,98314,1969-05-22,67.12,savings,2020-10-03
+CUST-000783,Ryan,Miller,wendyfrancis@example.org,320-522-2349x980,8367 Williamson Brook Apt. 779,Auburn,09960,1966-03-25,47.3,investment,2022-12-17
+CUST-000784,Joshua,Powell,kelly92@example.org,451.874.6564,86372 Robinson Port,Winchester,77119,1994-11-21,42.31,investment,2020-03-03
+CUST-000785,Rebecca,James,michael22@example.com,+1-776-741-4900x38502,344 Golden Locks,Salem,63561,1954-06-20,51.06,investment,2021-12-08
+CUST-000786,Amanda,Armstrong,taylor33@example.org,354-361-5749x325,978 Lawrence Island Apt. 120,Salem,38448,1946-06-26,72.31,investment,2019-10-29
+CUST-000787,John,Simpson,gcoleman@example.org,5853800187,91511 Perez Orchard Suite 210,Salem,64186,1995-11-27,64.66,investment,2017-05-18
+CUST-000788,Stephen,Williams,umccoy@example.com,325-770-6802x6933,30600 James Ferry Suite 550,Manchester,89011,1966-03-03,55.02,checking,2024-11-29
+CUST-000789,Gary,Yang,robertseric@example.com,(870)515-1459x92016,822 Melissa Harbors,Lincoln,05397,1947-08-04,50.2,investment,2019-10-19
+CUST-000790,Misty,Matthews,elizabethwilliams@example.com,(601)590-1134,133 Michael Path,Madison,50155,2005-10-16,48.48,savings,2017-10-08
+CUST-000791,Jason,Sanchez,matthew64@example.com,(934)828-6449,49866 Joseph Summit,Jackson,07645,1991-07-29,78.26,savings,2022-06-08
+CUST-000792,Michael,Kim,efields@example.net,749.885.2973,2665 Hart Circles,Jackson,35564,1976-05-05,37.78,checking,2025-07-29
+CUST-000793,Susan,Wood,monicadixon@example.net,(964)614-7533x69524,5353 Martinez Roads Suite 324,Cleveland,27049,2000-11-18,62.87,investment,2023-09-03
+CUST-000794,Veronica,Snyder,kennethmorgan@example.org,(676)838-3543,639 Robert Courts Suite 824,Riverside,74623,1975-03-29,47.03,checking,2022-12-28
+CUST-000795,Christina,Goodwin,perrymichael@example.org,+1-981-416-8371x03073,72014 Olsen Plaza Apt. 826,Jackson,96434,1962-12-08,33.41,investment,2018-09-06
+CUST-000796,David,Martinez,raymond39@example.com,001-576-325-4292x64563,99403 Hoover Greens Apt. 126,Riverside,92581,2003-01-01,41.66,checking,2023-10-16
+CUST-000797,Ashley,Davis,rhayes@example.org,(283)335-3910x16125,399 Simon Bypass Apt. 333,Arlington,36175,2006-11-05,56.89,checking,2018-10-04
+CUST-000798,Samantha,Barnes,ndouglas@example.net,981-540-9841x016,48116 Theresa Prairie,Oxford,86281,1990-05-11,43.71,savings,2023-03-26
+CUST-000799,Christopher,Johnson,diana20@example.org,486.361.6801x99034,8548 Beasley Circle,Madison,27964,1965-09-19,85.38,savings,2017-05-07
+CUST-000800,Bryan,Woods,tuckersheila@example.net,338-960-1571,21940 Kevin Mountain,Riverside,88189,2000-04-02,35.11,checking,2018-03-21
+CUST-000801,Sarah,Peters,robertsdavid@example.net,945.827.1936x785,3913 Benjamin Route Suite 491,Washington,86696,2007-09-18,43.49,savings,2017-10-28
+CUST-000802,Becky,Mitchell,darlenewilson@example.com,8134153506,68455 Yesenia Extensions Suite 410,Washington,18710,1985-06-25,47.04,savings,2019-06-07
+CUST-000803,Jennifer,Brown,msilva@example.net,+1-548-285-6694x899,1956 Bailey Shore,Jackson,53177,1958-09-21,33.14,checking,2020-03-29
+CUST-000804,William,Tanner,shaneramsey@example.com,(866)225-6504,01441 Adam Viaduct Suite 862,Milford,34668,1948-02-27,45.3,savings,2023-08-10
+CUST-000805,Sean,Morton,smithdanielle@example.com,(589)304-1728x20762,2232 Henry Point,Fairview,20820,1963-06-29,52.58,checking,2021-12-18
+CUST-000806,Thomas,Cline,michaelobrien@example.net,300-341-0847x9135,0535 Pennington Expressway,Winchester,84797,1979-01-12,56.87,savings,2017-11-30
+CUST-000807,Margaret,Moody,oroberts@example.net,+1-257-680-9783x02801,453 Jones Isle,Jackson,17048,1995-03-01,49.56,investment,2021-09-15
+CUST-000808,Rebecca,Spears,keith86@example.com,728-902-1889x3063,378 Elizabeth Court,Chester,29588,1997-07-05,59.62,savings,2022-10-22
+CUST-000809,Rebecca,Wallace,lynnpowell@example.net,6552855759,90696 Hannah Knolls Apt. 898,Dayton,56750,1946-07-14,45.51,investment,2017-04-08
+CUST-000810,Brandon,Rivera,callen@example.com,(370)616-5276x136,53084 Timothy Locks,Jackson,81236,1984-04-09,41.26,savings,2023-01-02
+CUST-000811,Melinda,Phillips,steve72@example.com,6842232423,1724 Jennifer Junctions,Arlington,32823,2004-12-20,43.64,investment,2020-08-02
+CUST-000812,Daniel,Nichols,stephen90@example.com,(979)260-2425,32959 Howard Forges,Greenville,11323,1965-11-25,49.39,checking,2021-12-24
+CUST-000813,Lisa,Fox,brandonsmith@example.org,+1-466-429-9172x174,41678 Rebecca Knolls,Clinton,90219,1960-10-08,15.2,checking,2018-05-13
+CUST-000814,Richard,Munoz,agarrison@example.com,225.603.1392,22061 Daniel Garden Apt. 359,Fairview,30083,1976-06-08,54.96,savings,2021-06-22
+CUST-000815,Cassandra,Smith,whitebonnie@example.com,(616)222-5647x18559,923 Justin Tunnel Suite 323,Salem,11359,2006-03-27,38.83,savings,2023-02-10
+CUST-000816,Taylor,Moon,mitchellnicholas@example.com,001-943-970-1945x3911,6505 Donna Rue Suite 120,Washington,75932,1955-09-10,53.88,investment,2017-06-20
+CUST-000817,Isabella,Morris,russellcharles@example.net,+1-802-923-1167x870,53223 Martinez Knolls Apt. 126,Winchester,83831,1978-03-01,39.52,savings,2019-06-13
+CUST-000818,William,Gutierrez,smiller@example.org,+1-443-500-0375x398,24659 James Fords,Harrison,17122,2006-10-09,44.84,checking,2024-02-25
+CUST-000819,Amanda,Scott,mhopkins@example.net,265.891.5382x0114,66426 Glenn Wells Apt. 512,Riverside,64444,1957-02-19,41.71,checking,2019-05-26
+CUST-000820,Sherry,Walker,tracydavenport@example.net,(456)497-6487x8496,451 Kurt Road Apt. 506,Oxford,76338,1953-10-08,35.4,investment,2022-04-12
+CUST-000821,Mark,Ferguson,michele20@example.com,001-627-667-2935x09793,29146 Santana Ferry,Milford,19813,1995-03-19,77.78,savings,2019-07-13
+CUST-000822,Trevor,Pierce,mitchellmichael@example.com,001-497-325-1840x7033,8233 Brewer Drives Apt. 945,Harrison,08893,1990-10-28,35.42,checking,2020-07-19
+CUST-000823,Ricardo,Blair,fosterrichard@example.org,+1-628-463-0112x20084,8333 Sweeney Spring Suite 082,Jackson,91116,1979-08-22,60.84,investment,2020-08-28
+CUST-000824,Jennifer,Little,patrickchristian@example.net,+1-349-546-9208x56490,9519 Neil Views,Salem,86102,2006-08-29,43.69,checking,2025-05-07
+CUST-000825,Chris,Nolan,peter75@example.net,001-208-603-8890x441,3156 English Junctions,Clinton,10442,1988-11-21,33.63,investment,2024-12-09
+CUST-000826,James,Walters,hilldebbie@example.com,775-858-0309x0168,1778 Johnson Rest Apt. 271,Marion,53558,2002-02-22,52.26,savings,2021-11-15
+CUST-000827,Angelica,Warner,bmiles@example.org,958-866-8611,9833 Robert Mountains Apt. 505,Harrison,70796,1958-09-02,33.88,investment,2018-07-01
+CUST-000828,Michael,Ryan,robert72@example.net,(835)433-9982x426,7580 Erin Plains,Lincoln,35586,2004-02-18,44.85,checking,2020-11-17
+CUST-000829,Todd,Melton,briggskimberly@example.org,(885)532-7276,1502 Martinez Path Suite 461,Cleveland,31768,1945-11-18,50.4,checking,2022-01-17
+CUST-000830,Lisa,Pugh,nicholsanne@example.com,(907)338-2777,425 Heather Orchard,Milford,86021,1977-05-09,75.15,savings,2020-07-02
+CUST-000831,Aaron,Morrison,ramoschristopher@example.org,2247234473,771 Michael Springs Suite 165,Milford,93532,1984-01-11,48.27,investment,2020-02-07
+CUST-000832,Raymond,Carrillo,mphillips@example.net,001-668-433-4400x9522,537 Susan Falls Apt. 191,Greenville,34366,1960-12-19,44.2,checking,2022-11-03
+CUST-000833,Alexander,Smith,timothy36@example.org,001-815-279-1150x10162,026 Castro Stravenue,Auburn,27886,1987-10-12,58.26,investment,2025-01-18
+CUST-000834,Renee,Harper,jeffreyroberts@example.net,001-335-671-9214x967,86643 Andrew Fords Apt. 726,Clinton,55981,1968-08-03,44.22,checking,2024-05-22
+CUST-000835,Douglas,Long,joseph92@example.net,824.200.0208x6014,90854 Madison Park Apt. 630,Chester,85037,1989-06-16,59.89,investment,2018-08-01
+CUST-000836,Jimmy,Roach,patrickmarquez@example.org,5103009089,104 Glenn Row Apt. 541,Georgetown,44423,1979-11-11,37.17,investment,2026-01-13
+CUST-000837,Katelyn,Weber,howelljerry@example.com,001-337-466-1366x280,681 Farrell Way,Dayton,75484,1964-09-12,17.97,savings,2021-03-11
+CUST-000838,Heidi,Scott,wbradford@example.net,811.905.8330,798 Irwin Court,Riverside,73599,1982-06-06,52.25,savings,2017-11-06
+CUST-000839,Kyle,Contreras,thomasrussell@example.com,+1-501-867-6718x7762,8850 Jessica Locks,Clinton,84371,1955-10-11,33.49,checking,2025-11-05
+CUST-000840,George,Moore,creynolds@example.net,001-280-993-7616x522,935 Derek Junctions Suite 772,Auburn,57364,1965-12-08,48.62,savings,2022-08-20
+CUST-000841,Tyler,Phillips,rhondawood@example.net,+1-805-701-4171,939 Stephanie Dam Suite 651,Lincoln,70543,1979-03-06,58.42,savings,2017-05-28
+CUST-000842,Danny,Rowland,pwilliams@example.com,001-900-292-4492x87875,029 Andrew Cove,Fairview,96325,2000-11-12,27.48,checking,2020-01-01
+CUST-000843,Alexander,Schneider,chouston@example.com,829-506-9522x233,806 Olivia Bridge,Winchester,65837,1985-11-09,51.17,savings,2016-10-19
+CUST-000844,Derek,Green,rebeccacurtis@example.com,(749)975-3740,446 Valenzuela Springs,Marion,65517,1961-09-18,55.72,investment,2023-10-22
+CUST-000845,Amy,Vasquez,michaeltorres@example.com,845.714.6688,483 Hoffman Walks,Franklin,30469,1987-04-09,44.89,checking,2025-11-14
+CUST-000846,Diana,Duffy,melissacollier@example.org,(664)585-3207x75870,698 Diane Run,Manchester,33507,1964-07-20,48.65,checking,2025-04-25
+CUST-000847,Jessica,Shea,michelle05@example.org,001-245-905-0928x46720,2939 Heidi Mission,Washington,30290,2003-03-25,28.42,investment,2021-07-03
+CUST-000848,Donald,Stanton,joseph50@example.org,+1-701-262-5851,045 Diane Points,Winchester,12849,1965-03-28,63.91,investment,2020-01-14
+CUST-000849,Nicole,Taylor,xcarlson@example.net,+1-233-679-5311x12359,5274 Andrea Ville,Arlington,89059,1969-07-25,27.73,savings,2018-06-08
+CUST-000850,Elizabeth,Rodriguez,millstyler@example.net,285.354.5146,1174 Poole Island,Oxford,99565,1988-09-17,72.42,savings,2023-06-28
+CUST-000851,Holly,Bradshaw,ltaylor@example.net,467-333-7461,5626 Andrade Extensions Suite 084,Franklin,69408,1953-01-26,40.94,investment,2026-05-12
+CUST-000852,Diana,Myers,lawrencesarah@example.com,001-731-396-3039,704 Johnson Isle Apt. 267,Clinton,30328,1988-03-27,29.86,investment,2017-08-08
+CUST-000853,Glen,Hodges,kimberly88@example.net,7485514202,5028 Kristen Freeway Apt. 342,Marion,62285,1968-05-25,84.65,savings,2020-04-24
+CUST-000854,Nicholas,Lopez,rodriguezmark@example.net,8447318343,02977 Erika Coves,Milford,42534,1946-08-07,81.98,checking,2018-01-27
+CUST-000855,Brenda,Fry,yjacobs@example.com,373-228-1629,92219 Randy Club Suite 737,Winchester,57536,1994-08-14,78.21,checking,2017-09-28
+CUST-000856,Anthony,Taylor,cfreeman@example.net,459-291-5304x4500,683 Peters Bypass,Washington,28425,1992-07-11,46.21,savings,2019-09-13
+CUST-000857,Michael,Brown,wesley76@example.org,704.609.3467,236 Bradley Gardens,Lincoln,72519,1987-07-03,46.96,savings,2021-01-24
+CUST-000858,Charles,Savage,craig34@example.com,4187422013,08316 Jennifer Route,Salem,54381,1959-08-10,34.54,checking,2025-01-05
+CUST-000859,John,Cunningham,wongjacqueline@example.org,001-269-207-8947x6720,14107 Stephen Mews Apt. 485,Burlington,04116,1995-08-28,43.16,investment,2023-04-26
+CUST-000860,Mary,Flores,jaysmith@example.com,719-819-4454,96556 Carol Motorway Suite 713,Cleveland,58066,1973-09-17,59.91,checking,2023-06-12
+CUST-000861,Darren,Fischer,bbrady@example.org,001-556-212-6678,7371 Amy Walk Suite 402,Riverside,96109,1954-05-30,55.71,checking,2023-06-24
+CUST-000862,Sara,Juarez,elizabeth14@example.com,(362)676-3304x1176,152 Dixon Creek,Salem,79270,1970-08-08,35.44,checking,2021-12-02
+CUST-000863,Robert,Eaton,bgreen@example.com,(556)289-6987x0368,8379 Richard Forks,Franklin,90953,1998-09-16,53.16,investment,2024-04-04
+CUST-000864,Barbara,White,kimberlymann@example.net,327-206-5934,62911 Jackson Passage Apt. 471,Lincoln,68474,1957-09-26,52.32,investment,2017-06-23
+CUST-000865,Danny,Horton,epearson@example.com,+1-278-798-4974x99799,17114 Gibbs Mall,Riverside,47155,1978-02-28,50.15,savings,2017-07-20
+CUST-000866,Christine,Alvarado,reynoldstravis@example.net,+1-456-831-6312x97557,9496 Tony Points,Salem,66969,1950-01-29,54.51,investment,2022-05-05
+CUST-000867,Patricia,Fox,myerstiffany@example.org,001-301-830-7167x532,361 Chase Ridges,Georgetown,69560,1966-05-11,50.71,checking,2022-05-21
+CUST-000868,Karen,Williams,sanchezemily@example.net,(345)485-8356x399,3922 Waters Junctions Apt. 741,Milford,79170,1989-09-27,24.06,savings,2018-06-12
+CUST-000869,Angela,Humphrey,marilyn62@example.org,001-723-660-1863x994,84531 Price Trail,Salem,07411,1983-08-08,59.77,savings,2016-09-08
+CUST-000870,Kelsey,Ruiz,vboyd@example.com,001-490-396-4598x72408,3516 Romero Cliff Apt. 397,Dayton,25681,2004-06-19,27.72,investment,2021-02-17
+CUST-000871,Timothy,Taylor,tsandoval@example.com,5242222419,323 Edwards Bridge Apt. 814,Cleveland,38536,1962-07-08,43.83,savings,2019-07-27
+CUST-000872,Teresa,Salas,eric02@example.net,835-309-4765x118,4099 Garcia Park Suite 398,Clinton,81771,1990-02-15,38.34,investment,2025-07-29
+CUST-000873,Taylor,Flores,kevinnguyen@example.org,+1-690-482-6110x35659,23766 Aguilar Manors,Milford,79137,1956-07-09,52.29,checking,2018-04-13
+CUST-000874,Michael,Hall,qdavis@example.org,683-490-9342,66283 Ortiz Flats Suite 889,Auburn,30657,2005-08-06,62.47,investment,2019-03-06
+CUST-000875,Thomas,Garcia,ngraham@example.com,001-408-765-4243x8269,74350 Martin Trace Suite 947,Winchester,83280,2000-02-20,67.87,savings,2019-02-02
+CUST-000876,Ronald,Strong,ncampbell@example.com,+1-217-265-0471x883,2887 Sarah Haven Suite 686,Auburn,56822,1973-12-14,38.9,savings,2021-12-28
+CUST-000877,Beth,Bryant,dhaynes@example.net,+1-606-990-1497x1103,6756 Luna Alley,Riverside,86041,1966-12-10,85.21,investment,2022-01-11
+CUST-000878,William,Acevedo,cruzeileen@example.com,001-723-243-5969,0566 Todd Inlet Apt. 242,Oxford,74031,1972-12-26,43.81,investment,2021-04-26
+CUST-000879,Jacqueline,Matthews,laurie14@example.org,(850)638-5762,638 Berry Trace,Chester,98628,1971-04-05,44.91,savings,2022-03-13
+CUST-000880,Brett,Cruz,william30@example.net,701-327-8969,48527 Bell Lane,Oxford,62740,1948-09-04,35.5,checking,2018-10-06
+CUST-000881,Mark,Thomas,julielewis@example.com,+1-443-594-6896x33181,7617 Shane Forges,Cleveland,16758,2001-06-01,39.18,checking,2019-08-14
+CUST-000882,Michelle,Murray,athompson@example.org,(636)978-5089x8977,443 Combs Station Suite 295,Washington,25438,1973-09-16,47.37,investment,2021-03-14
+CUST-000883,Jon,Petersen,riverskristen@example.com,(776)387-4042x0767,753 Davis Island Suite 330,Clinton,82026,1982-09-02,61.43,investment,2024-06-28
+CUST-000884,Dawn,Williams,joanna65@example.com,(582)734-4538x565,26600 Jorge Burgs,Arlington,75293,1992-01-10,18.74,savings,2017-04-21
+CUST-000885,Jill,Briggs,madison11@example.net,001-598-999-6511x815,6144 West Course Suite 870,Auburn,37288,1990-12-31,35.39,savings,2023-12-07
+CUST-000886,Robert,Lambert,jkelley@example.net,+1-305-625-6599x508,330 Audrey Ferry,Georgetown,65562,1972-03-29,47.21,savings,2019-06-17
+CUST-000887,Andre,Ramirez,nbecker@example.net,(622)914-0513x18660,3389 Jon Street Suite 247,Jackson,39721,2000-01-31,64.41,savings,2024-11-17
+CUST-000888,Aaron,Murphy,julian02@example.net,687.935.1866,1313 Jones Spring Apt. 025,Franklin,67887,1969-02-27,57.82,investment,2019-04-12
+CUST-000889,Shirley,Barnes,amanda15@example.org,+1-288-652-1789x559,86558 Nicholas Key,Winchester,99840,1984-09-19,52.33,savings,2018-10-02
+CUST-000890,Jamie,Nash,larrygill@example.net,580-603-8146,924 Curtis Rest,Lincoln,48994,1981-10-12,45.72,investment,2024-01-18
+CUST-000891,John,Hines,pittmanjill@example.org,(318)652-7341,33155 Gonzalez Center Apt. 530,Lexington,25379,1949-04-25,55.65,investment,2019-09-04
+CUST-000892,Alex,Alexander,powerscory@example.org,+1-665-798-4557x663,82991 Richard Ridges Suite 520,Winchester,55154,1964-12-06,51.43,investment,2017-06-03
+CUST-000893,Christine,Gross,johnsonteresa@example.net,001-866-491-0082x2421,221 Kelly Route Suite 269,Auburn,75012,1994-09-08,52.11,savings,2026-02-24
+CUST-000894,Anthony,Lee,tyler10@example.org,(493)425-7228x703,74859 Moss Glens,Washington,25584,1980-08-30,60.05,checking,2025-12-30
+CUST-000895,Duane,Bailey,matthew05@example.net,202.886.0604x80224,7476 Williams Prairie Apt. 418,Georgetown,96010,1982-06-04,85.42,checking,2019-11-28
+CUST-000896,Philip,Watts,austinlester@example.com,+1-756-823-8878x8876,36062 Megan Brooks,Winchester,12059,2008-02-13,35.24,savings,2024-08-06
+CUST-000897,Miranda,Hawkins,weekstimothy@example.net,671-799-0380x351,294 Jones Station,Salem,99261,1953-04-17,42.16,savings,2021-03-13
+CUST-000898,Anna,Williams,jesus72@example.net,795.516.7309,670 Lin Trace,Salem,68274,1971-01-21,27.95,investment,2022-11-14
+CUST-000899,Kaitlin,Gutierrez,norman29@example.org,(582)728-2801x832,68856 Maldonado Village,Chester,55866,1976-02-27,52.34,investment,2020-09-11
+CUST-000900,Tyler,Smith,zramirez@example.net,474.349.5975,3175 Sutton Station,Jackson,43722,1983-05-21,35.51,savings,2018-03-10
+CUST-000901,Wesley,Dean,amanda74@example.org,+1-814-686-2675x11997,49655 Katrina Tunnel Suite 419,Washington,53362,1973-05-12,48.69,savings,2022-08-04
+CUST-000902,John,Sharp,knightjamie@example.net,420.416.3015x97224,349 Timothy Loop Apt. 984,Burlington,57634,1986-11-12,67.94,checking,2017-02-04
+CUST-000903,Christopher,Schultz,hilllaura@example.org,380-715-3735x8667,4605 Brenda Lock Apt. 967,Winchester,35539,2004-04-13,21.82,checking,2024-11-06
+CUST-000904,Richard,Graves,otaylor@example.com,001-936-449-9119x2856,021 Booker Stravenue Apt. 830,Marion,88788,1976-12-03,55.47,savings,2020-01-02
+CUST-000905,Luke,Taylor,paulbutler@example.org,+1-256-978-4460x789,99198 Stephen Landing Suite 129,Arlington,89313,1988-12-12,78.74,investment,2019-08-05
+CUST-000906,Laura,Munoz,matthewchambers@example.com,998-828-3859x747,5907 Michael Hollow Suite 343,Clinton,57112,1979-06-09,58.49,checking,2023-03-05
+CUST-000907,Curtis,Heath,stephanieswanson@example.net,990-976-3415x359,01154 Gibson Forks,Fairview,38215,1984-04-27,31.24,investment,2019-03-26
+CUST-000908,Elizabeth,Cardenas,heather72@example.org,(657)385-6413x547,557 Christine Island Apt. 328,Arlington,48567,2006-07-05,43.47,savings,2020-02-05
+CUST-000909,Andres,Rowe,todd94@example.com,(481)566-0284x136,470 Smith Cove,Clinton,33481,1970-10-31,53.6,investment,2022-07-13
+CUST-000910,Theresa,Schultz,scotttiffany@example.net,001-773-241-8559,4560 Steven Field,Salem,80256,1997-07-22,60.23,savings,2017-08-11
+CUST-000911,Christian,Bailey,hopkinsbenjamin@example.org,406.779.4907x869,162 Kara Lakes Apt. 896,Auburn,58850,1970-12-01,37.14,savings,2019-02-07
+CUST-000912,Whitney,Gibbs,xcooke@example.net,(589)660-7072x288,35139 Charles Field,Cleveland,06678,1983-08-19,31.18,savings,2025-09-17
+CUST-000913,Kyle,Vasquez,theresa36@example.com,+1-935-579-6714x80300,658 Peter Burg Apt. 526,Winchester,31602,2002-02-10,39.04,checking,2021-04-24
+CUST-000914,Brittany,Baker,thomaswilliam@example.net,(469)811-2232x1425,97892 Patrick Way,Winchester,40626,1970-06-12,36.46,savings,2024-03-08
+CUST-000915,Lucas,Stuart,nicholas53@example.org,(854)941-1818x513,052 Jamie Views,Madison,85444,1986-02-21,62.03,checking,2017-08-09
+CUST-000916,Brittany,Wallace,xpalmer@example.org,+1-347-614-6220,35401 Jack Extension,Auburn,71503,1958-08-25,64.53,investment,2020-06-29
+CUST-000917,James,Romero,dmora@example.com,9908676183,950 Fisher Orchard,Riverside,90815,1998-06-02,21.65,checking,2022-12-20
+CUST-000918,Jacob,Davis,bobbygardner@example.net,(680)741-8693x0326,9674 Brianna Corner Suite 053,Lincoln,80353,1988-07-21,45.7,checking,2020-06-21
+CUST-000919,Rhonda,Flynn,sanfordjennifer@example.com,+1-703-342-5197x0181,8296 Best Mountain,Cleveland,36843,1956-08-21,58.15,investment,2026-03-18
+CUST-000920,Sandra,Jones,danasanders@example.org,001-752-660-2216x90887,93358 Katelyn Views,Salem,39566,1957-09-15,50.33,checking,2024-12-29
+CUST-000921,Danielle,Smith,shane51@example.com,354-469-3510x2140,19558 Knight Bridge,Harrison,29408,1966-12-14,56.14,savings,2024-03-09
+CUST-000922,Carrie,Garcia,fmiller@example.net,6303568709,6051 King Valleys,Marion,30891,1993-07-13,58.57,checking,2022-11-30
+CUST-000923,Brittany,Clark,qcruz@example.org,001-987-567-7600x64345,730 Jeremiah Greens,Lexington,76541,1995-06-15,27.33,savings,2024-02-01
+CUST-000924,Jennifer,Hayes,qkemp@example.com,904-584-8094,156 Melissa Vista,Lincoln,38447,1955-10-28,23.38,savings,2017-02-11
+CUST-000925,Brooke,Allison,lisa47@example.com,911-707-9764,565 Hernandez Port Suite 226,Springfield,90039,1981-12-06,68.98,checking,2019-07-25
+CUST-000926,Matthew,Harding,changbethany@example.net,546.485.6066x99261,709 Ware Motorway Suite 957,Springfield,05859,1993-04-15,50.79,investment,2018-08-27
+CUST-000927,Annette,Bryan,nicholascrawford@example.net,(471)810-7351,06824 Frank Fields,Winchester,90208,2004-12-05,43.6,checking,2019-01-08
+CUST-000928,Kristin,Lewis,johnnygray@example.com,001-706-994-3069x523,2941 William Gardens Suite 006,Milford,35222,1961-08-05,90.82,investment,2025-06-17
+CUST-000929,Angela,Mitchell,vchan@example.org,619-480-4255,3764 Michael Union,Lincoln,04415,1975-10-28,17.78,checking,2025-03-14
+CUST-000930,Stephanie,Pierce,bstephens@example.net,(903)292-2131,586 Nielsen Ramp,Greenville,76088,1987-04-20,65.02,checking,2022-01-01
+CUST-000931,Thomas,Warren,hmoore@example.com,314.924.9562,4160 James Falls Apt. 700,Milford,42992,1950-07-22,55.81,investment,2017-01-05
+CUST-000932,Alison,Collins,hernandezandrew@example.net,(801)675-4541,210 Sullivan Curve Suite 501,Fairview,47098,1956-05-20,57.88,savings,2023-05-31
+CUST-000933,Ashley,King,marciahall@example.net,(907)485-4833x0958,836 Ronald Underpass,Fairview,12025,2000-01-24,51.7,savings,2019-12-16
+CUST-000934,Tiffany,Hernandez,richardjones@example.net,+1-985-981-9701x50196,92519 Brandon Vista,Burlington,74209,1955-05-09,44.15,investment,2023-11-04
+CUST-000935,Michael,Allen,taracole@example.org,793-779-5829x158,63971 Guzman Brook,Salem,61665,1966-08-30,60.71,investment,2025-12-19
+CUST-000936,Kevin,Villarreal,robin48@example.com,596.326.2591,9773 Erickson Mountain,Franklin,63417,1956-06-06,49.34,investment,2024-02-13
+CUST-000937,Kenneth,Reid,crystalcooper@example.com,+1-678-572-9657x156,99034 Danielle Crossroad,Jackson,38906,1975-04-09,50.4,savings,2025-03-30
+CUST-000938,Susan,Sims,bradleyalbert@example.org,(657)437-6242x66225,69309 Jennifer Grove,Oxford,83014,2007-01-01,43.37,investment,2025-09-22
+CUST-000939,Erika,Hernandez,danielpage@example.com,(226)241-4756,429 Jeff Isle,Manchester,80562,1978-11-02,51.94,checking,2023-12-22
+CUST-000940,Shane,Torres,barbarawalsh@example.net,001-859-466-7715x39022,3650 Jennifer Divide Apt. 900,Franklin,57166,1964-07-17,50.71,savings,2021-02-18
+CUST-000941,Carlos,Pittman,kevin78@example.com,855.940.4231,067 Shepherd Grove,Arlington,75330,1959-10-04,41.75,checking,2018-07-26
+CUST-000942,Stephanie,Sutton,rmatthews@example.com,792.952.8783,81330 Hall Junctions,Milford,33079,1985-03-27,39.37,checking,2024-12-26
+CUST-000943,Jared,White,rodneygarcia@example.org,(947)440-9853,35051 Williams Gateway,Salem,17811,1966-03-08,57.25,investment,2024-10-16
+CUST-000944,Tony,Davis,mark70@example.net,404-722-4564x119,25380 Townsend Club Apt. 350,Manchester,46283,1990-09-06,79.31,savings,2018-11-01
+CUST-000945,Haley,Carr,sarah19@example.net,415.675.5716x6328,06162 Emily Well Suite 635,Riverside,17726,1946-03-10,70.24,savings,2024-05-24
+CUST-000946,Stephen,Ayers,bob20@example.com,+1-586-885-6977x143,090 Bradley Haven,Auburn,99369,1971-11-30,39.55,investment,2017-07-24
+CUST-000947,Brendan,Robinson,toddpalmer@example.net,+1-818-593-0461,8785 Alison Spur,Lincoln,46798,2004-05-10,83.74,savings,2025-11-29
+CUST-000948,Brandon,Bell,guerreropatrick@example.com,001-288-326-7280x07272,2373 Fisher Brook Suite 830,Springfield,70423,1959-08-03,57.08,checking,2024-04-15
+CUST-000949,Cassandra,Farley,dakota45@example.com,+1-883-867-1467x490,5185 Barry Corner Suite 456,Dayton,06456,1967-09-22,67.16,savings,2022-09-05
+CUST-000950,Michael,Morales,john18@example.org,+1-573-592-0025x8565,773 Erica Courts Suite 787,Franklin,14691,1982-11-23,71.89,savings,2018-03-18
+CUST-000951,Robert,Watson,anunez@example.org,(240)725-4550,080 Ashley Park Suite 738,Madison,67347,1975-09-27,32.15,savings,2019-09-13
+CUST-000952,Connor,Lewis,laureningram@example.org,530.200.9143x52949,417 Edwards Groves Suite 628,Lincoln,81660,1976-11-19,42.41,investment,2018-07-20
+CUST-000953,Cory,Obrien,vmoore@example.org,256.700.2230x234,771 Michael Shoals Suite 890,Chester,34893,1952-01-18,31.66,investment,2021-10-08
+CUST-000954,Cristina,Barton,rogersrobert@example.com,6816239278,909 Marsh Mall Apt. 527,Winchester,51738,1984-02-17,66.41,checking,2024-11-22
+CUST-000955,Lisa,Foley,kevin20@example.org,(348)524-8863,71450 Sherry Villages Apt. 802,Milford,50342,1988-05-20,49.61,checking,2022-12-01
+CUST-000956,Lisa,Mora,munozjohn@example.net,(406)710-4718x91199,924 Ortiz Plaza Apt. 410,Arlington,29395,1962-02-06,36.19,checking,2019-05-31
+CUST-000957,James,Jones,rodriguezmichaela@example.net,+1-614-605-1325x1790,85609 Sparks Valley Suite 714,Franklin,87084,1997-02-09,36.16,investment,2021-03-10
+CUST-000958,Jason,Johnson,bakerlindsay@example.com,657-222-7579x407,74499 Smith Forks,Oxford,32866,1983-12-09,71.63,savings,2023-09-07
+CUST-000959,Phillip,Booker,christopher64@example.org,3602326753,6310 Anthony Place Suite 546,Springfield,12903,1956-01-17,32.54,savings,2018-11-11
+CUST-000960,Benjamin,Galvan,brownscott@example.net,(379)948-6989x4848,361 Vanessa Motorway,Manchester,61912,1945-11-07,30.41,checking,2017-04-27
+CUST-000961,Tom,Sosa,desireeedwards@example.com,+1-833-207-8111x719,9021 Mitchell Corners,Marion,47250,1966-08-28,36.25,checking,2022-07-10
+CUST-000962,Seth,Perez,elizabethstone@example.net,001-265-552-3917,3004 Paul Lodge,Lincoln,46111,1959-02-11,45.24,investment,2020-06-17
+CUST-000963,Daniel,Singh,dholland@example.org,973-494-6248,858 Hodge Shore,Lincoln,32430,1998-03-31,31.18,savings,2018-02-19
+CUST-000964,Timothy,Burnett,qbeck@example.net,934-293-1796,55817 Mallory Mountain Apt. 116,Salem,18359,1966-12-17,67.65,investment,2020-07-14
+CUST-000965,Lisa,Grant,sarahwatson@example.com,(946)239-8970x1455,342 Dominguez Courts,Franklin,95436,1979-09-09,57.55,investment,2020-07-21
+CUST-000966,Stephanie,Aguilar,michaelmartinez@example.net,3503926000,56161 Lee Green,Jackson,33580,2006-08-02,54.28,checking,2024-01-27
+CUST-000967,Courtney,Miller,foleyaaron@example.net,001-988-423-8469x9086,310 Ortega Pines,Winchester,16867,1976-09-17,39.09,checking,2025-06-29
+CUST-000968,Tiffany,Fry,courtneygutierrez@example.com,361-892-2188x22063,76130 Jake Greens Apt. 693,Springfield,56017,1977-07-12,59.07,savings,2019-10-09
+CUST-000969,Connie,Garza,babbott@example.com,7324391932,671 Oscar Rapids,Burlington,32010,1974-08-27,42.42,checking,2019-03-15
+CUST-000970,Megan,Bradley,sharonedwards@example.net,(644)548-4368x68111,64098 Luke Parks,Franklin,63271,1950-12-20,59.17,checking,2019-12-10
+CUST-000971,Jacqueline,Wheeler,wiserenee@example.net,(378)479-0259,463 Jackson Loop,Arlington,23907,2001-06-11,31.9,savings,2026-04-09
+CUST-000972,Randall,Johnson,jameshicks@example.org,+1-902-995-5999,793 Davila Walk,Greenville,76374,1965-07-02,56.03,checking,2020-01-24
+CUST-000973,Anne,Schneider,jonathanhayes@example.net,811-473-6703,7611 Michael Point Suite 233,Franklin,04515,1995-10-13,45.97,investment,2022-01-12
+CUST-000974,Michael,Huber,paulwilliam@example.org,001-324-282-8732,883 George Mill Apt. 654,Chester,71904,1967-08-03,55.27,savings,2018-06-10
+CUST-000975,Thomas,Smith,jkirk@example.com,(887)541-6279,1295 Rivera Spur Apt. 051,Springfield,04742,1977-12-09,46.14,checking,2022-10-15
+CUST-000976,Haley,Mack,davidwiley@example.org,001-400-536-0722x350,342 Gonzalez Motorway,Winchester,43871,1996-06-09,64.35,investment,2022-05-06
+CUST-000977,Tina,Saunders,melissacastro@example.net,966-631-6696,30454 Brown Brook,Salem,51558,1951-11-17,41.77,savings,2020-07-06
+CUST-000978,Betty,Smith,kelly58@example.org,451-276-4296,1150 Meyers Shoal,Madison,80433,2006-05-11,46.0,checking,2020-09-06
+CUST-000979,Ashley,Thornton,simonkendra@example.org,925-952-3228x05883,54047 Thompson Junctions Apt. 950,Fairview,14461,1951-01-30,44.48,checking,2025-10-01
+CUST-000980,Kimberly,Montoya,william62@example.com,288.582.6031x748,5880 Wilson Plains,Madison,57093,1949-11-07,66.59,savings,2025-06-28
+CUST-000981,Megan,Serrano,gregoryfrey@example.org,(754)959-2055x967,911 Kristen Ramp Apt. 045,Fairview,61808,1971-07-17,34.82,checking,2018-01-11
+CUST-000982,Morgan,Nguyen,millerpaul@example.net,001-458-397-0152,68960 Rose Flat,Marion,36191,1974-06-28,58.21,savings,2023-05-30
+CUST-000983,Chad,Powers,adrianmcneil@example.com,361-713-9979x927,33878 Khan Drive Suite 898,Salem,52479,1977-11-22,46.81,investment,2017-08-26
+CUST-000984,Kendra,Scott,tanyamcdonald@example.net,609.600.7379,7444 Melissa Cape Suite 692,Georgetown,97994,1972-06-11,32.74,savings,2020-06-16
+CUST-000985,Kellie,Cooper,kennethhayes@example.com,001-516-704-3598,9965 Cole Throughway,Greenville,29725,2003-09-08,51.15,savings,2021-07-28
+CUST-000986,Robert,Andersen,grayalicia@example.org,207-230-7177x6135,836 Edgar Flat Suite 403,Chester,25285,1971-05-11,51.31,investment,2022-06-25
+CUST-000987,Matthew,Finley,evelyn02@example.org,726-353-2735,724 Jacob Crossroad Apt. 477,Oxford,10309,1964-01-01,54.47,savings,2024-07-10
+CUST-000988,Mark,Johnson,jenniferedwards@example.com,001-870-620-0617x413,9476 Katie Coves Apt. 912,Arlington,63102,1988-04-03,37.35,investment,2024-02-29
+CUST-000989,Alexis,Barnes,kimrichard@example.org,(828)730-5644,045 Nguyen Junctions,Lexington,76605,1966-07-31,58.65,investment,2017-11-11
+CUST-000990,Ricky,Thornton,fsmith@example.com,001-889-243-3276x39904,236 Le Viaduct,Georgetown,19128,2005-05-01,59.96,savings,2020-11-04
+CUST-000991,Sarah,Smith,edwardelliott@example.com,206-217-9067x01512,344 Stephen Rapid,Chester,62841,2001-12-05,56.64,savings,2025-09-22
+CUST-000992,Patrick,Chandler,ginafischer@example.org,001-219-729-6921,71226 Michelle Points,Washington,17006,2001-04-29,63.58,investment,2021-09-17
+CUST-000993,Denise,Wallace,hunter05@example.com,+1-585-478-8728x206,801 Robert Ports,Harrison,73037,1948-12-10,23.61,checking,2019-07-07
+CUST-000994,Robert,Barnes,derrick47@example.com,7964064724,3787 Harrison Plaza Suite 070,Chester,91842,1989-08-24,20.86,savings,2019-04-30
+CUST-000995,Louis,Mcdonald,mcknightchristopher@example.net,489.872.8426x80928,641 Johnson Junctions,Fairview,26174,2000-02-22,56.08,checking,2017-05-07
+CUST-000996,Zachary,Coleman,paul68@example.net,3314664795,831 Kathleen Greens Apt. 853,Dayton,49401,1987-12-16,36.3,checking,2019-04-21
+CUST-000997,Mary,Conner,raychristopher@example.net,+1-248-808-7017,52077 Jenny Centers Suite 404,Dayton,30134,1959-10-10,59.45,investment,2026-05-09
+CUST-000998,Beth,Dennis,jchavez@example.net,361-905-1109x0070,20502 Ortega Port Suite 239,Springfield,23520,1947-09-02,49.84,investment,2016-09-20
+CUST-000999,Emily,Harvey,ndiaz@example.net,747.453.9659x7442,942 Juan Lodge Suite 153,Burlington,58278,1963-12-25,59.64,savings,2026-01-06
+CUST-001000,Kristin,Rosales,lesterwanda@example.org,893.276.6997x681,7174 Lauren Pike Suite 968,Harrison,67234,1950-07-28,46.39,checking,2019-05-01
