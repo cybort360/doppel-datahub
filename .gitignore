@@ -8,3 +8,4 @@ artifacts/runs/*
 !artifacts/runs/.gitkeep
 .DS_Store
 artifacts/*.log
+.vercel

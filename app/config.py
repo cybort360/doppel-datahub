@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -31,4 +32,14 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-settings.doppel_artifact_dir.mkdir(parents=True, exist_ok=True)
+
+# On Vercel (and any read-only serverless filesystem) only /tmp is writable.
+# Redirect run artifacts there unless the operator set an explicit override.
+if os.environ.get("VERCEL") and settings.doppel_artifact_dir == Path("artifacts/runs"):
+    settings.doppel_artifact_dir = Path("/tmp/doppel-runs")
+
+# Creating the directory must never crash import on a read-only filesystem.
+try:
+    settings.doppel_artifact_dir.mkdir(parents=True, exist_ok=True)
+except OSError:
+    pass
