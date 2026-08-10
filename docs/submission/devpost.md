@@ -11,9 +11,9 @@ DOPPEL reads DataHub-governed metadata for a sensitive dataset, generates a priv
 
 ## Challenge fit
 
-**Primary — Open / Wildcard.** DOPPEL uses DataHub as the governance foundation for a creative use case: turning catalog-governed sensitive datasets into privacy-safe synthetic twins for development and testing, and contributing a reusable DataHub Skill to the open-source stack.
+**Primary — Agents That Do Real Work.** DOPPEL ships an LLM agent (`python -m app.agent --asset <id>`) that **reads** DataHub context, **reasons** over every column to classify it and author a governance analysis, hands the plan to a deterministic engine that **generates and fail-closed verifies** the twin, then **writes back** the results plus a natural-language knowledge handoff to the catalog (`UpstreamLineage`, `InstitutionalMemory`) so the next person or agent inherits the reasoning. Crucially, the model only proposes classifications (validated against the semantic-type enum) and writes the handoff — it can never override a privacy or integrity gate.
 
-**Also — Agents That Do Real Work.** DOPPEL reads DataHub to understand what is connected to what, takes action (generates a fail-closed, verified twin), and writes results back — `UpstreamLineage`, `InstitutionalMemory` evidence, `SYNTHETIC`/`NON_PRODUCTION` tags, scores, and expiry — so the next person or agent inherits the knowledge in the catalog. It ships both as an app and as a reusable Agent Skill (`skills/create-synthetic-data-product/`) so any compatible agent can run the same read → generate → verify → write-back loop.
+**Also — Open / Wildcard.** DOPPEL uses DataHub as the governance foundation and contributes a reusable DataHub Skill (`skills/create-synthetic-data-product/`) so any compatible agent can run the same read → reason → generate → verify → write-back loop.
 
 ## Inspiration
 

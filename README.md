@@ -45,6 +45,18 @@ The five-screen UI walks a judge through **Data Asset → Generation Plan → Li
 4. **Verify.** A fail-closed boundary checks exact-row overlap, direct-identifier overlap, quasi-identifier singling-out risk, schema fidelity, null-rate similarity, distribution similarity, correlations, conditional relationships, aggregate-query similarity, and foreign-key integrity.
 5. **Write back.** A `VERIFIED` twin is registered in DataHub with `SYNTHETIC` and `NON_PRODUCTION` tags, upstream lineage, owner/domain, scores, expiry, and a linked evidence report.
 
+## The agent
+
+DOPPEL can run the whole loop as an agent that does real work against the catalog:
+
+```bash
+python -m app.agent --asset healthcare
+```
+
+The agent **reads** DataHub context, an LLM **reasons** over every column — classifying it, flagging direct and quasi identifiers, and authoring a governance analysis — then hands the plan to the deterministic engine that **generates and fail-closed verifies** the twin, and finally **writes back** the results plus a natural-language knowledge handoff (`agent_handoff.md`, surfaced as `InstitutionalMemory` in live mode) so the next person or agent inherits the reasoning.
+
+The division of labor is deliberate: the LLM only proposes classifications (validated against the semantic-type enum) and writes the handoff. It can never override a privacy or integrity gate — the deterministic verification is the sole authority on whether a twin is safe to publish. If no LLM is configured, the agent falls back to deterministic classification and still completes. The gateway is configured with `OPENCODE_API_KEY` / `OPENCODE_BASE_URL` / `OPENCODE_MODEL` (any OpenAI-compatible endpoint).
+
 ## Architecture
 
 ![Architecture diagram](docs/architecture.svg)
@@ -247,11 +259,13 @@ Interactive OpenAPI docs are available at `/docs`.
 ├── app/
 │   ├── main.py                 # FastAPI application
 │   ├── cli.py                  # doppel CLI
+│   ├── agent.py                # doppel-agent CLI (LLM planner)
 │   ├── config.py               # Pydantic settings
 │   ├── models.py               # Pydantic domain models
 │   ├── static/                 # Browser UI
 │   └── services/
 │       ├── catalog.py          # DataHub/fixture context loader
+│       ├── agent.py            # Agent: read → reason → act → write-back
 │       ├── synthesizer.py      # Multi-table synthetic engine
 │       ├── evaluation.py       # Privacy/utility/integrity checks
 │       ├── pipeline.py         # Run orchestration
